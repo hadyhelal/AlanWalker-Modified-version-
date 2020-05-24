@@ -16,6 +16,16 @@
 		0721CAE224770A130013277C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0721CAE024770A130013277C /* LaunchScreen.storyboard */; };
 		0721CAEA24770C8D0013277C /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0721CAE924770C8D0013277C /* Login.swift */; };
 		0721CAEC24770CA20013277C /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0721CAEB24770CA20013277C /* Register.swift */; };
+		0725866F24773CC500254564 /* SongsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0725866E24773CC500254564 /* SongsList.swift */; };
+		0725867624773F4B00254564 /* Faded.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0725867124773F4B00254564 /* Faded.mp3 */; };
+		0725867724773F4B00254564 /* Not Afraid ft Faded.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0725867224773F4B00254564 /* Not Afraid ft Faded.mp3 */; };
+		0725867824773F4B00254564 /* Sing Me To Sleep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0725867324773F4B00254564 /* Sing Me To Sleep.mp3 */; };
+		0725867924773F4B00254564 /* The Spectre.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0725867424773F4B00254564 /* The Spectre.mp3 */; };
+		0725867A24773F4B00254564 /* PLAY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0725867524773F4B00254564 /* PLAY.mp3 */; };
+		07282A5B247AD69C0078E709 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07282A5A247AD69C0078E709 /* CategoryTableViewController.swift */; };
+		07282A5D247ADE3D0078E709 /* ParentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07282A5C247ADE3D0078E709 /* ParentController.swift */; };
+		072B51D62478534800627A96 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072B51D52478534800627A96 /* FirstView.swift */; };
+		97D5D2193C994FFB362C6E7B /* Pods_AlanWalker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907EF626350E332F0B591DAC /* Pods_AlanWalker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +40,18 @@
 		0721CAE324770A130013277C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0721CAE924770C8D0013277C /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		0721CAEB24770CA20013277C /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		0725866E24773CC500254564 /* SongsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SongsList.swift; path = AlanWalker/SongsList.swift; sourceTree = SOURCE_ROOT; };
+		0725867124773F4B00254564 /* Faded.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Faded.mp3; path = "../../../Walker Songs/Walker Songs/Faded.mp3"; sourceTree = "<group>"; };
+		0725867224773F4B00254564 /* Not Afraid ft Faded.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Not Afraid ft Faded.mp3"; path = "../../../Walker Songs/Walker Songs/Not Afraid ft Faded.mp3"; sourceTree = "<group>"; };
+		0725867324773F4B00254564 /* Sing Me To Sleep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Sing Me To Sleep.mp3"; path = "../../../Walker Songs/Walker Songs/Sing Me To Sleep.mp3"; sourceTree = "<group>"; };
+		0725867424773F4B00254564 /* The Spectre.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "The Spectre.mp3"; path = "../../../Walker Songs/Walker Songs/The Spectre.mp3"; sourceTree = "<group>"; };
+		0725867524773F4B00254564 /* PLAY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = PLAY.mp3; path = "../../../Walker Songs/Walker Songs/PLAY.mp3"; sourceTree = "<group>"; };
+		07282A5A247AD69C0078E709 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CategoryTableViewController.swift; path = AlanWalker/CategoryTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		07282A5C247ADE3D0078E709 /* ParentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentController.swift; sourceTree = "<group>"; };
+		072B51D52478534800627A96 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = SOURCE_ROOT; };
+		89CFD36A4F7CD7EE957D21EE /* Pods-AlanWalker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlanWalker.debug.xcconfig"; path = "Target Support Files/Pods-AlanWalker/Pods-AlanWalker.debug.xcconfig"; sourceTree = "<group>"; };
+		907EF626350E332F0B591DAC /* Pods_AlanWalker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlanWalker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B04C02733EE86C83E99575D9 /* Pods-AlanWalker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlanWalker.release.xcconfig"; path = "Target Support Files/Pods-AlanWalker/Pods-AlanWalker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97D5D2193C994FFB362C6E7B /* Pods_AlanWalker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +71,8 @@
 			children = (
 				0721CAD124770A120013277C /* AlanWalker */,
 				0721CAD024770A120013277C /* Products */,
+				B5EF720C186874FF4E0D6A83 /* Pods */,
+				A2ABCA1F82F0EB6A4CE025F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,8 +87,6 @@
 		0721CAD124770A120013277C /* AlanWalker */ = {
 			isa = PBXGroup;
 			children = (
-				0721CAD224770A120013277C /* AppDelegate.swift */,
-				0721CAD424770A120013277C /* SceneDelegate.swift */,
 				0721CAED24770CB10013277C /* ViewControllers */,
 				0721CAD824770A120013277C /* Main.storyboard */,
 				0721CADE24770A130013277C /* Assets.xcassets */,
@@ -77,11 +100,48 @@
 		0721CAED24770CB10013277C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				0721CAD224770A120013277C /* AppDelegate.swift */,
+				0721CAD424770A120013277C /* SceneDelegate.swift */,
+				072B51D52478534800627A96 /* FirstView.swift */,
+				07282A5A247AD69C0078E709 /* CategoryTableViewController.swift */,
+				0725866E24773CC500254564 /* SongsList.swift */,
+				07282A5C247ADE3D0078E709 /* ParentController.swift */,
 				0721CAD624770A120013277C /* ViewController.swift */,
 				0721CAE924770C8D0013277C /* Login.swift */,
 				0721CAEB24770CA20013277C /* Register.swift */,
+				0725867024773F2100254564 /* Songs */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0725867024773F2100254564 /* Songs */ = {
+			isa = PBXGroup;
+			children = (
+				0725867124773F4B00254564 /* Faded.mp3 */,
+				0725867224773F4B00254564 /* Not Afraid ft Faded.mp3 */,
+				0725867524773F4B00254564 /* PLAY.mp3 */,
+				0725867324773F4B00254564 /* Sing Me To Sleep.mp3 */,
+				0725867424773F4B00254564 /* The Spectre.mp3 */,
+			);
+			name = Songs;
+			sourceTree = "<group>";
+		};
+		A2ABCA1F82F0EB6A4CE025F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				907EF626350E332F0B591DAC /* Pods_AlanWalker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5EF720C186874FF4E0D6A83 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89CFD36A4F7CD7EE957D21EE /* Pods-AlanWalker.debug.xcconfig */,
+				B04C02733EE86C83E99575D9 /* Pods-AlanWalker.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,9 +151,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0721CAE624770A130013277C /* Build configuration list for PBXNativeTarget "AlanWalker" */;
 			buildPhases = (
+				0E81F2F4DB3F0890E7CE7DF4 /* [CP] Check Pods Manifest.lock */,
 				0721CACB24770A120013277C /* Sources */,
 				0721CACC24770A120013277C /* Frameworks */,
 				0721CACD24770A120013277C /* Resources */,
+				868CB19B140ED59D6EF96B9B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -145,10 +207,57 @@
 				0721CAE224770A130013277C /* LaunchScreen.storyboard in Resources */,
 				0721CADF24770A130013277C /* Assets.xcassets in Resources */,
 				0721CADA24770A120013277C /* Main.storyboard in Resources */,
+				0725867824773F4B00254564 /* Sing Me To Sleep.mp3 in Resources */,
+				0725867A24773F4B00254564 /* PLAY.mp3 in Resources */,
+				0725867924773F4B00254564 /* The Spectre.mp3 in Resources */,
+				0725867724773F4B00254564 /* Not Afraid ft Faded.mp3 in Resources */,
+				0725867624773F4B00254564 /* Faded.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E81F2F4DB3F0890E7CE7DF4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlanWalker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		868CB19B140ED59D6EF96B9B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlanWalker/Pods-AlanWalker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlanWalker/Pods-AlanWalker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AlanWalker/Pods-AlanWalker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0721CACB24770A120013277C /* Sources */ = {
@@ -156,9 +265,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0721CAEC24770CA20013277C /* Register.swift in Sources */,
+				07282A5D247ADE3D0078E709 /* ParentController.swift in Sources */,
 				0721CAD724770A120013277C /* ViewController.swift in Sources */,
 				0721CAEA24770C8D0013277C /* Login.swift in Sources */,
 				0721CADD24770A120013277C /* AlanWalker.xcdatamodeld in Sources */,
+				0725866F24773CC500254564 /* SongsList.swift in Sources */,
+				07282A5B247AD69C0078E709 /* CategoryTableViewController.swift in Sources */,
+				072B51D62478534800627A96 /* FirstView.swift in Sources */,
 				0721CAD324770A120013277C /* AppDelegate.swift in Sources */,
 				0721CAD524770A120013277C /* SceneDelegate.swift in Sources */,
 			);
@@ -302,6 +415,7 @@
 		};
 		0721CAE724770A130013277C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89CFD36A4F7CD7EE957D21EE /* Pods-AlanWalker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -310,7 +424,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.HadyOrgwalkersound.AlanWalker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HadyOrgwalkersound.AlanWalkerHD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -319,6 +433,7 @@
 		};
 		0721CAE824770A130013277C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B04C02733EE86C83E99575D9 /* Pods-AlanWalker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -327,7 +442,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.HadyOrgwalkersound.AlanWalker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HadyOrgwalkersound.AlanWalkerHD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
