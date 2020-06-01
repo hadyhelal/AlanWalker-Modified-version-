@@ -1,5 +1,5 @@
 # AlanWalker
-Simple music app
+Simple music app.
 This project still under development
 
 # what i used in this project?
