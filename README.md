@@ -12,5 +12,5 @@ This project still under development
 # what's under development now?
 
 - playing videoClip in application.
-- Firestore, firebase authentication.
+- Firestore and firebase authentication.
 - Store user's preference in cloud store.
