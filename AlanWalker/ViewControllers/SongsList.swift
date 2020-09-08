@@ -58,7 +58,7 @@ class SongsList : ParentController , AVAudioPlayerDelegate  {
     // MARK: - playingMusic
     
     func playMusic (musicName : String) {
-        let url = Bundle.main.url(forResource: musicName, withExtension: "mp3")!
+        let url = Bundle.main.url(forResource: musicName, withExtension: ".mp3")!
         do {
             audio = try AVAudioPlayer(contentsOf: url)
         } catch {

@@ -3,15 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0721CAD324770A120013277C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0721CAD224770A120013277C /* AppDelegate.swift */; };
 		0721CAD524770A120013277C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0721CAD424770A120013277C /* SceneDelegate.swift */; };
-		0721CAD724770A120013277C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0721CAD624770A120013277C /* ViewController.swift */; };
+		0721CAD724770A120013277C /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0721CAD624770A120013277C /* Welcome.swift */; };
 		0721CADA24770A120013277C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0721CAD824770A120013277C /* Main.storyboard */; };
-		0721CADD24770A120013277C /* AlanWalker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0721CADB24770A120013277C /* AlanWalker.xcdatamodeld */; };
 		0721CADF24770A130013277C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0721CADE24770A130013277C /* Assets.xcassets */; };
 		0721CAE224770A130013277C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0721CAE024770A130013277C /* LaunchScreen.storyboard */; };
 		0721CAEA24770C8D0013277C /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0721CAE924770C8D0013277C /* Login.swift */; };
@@ -25,6 +24,7 @@
 		07282A5B247AD69C0078E709 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07282A5A247AD69C0078E709 /* CategoryTableViewController.swift */; };
 		07282A5D247ADE3D0078E709 /* ParentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07282A5C247ADE3D0078E709 /* ParentController.swift */; };
 		072B51D62478534800627A96 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072B51D52478534800627A96 /* FirstView.swift */; };
+		07B4E87D2507A5AF0028079A /* AlanWalker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0721CADB24770A120013277C /* AlanWalker.xcdatamodeld */; };
 		97D5D2193C994FFB362C6E7B /* Pods_AlanWalker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907EF626350E332F0B591DAC /* Pods_AlanWalker.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +32,7 @@
 		0721CACF24770A120013277C /* AlanWalker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlanWalker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0721CAD224770A120013277C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0721CAD424770A120013277C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0721CAD624770A120013277C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0721CAD624770A120013277C /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
 		0721CAD924770A120013277C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0721CADC24770A120013277C /* AlanWalker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AlanWalker.xcdatamodel; sourceTree = "<group>"; };
 		0721CADE24770A130013277C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -40,15 +40,15 @@
 		0721CAE324770A130013277C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0721CAE924770C8D0013277C /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		0721CAEB24770CA20013277C /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
-		0725866E24773CC500254564 /* SongsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SongsList.swift; path = AlanWalker/SongsList.swift; sourceTree = SOURCE_ROOT; };
-		0725867124773F4B00254564 /* Faded.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Faded.mp3; path = "../../../Walker Songs/Walker Songs/Faded.mp3"; sourceTree = "<group>"; };
-		0725867224773F4B00254564 /* Not Afraid ft Faded.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Not Afraid ft Faded.mp3"; path = "../../../Walker Songs/Walker Songs/Not Afraid ft Faded.mp3"; sourceTree = "<group>"; };
-		0725867324773F4B00254564 /* Sing Me To Sleep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Sing Me To Sleep.mp3"; path = "../../../Walker Songs/Walker Songs/Sing Me To Sleep.mp3"; sourceTree = "<group>"; };
-		0725867424773F4B00254564 /* The Spectre.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "The Spectre.mp3"; path = "../../../Walker Songs/Walker Songs/The Spectre.mp3"; sourceTree = "<group>"; };
-		0725867524773F4B00254564 /* PLAY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = PLAY.mp3; path = "../../../Walker Songs/Walker Songs/PLAY.mp3"; sourceTree = "<group>"; };
-		07282A5A247AD69C0078E709 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CategoryTableViewController.swift; path = AlanWalker/CategoryTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		0725866E24773CC500254564 /* SongsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SongsList.swift; path = AlanWalker/ViewControllers/SongsList.swift; sourceTree = SOURCE_ROOT; };
+		0725867124773F4B00254564 /* Faded.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Faded.mp3; path = "../Songs/Non-Single/Faded.mp3"; sourceTree = "<group>"; };
+		0725867224773F4B00254564 /* Not Afraid ft Faded.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Not Afraid ft Faded.mp3"; path = "../Songs/Single & ESP/Not Afraid ft Faded.mp3"; sourceTree = "<group>"; };
+		0725867324773F4B00254564 /* Sing Me To Sleep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Sing Me To Sleep.mp3"; path = "../Songs/Non-Single/Sing Me To Sleep.mp3"; sourceTree = "<group>"; };
+		0725867424773F4B00254564 /* The Spectre.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Spectre.mp3"; sourceTree = "<group>"; };
+		0725867524773F4B00254564 /* PLAY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = PLAY.mp3; path = ../Songs/PLAY.mp3; sourceTree = "<group>"; };
+		07282A5A247AD69C0078E709 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CategoryTableViewController.swift; path = AlanWalker/ViewControllers/CategoryTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		07282A5C247ADE3D0078E709 /* ParentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentController.swift; sourceTree = "<group>"; };
-		072B51D52478534800627A96 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = SOURCE_ROOT; };
+		072B51D52478534800627A96 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirstView.swift; path = AlanWalker/ViewControllers/FirstView.swift; sourceTree = SOURCE_ROOT; };
 		89CFD36A4F7CD7EE957D21EE /* Pods-AlanWalker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlanWalker.debug.xcconfig"; path = "Target Support Files/Pods-AlanWalker/Pods-AlanWalker.debug.xcconfig"; sourceTree = "<group>"; };
 		907EF626350E332F0B591DAC /* Pods_AlanWalker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlanWalker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B04C02733EE86C83E99575D9 /* Pods-AlanWalker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlanWalker.release.xcconfig"; path = "Target Support Files/Pods-AlanWalker/Pods-AlanWalker.release.xcconfig"; sourceTree = "<group>"; };
@@ -70,9 +70,9 @@
 			isa = PBXGroup;
 			children = (
 				0721CAD124770A120013277C /* AlanWalker */,
-				0721CAD024770A120013277C /* Products */,
-				B5EF720C186874FF4E0D6A83 /* Pods */,
 				A2ABCA1F82F0EB6A4CE025F7 /* Frameworks */,
+				B5EF720C186874FF4E0D6A83 /* Pods */,
+				0721CAD024770A120013277C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,12 +87,11 @@
 		0721CAD124770A120013277C /* AlanWalker */ = {
 			isa = PBXGroup;
 			children = (
+				07B4E87C2507A5870028079A /* AppDelegate */,
 				0721CAED24770CB10013277C /* ViewControllers */,
-				0721CAD824770A120013277C /* Main.storyboard */,
-				0721CADE24770A130013277C /* Assets.xcassets */,
-				0721CAE024770A130013277C /* LaunchScreen.storyboard */,
-				0721CAE324770A130013277C /* Info.plist */,
-				0721CADB24770A120013277C /* AlanWalker.xcdatamodeld */,
+				07B4E8802507A8CF0028079A /* View */,
+				07B4E8812507A8DD0028079A /* Model */,
+				07B4E87F2507A8860028079A /* Resources */,
 			);
 			path = AlanWalker;
 			sourceTree = "<group>";
@@ -100,16 +99,11 @@
 		0721CAED24770CB10013277C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				0721CAD224770A120013277C /* AppDelegate.swift */,
-				0721CAD424770A120013277C /* SceneDelegate.swift */,
 				072B51D52478534800627A96 /* FirstView.swift */,
 				07282A5A247AD69C0078E709 /* CategoryTableViewController.swift */,
 				0725866E24773CC500254564 /* SongsList.swift */,
 				07282A5C247ADE3D0078E709 /* ParentController.swift */,
-				0721CAD624770A120013277C /* ViewController.swift */,
-				0721CAE924770C8D0013277C /* Login.swift */,
-				0721CAEB24770CA20013277C /* Register.swift */,
-				0725867024773F2100254564 /* Songs */,
+				07B4E87E2507A5D70028079A /* Online */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -117,13 +111,86 @@
 		0725867024773F2100254564 /* Songs */ = {
 			isa = PBXGroup;
 			children = (
-				0725867124773F4B00254564 /* Faded.mp3 */,
+				07B4E8842507AB7E0028079A /* Non-Single */,
+				07B4E8832507AB710028079A /* Single & ESP */,
+				07B4E8822507AB5D0028079A /* Different World */,
 				0725867224773F4B00254564 /* Not Afraid ft Faded.mp3 */,
 				0725867524773F4B00254564 /* PLAY.mp3 */,
-				0725867324773F4B00254564 /* Sing Me To Sleep.mp3 */,
-				0725867424773F4B00254564 /* The Spectre.mp3 */,
 			);
 			name = Songs;
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		07B4E87C2507A5870028079A /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				0721CAD224770A120013277C /* AppDelegate.swift */,
+				0721CAD424770A120013277C /* SceneDelegate.swift */,
+			);
+			name = AppDelegate;
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		07B4E87E2507A5D70028079A /* Online */ = {
+			isa = PBXGroup;
+			children = (
+				0721CAD624770A120013277C /* Welcome.swift */,
+				0721CAE924770C8D0013277C /* Login.swift */,
+				0721CAEB24770CA20013277C /* Register.swift */,
+			);
+			name = Online;
+			sourceTree = "<group>";
+		};
+		07B4E87F2507A8860028079A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0725867024773F2100254564 /* Songs */,
+				0721CADE24770A130013277C /* Assets.xcassets */,
+				0721CAE324770A130013277C /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		07B4E8802507A8CF0028079A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0721CAD824770A120013277C /* Main.storyboard */,
+				0721CAE024770A130013277C /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		07B4E8812507A8DD0028079A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0721CADB24770A120013277C /* AlanWalker.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		07B4E8822507AB5D0028079A /* Different World */ = {
+			isa = PBXGroup;
+			children = (
+				0725867424773F4B00254564 /* The Spectre.mp3 */,
+			);
+			name = "Different World";
+			path = "../Songs/Different World";
+			sourceTree = "<group>";
+		};
+		07B4E8832507AB710028079A /* Single & ESP */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Single & ESP";
+			sourceTree = "<group>";
+		};
+		07B4E8842507AB7E0028079A /* Non-Single */ = {
+			isa = PBXGroup;
+			children = (
+				0725867124773F4B00254564 /* Faded.mp3 */,
+				0725867324773F4B00254564 /* Sing Me To Sleep.mp3 */,
+			);
+			name = "Non-Single";
 			sourceTree = "<group>";
 		};
 		A2ABCA1F82F0EB6A4CE025F7 /* Frameworks */ = {
@@ -140,7 +207,6 @@
 				89CFD36A4F7CD7EE957D21EE /* Pods-AlanWalker.debug.xcconfig */,
 				B04C02733EE86C83E99575D9 /* Pods-AlanWalker.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -266,10 +332,10 @@
 			files = (
 				0721CAEC24770CA20013277C /* Register.swift in Sources */,
 				07282A5D247ADE3D0078E709 /* ParentController.swift in Sources */,
-				0721CAD724770A120013277C /* ViewController.swift in Sources */,
+				0721CAD724770A120013277C /* Welcome.swift in Sources */,
 				0721CAEA24770C8D0013277C /* Login.swift in Sources */,
-				0721CADD24770A120013277C /* AlanWalker.xcdatamodeld in Sources */,
 				0725866F24773CC500254564 /* SongsList.swift in Sources */,
+				07B4E87D2507A5AF0028079A /* AlanWalker.xcdatamodeld in Sources */,
 				07282A5B247AD69C0078E709 /* CategoryTableViewController.swift in Sources */,
 				072B51D62478534800627A96 /* FirstView.swift in Sources */,
 				0721CAD324770A120013277C /* AppDelegate.swift in Sources */,
@@ -419,7 +485,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AlanWalker/Info.plist;
+				INFOPLIST_FILE = AlanWalker/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -437,7 +503,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AlanWalker/Info.plist;
+				INFOPLIST_FILE = AlanWalker/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -481,6 +547,7 @@
 			currentVersion = 0721CADC24770A120013277C /* AlanWalker.xcdatamodel */;
 			path = AlanWalker.xcdatamodeld;
 			sourceTree = "<group>";
+			usesTabs = 0;
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
