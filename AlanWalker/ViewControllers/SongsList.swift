@@ -17,7 +17,8 @@ class SongsList : ParentController , AVAudioPlayerDelegate  {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationController?.setNavigationBarHidden(false, animated: true)
+
         tableView.separatorColor = .white
         tableView.rowHeight = 71.0
         tableView.tableFooterView = UIView()

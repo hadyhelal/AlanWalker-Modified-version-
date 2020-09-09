@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4cB-mi-JRX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2ut-en-ShB">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
@@ -42,7 +42,7 @@
                                         </state>
                                         <connections>
                                             <action selector="offlineMode:" destination="4cB-mi-JRX" eventType="touchUpInside" id="JPy-iL-PhO"/>
-                                            <segue destination="b5M-o4-436" kind="show" identifier="offline" id="Cqa-X9-gJH"/>
+                                            <segue destination="TLf-Y2-jqe" kind="show" id="glA-wm-G2v"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -61,24 +61,25 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="12W-5x-j7n"/>
                     </view>
+                    <navigationItem key="navigationItem" id="x1E-DW-XvL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9dY-od-ZYJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1310" y="317"/>
+            <point key="canvasLocation" x="-402.89855072463769" y="316.304347826087"/>
         </scene>
         <!--Welcome-->
         <scene sceneID="Ier-O0-Jwi">
             <objects>
                 <viewController id="gUj-Xg-Jdv" customClass="Welcome" customModule="AlanWalker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fzi-oQ-eP1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="29 Alan Walker Wallpapers | WallpaperCarax" translatesAutoresizingMaskIntoConstraints="NO" id="N0A-vx-FOR">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="XeL-0c-AyK">
-                                <rect key="frame" x="0.0" y="622" width="414" height="84"/>
+                                <rect key="frame" x="0.0" y="642" width="414" height="84"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfr-bG-7yD">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="42"/>
@@ -115,24 +116,25 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eMW-BG-nMo"/>
                     </view>
+                    <navigationItem key="navigationItem" id="eE3-A3-n2d"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qLa-ZL-9cn" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-191.30434782608697" y="13.858695652173914"/>
+            <point key="canvasLocation" x="715.94202898550725" y="13.858695652173914"/>
         </scene>
         <!--Login-->
         <scene sceneID="cgJ-cu-AJa">
             <objects>
                 <viewController id="ArS-tR-qFk" customClass="Login" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kxU-Oy-HSa">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gear_ Razer Adaro DJ Headphone Review" translatesAutoresizingMaskIntoConstraints="NO" id="1SE-mZ-jbY">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="E9R-eQ-U3c">
-                                <rect key="frame" x="50" y="50" width="314" height="89"/>
+                                <rect key="frame" x="50" y="94" width="314" height="89"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Td-C9-n4Z">
                                         <rect key="frame" x="0.0" y="0.0" width="314" height="34"/>
@@ -151,7 +153,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sci-4h-c2Z">
-                                <rect key="frame" x="0.0" y="209" width="414" height="42"/>
+                                <rect key="frame" x="0.0" y="253" width="414" height="42"/>
                                 <color key="backgroundColor" red="0.088890232149999998" green="0.33053600789999998" blue="0.45785576109999998" alpha="0.79377140410000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
                                 <state key="normal" title="Log In"/>
@@ -177,19 +179,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZoD-gx-lar" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="993" y="-305"/>
+            <point key="canvasLocation" x="1900.0000000000002" y="-305.70652173913044"/>
         </scene>
         <!--Songs List-->
         <scene sceneID="0Mt-tZ-DCh">
             <objects>
                 <tableViewController id="b5M-o4-436" customClass="SongsList" customModule="AlanWalker" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="DCI-Km-cWp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.05160357803106308" green="0.083761401474475861" blue="0.18796935677528381" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="0ut-4g-4L7">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="7xq-CZ-v9o" customClass="SwipeTableViewCell" customModule="SwipeCellKit">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="72" width="414" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7xq-CZ-v9o" id="e59-Bg-hHO">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
@@ -226,10 +233,11 @@
                             <outlet property="delegate" destination="b5M-o4-436" id="L7c-2A-wB2"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="E7M-Vb-eMf"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ix8-r7-EQW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-191" y="1238"/>
+            <point key="canvasLocation" x="1032" y="1260"/>
         </scene>
         <!--Category Table View Controller-->
         <scene sceneID="FEu-ie-fUK">
@@ -247,6 +255,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="383" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="b5M-o4-436" kind="show" id="DBm-eo-1lo"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -254,30 +265,31 @@
                             <outlet property="delegate" destination="TLf-Y2-jqe" id="N4f-rf-ygP"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="xXY-we-x7S"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iZZ-nw-cnM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="645" y="1238"/>
+            <point key="canvasLocation" x="-423" y="1260"/>
         </scene>
         <!--Register-->
         <scene sceneID="EWh-aU-eEj">
             <objects>
                 <viewController id="ps1-NV-wDu" customClass="Register" customModule="AlanWalker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ert-G9-tn0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gear_ Razer Adaro DJ Headphone Review" translatesAutoresizingMaskIntoConstraints="NO" id="wtV-AL-wL7">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ObI-nd-Cdr">
-                                <rect key="frame" x="0.0" y="268" width="414" height="42"/>
+                                <rect key="frame" x="0.0" y="312" width="414" height="42"/>
                                 <color key="backgroundColor" red="0.088890232149999998" green="0.33053600789999998" blue="0.45785576109999998" alpha="0.79377140410000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
                                 <state key="normal" title="Register"/>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="yiW-A0-zxd">
-                                <rect key="frame" x="50" y="50" width="314" height="148"/>
+                                <rect key="frame" x="50" y="94" width="314" height="148"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uSE-nk-v78">
                                         <rect key="frame" x="0.0" y="0.0" width="314" height="34"/>
@@ -319,10 +331,29 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Z8Z-t0-oq5"/>
                     </view>
+                    <navigationItem key="navigationItem" id="diW-yB-khc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U7t-oe-l6T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="993" y="417"/>
+            <point key="canvasLocation" x="1900.0000000000002" y="416.57608695652175"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hTU-wr-wdf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2ut-en-ShB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="k8z-uY-7WP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4cB-mi-JRX" kind="relationship" relationship="rootViewController" id="9w6-A9-RQh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5ge-mI-Pkg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1310.144927536232" y="316.304347826087"/>
         </scene>
     </scenes>
     <resources>

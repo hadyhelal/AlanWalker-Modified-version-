@@ -100,9 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				072B51D52478534800627A96 /* FirstView.swift */,
-				07282A5A247AD69C0078E709 /* CategoryTableViewController.swift */,
-				0725866E24773CC500254564 /* SongsList.swift */,
-				07282A5C247ADE3D0078E709 /* ParentController.swift */,
+				07F6520E2508B7F20075399B /* Offline */,
 				07B4E87E2507A5D70028079A /* Online */,
 			);
 			path = ViewControllers;
@@ -191,6 +189,16 @@
 				0725867324773F4B00254564 /* Sing Me To Sleep.mp3 */,
 			);
 			name = "Non-Single";
+			sourceTree = "<group>";
+		};
+		07F6520E2508B7F20075399B /* Offline */ = {
+			isa = PBXGroup;
+			children = (
+				07282A5A247AD69C0078E709 /* CategoryTableViewController.swift */,
+				0725866E24773CC500254564 /* SongsList.swift */,
+				07282A5C247ADE3D0078E709 /* ParentController.swift */,
+			);
+			name = Offline;
 			sourceTree = "<group>";
 		};
 		A2ABCA1F82F0EB6A4CE025F7 /* Frameworks */ = {
