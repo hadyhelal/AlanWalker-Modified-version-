@@ -17,11 +17,11 @@ class Welcome: UIViewController {
     
     
     @IBAction func logInButton(_ sender: Any) {
-        performSegue(withIdentifier: "loginSegue", sender: self)
+     //   performSegue(withIdentifier: "loginSegue", sender: self)
     }
     
     @IBAction func registerButton(_ sender: Any) {
-        performSegue(withIdentifier: "RegisterSegue", sender: self)
+      //  performSegue(withIdentifier: "RegisterSegue", sender: self)
     }
     
 }

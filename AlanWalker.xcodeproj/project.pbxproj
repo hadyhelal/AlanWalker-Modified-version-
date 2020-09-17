@@ -16,15 +16,27 @@
 		0721CAEA24770C8D0013277C /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0721CAE924770C8D0013277C /* Login.swift */; };
 		0721CAEC24770CA20013277C /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0721CAEB24770CA20013277C /* Register.swift */; };
 		0725866F24773CC500254564 /* SongsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0725866E24773CC500254564 /* SongsList.swift */; };
-		0725867624773F4B00254564 /* Faded.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0725867124773F4B00254564 /* Faded.mp3 */; };
-		0725867724773F4B00254564 /* Not Afraid ft Faded.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0725867224773F4B00254564 /* Not Afraid ft Faded.mp3 */; };
-		0725867824773F4B00254564 /* Sing Me To Sleep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0725867324773F4B00254564 /* Sing Me To Sleep.mp3 */; };
-		0725867924773F4B00254564 /* The Spectre.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0725867424773F4B00254564 /* The Spectre.mp3 */; };
-		0725867A24773F4B00254564 /* PLAY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0725867524773F4B00254564 /* PLAY.mp3 */; };
 		07282A5B247AD69C0078E709 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07282A5A247AD69C0078E709 /* CategoryTableViewController.swift */; };
-		07282A5D247ADE3D0078E709 /* ParentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07282A5C247ADE3D0078E709 /* ParentController.swift */; };
+		0729C473250D30D60084029E /* MusicDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0729C472250D30D60084029E /* MusicDataModel.swift */; };
 		072B51D62478534800627A96 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072B51D52478534800627A96 /* FirstView.swift */; };
-		07B4E87D2507A5AF0028079A /* AlanWalker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0721CADB24770A120013277C /* AlanWalker.xcdatamodeld */; };
+		0790703F250CCACD0028C269 /* AlanWalker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0790703D250CCACD0028C269 /* AlanWalker.xcdatamodeld */; };
+		07CD39CA250D1D7D0065A2C7 /* TableViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CD39C8250D1D7D0065A2C7 /* TableViewCell1.swift */; };
+		07CD39CB250D1D7D0065A2C7 /* TableViewCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07CD39C9250D1D7D0065A2C7 /* TableViewCell1.xib */; };
+		07D02C72250B8A65005E5A9E /* Return.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07D02C6F250B8A64005E5A9E /* Return.mp3 */; };
+		07D02C73250B8A65005E5A9E /* Memories.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07D02C70250B8A64005E5A9E /* Memories.mp3 */; };
+		07D02C74250B8A65005E5A9E /* Alone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07D02C71250B8A65005E5A9E /* Alone.mp3 */; };
+		07D02C76250B8AC0005E5A9E /* On My Way.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07D02C75250B8AC0005E5A9E /* On My Way.mp3 */; };
+		07D02C7C250B8BA5005E5A9E /* Avem.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07D02C77250B8BA3005E5A9E /* Avem.mp3 */; };
+		07D02C7D250B8BA5005E5A9E /* Unity.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07D02C78250B8BA4005E5A9E /* Unity.mp3 */; };
+		07D02C7E250B8BA5005E5A9E /* Ignite.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07D02C79250B8BA4005E5A9E /* Ignite.mp3 */; };
+		07D02C7F250B8BA5005E5A9E /* Hope.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07D02C7A250B8BA5005E5A9E /* Hope.mp3 */; };
+		07D02C80250B8BA5005E5A9E /* I Don't Wanna Go.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07D02C7B250B8BA5005E5A9E /* I Don't Wanna Go.mp3 */; };
+		07D18DBA250B80DE001E0C46 /* Sing Me To Sleep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07D18DB8250B80DD001E0C46 /* Sing Me To Sleep.mp3 */; };
+		07D18DBB250B80DE001E0C46 /* Faded.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07D18DB9250B80DE001E0C46 /* Faded.mp3 */; };
+		07E27E9E250B973300ED9D1C /* The Spectre.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07E27E9D250B973300ED9D1C /* The Spectre.mp3 */; };
+		07E27EA0250B974D00ED9D1C /* PLAY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07E27E9F250B974D00ED9D1C /* PLAY.mp3 */; };
+		07E27EA3250B981100ED9D1C /* Not Afraid ft Faded.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07E27EA2250B981100ED9D1C /* Not Afraid ft Faded.mp3 */; };
+		07F16737250D598C00DD1682 /* musicUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F16736250D598C00DD1682 /* musicUI.swift */; };
 		97D5D2193C994FFB362C6E7B /* Pods_AlanWalker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907EF626350E332F0B591DAC /* Pods_AlanWalker.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,21 +46,33 @@
 		0721CAD424770A120013277C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0721CAD624770A120013277C /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
 		0721CAD924770A120013277C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0721CADC24770A120013277C /* AlanWalker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AlanWalker.xcdatamodel; sourceTree = "<group>"; };
 		0721CADE24770A130013277C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0721CAE124770A130013277C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0721CAE324770A130013277C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0721CAE924770C8D0013277C /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		0721CAEB24770CA20013277C /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		0725866E24773CC500254564 /* SongsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SongsList.swift; path = AlanWalker/ViewControllers/SongsList.swift; sourceTree = SOURCE_ROOT; };
-		0725867124773F4B00254564 /* Faded.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Faded.mp3; path = "../Songs/Non-Single/Faded.mp3"; sourceTree = "<group>"; };
-		0725867224773F4B00254564 /* Not Afraid ft Faded.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Not Afraid ft Faded.mp3"; path = "../Songs/Single & ESP/Not Afraid ft Faded.mp3"; sourceTree = "<group>"; };
-		0725867324773F4B00254564 /* Sing Me To Sleep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Sing Me To Sleep.mp3"; path = "../Songs/Non-Single/Sing Me To Sleep.mp3"; sourceTree = "<group>"; };
-		0725867424773F4B00254564 /* The Spectre.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Spectre.mp3"; sourceTree = "<group>"; };
-		0725867524773F4B00254564 /* PLAY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = PLAY.mp3; path = ../Songs/PLAY.mp3; sourceTree = "<group>"; };
 		07282A5A247AD69C0078E709 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CategoryTableViewController.swift; path = AlanWalker/ViewControllers/CategoryTableViewController.swift; sourceTree = SOURCE_ROOT; };
-		07282A5C247ADE3D0078E709 /* ParentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentController.swift; sourceTree = "<group>"; };
+		0729C472250D30D60084029E /* MusicDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicDataModel.swift; sourceTree = "<group>"; };
 		072B51D52478534800627A96 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirstView.swift; path = AlanWalker/ViewControllers/FirstView.swift; sourceTree = SOURCE_ROOT; };
+		0790703E250CCACD0028C269 /* AlanWalker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AlanWalker.xcdatamodel; sourceTree = "<group>"; };
+		07CD39C8250D1D7D0065A2C7 /* TableViewCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell1.swift; sourceTree = "<group>"; };
+		07CD39C9250D1D7D0065A2C7 /* TableViewCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell1.xib; sourceTree = "<group>"; };
+		07D02C6F250B8A64005E5A9E /* Return.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Return.mp3; sourceTree = "<group>"; };
+		07D02C70250B8A64005E5A9E /* Memories.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Memories.mp3; sourceTree = "<group>"; };
+		07D02C71250B8A65005E5A9E /* Alone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Alone.mp3; sourceTree = "<group>"; };
+		07D02C75250B8AC0005E5A9E /* On My Way.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "On My Way.mp3"; sourceTree = "<group>"; };
+		07D02C77250B8BA3005E5A9E /* Avem.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Avem.mp3; sourceTree = "<group>"; };
+		07D02C78250B8BA4005E5A9E /* Unity.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Unity.mp3; sourceTree = "<group>"; };
+		07D02C79250B8BA4005E5A9E /* Ignite.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ignite.mp3; sourceTree = "<group>"; };
+		07D02C7A250B8BA5005E5A9E /* Hope.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Hope.mp3; sourceTree = "<group>"; };
+		07D02C7B250B8BA5005E5A9E /* I Don't Wanna Go.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "I Don't Wanna Go.mp3"; sourceTree = "<group>"; };
+		07D18DB8250B80DD001E0C46 /* Sing Me To Sleep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sing Me To Sleep.mp3"; sourceTree = "<group>"; };
+		07D18DB9250B80DE001E0C46 /* Faded.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Faded.mp3; sourceTree = "<group>"; };
+		07E27E9D250B973300ED9D1C /* The Spectre.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Spectre.mp3"; sourceTree = "<group>"; };
+		07E27E9F250B974D00ED9D1C /* PLAY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PLAY.mp3; sourceTree = "<group>"; };
+		07E27EA2250B981100ED9D1C /* Not Afraid ft Faded.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Not Afraid ft Faded.mp3"; sourceTree = "<group>"; };
+		07F16736250D598C00DD1682 /* musicUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = musicUI.swift; sourceTree = "<group>"; };
 		89CFD36A4F7CD7EE957D21EE /* Pods-AlanWalker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlanWalker.debug.xcconfig"; path = "Target Support Files/Pods-AlanWalker/Pods-AlanWalker.debug.xcconfig"; sourceTree = "<group>"; };
 		907EF626350E332F0B591DAC /* Pods_AlanWalker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlanWalker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B04C02733EE86C83E99575D9 /* Pods-AlanWalker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlanWalker.release.xcconfig"; path = "Target Support Files/Pods-AlanWalker/Pods-AlanWalker.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,19 +130,6 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		0725867024773F2100254564 /* Songs */ = {
-			isa = PBXGroup;
-			children = (
-				07B4E8842507AB7E0028079A /* Non-Single */,
-				07B4E8832507AB710028079A /* Single & ESP */,
-				07B4E8822507AB5D0028079A /* Different World */,
-				0725867224773F4B00254564 /* Not Afraid ft Faded.mp3 */,
-				0725867524773F4B00254564 /* PLAY.mp3 */,
-			);
-			name = Songs;
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
 		07B4E87C2507A5870028079A /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,8 +153,9 @@
 		07B4E87F2507A8860028079A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				0725867024773F2100254564 /* Songs */,
+				07D18DB1250B7ED2001E0C46 /* Songs */,
 				0721CADE24770A130013277C /* Assets.xcassets */,
+				07D02C7B250B8BA5005E5A9E /* I Don't Wanna Go.mp3 */,
 				0721CAE324770A130013277C /* Info.plist */,
 			);
 			path = Resources;
@@ -152,8 +164,10 @@
 		07B4E8802507A8CF0028079A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				07CD39C4250D1D260065A2C7 /* Xip */,
 				0721CAD824770A120013277C /* Main.storyboard */,
 				0721CAE024770A130013277C /* LaunchScreen.storyboard */,
+				0729C472250D30D60084029E /* MusicDataModel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -161,34 +175,54 @@
 		07B4E8812507A8DD0028079A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0721CADB24770A120013277C /* AlanWalker.xcdatamodeld */,
+				0790703D250CCACD0028C269 /* AlanWalker.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		07B4E8822507AB5D0028079A /* Different World */ = {
+		07CD39C4250D1D260065A2C7 /* Xip */ = {
 			isa = PBXGroup;
 			children = (
-				0725867424773F4B00254564 /* The Spectre.mp3 */,
+				07CD39C8250D1D7D0065A2C7 /* TableViewCell1.swift */,
+				07CD39C9250D1D7D0065A2C7 /* TableViewCell1.xib */,
 			);
-			name = "Different World";
-			path = "../Songs/Different World";
+			name = Xip;
 			sourceTree = "<group>";
 		};
-		07B4E8832507AB710028079A /* Single & ESP */ = {
+		07D02C82250B8CC7005E5A9E /* Non-Single */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			path = "Single & ESP";
-			sourceTree = "<group>";
-		};
-		07B4E8842507AB7E0028079A /* Non-Single */ = {
-			isa = PBXGroup;
-			children = (
-				0725867124773F4B00254564 /* Faded.mp3 */,
-				0725867324773F4B00254564 /* Sing Me To Sleep.mp3 */,
+				07E27EA2250B981100ED9D1C /* Not Afraid ft Faded.mp3 */,
+				07E27E9D250B973300ED9D1C /* The Spectre.mp3 */,
+				07E27E9F250B974D00ED9D1C /* PLAY.mp3 */,
+				07D02C75250B8AC0005E5A9E /* On My Way.mp3 */,
+				07D18DB8250B80DD001E0C46 /* Sing Me To Sleep.mp3 */,
+				07D18DB9250B80DE001E0C46 /* Faded.mp3 */,
+				07D02C79250B8BA4005E5A9E /* Ignite.mp3 */,
+				07D02C78250B8BA4005E5A9E /* Unity.mp3 */,
+				07D02C71250B8A65005E5A9E /* Alone.mp3 */,
 			);
 			name = "Non-Single";
+			sourceTree = "<group>";
+		};
+		07D02C83250B8D1B005E5A9E /* Single & ESP */ = {
+			isa = PBXGroup;
+			children = (
+				07D02C70250B8A64005E5A9E /* Memories.mp3 */,
+				07D02C77250B8BA3005E5A9E /* Avem.mp3 */,
+				07D02C7A250B8BA5005E5A9E /* Hope.mp3 */,
+				07D02C6F250B8A64005E5A9E /* Return.mp3 */,
+			);
+			name = "Single & ESP";
+			sourceTree = "<group>";
+		};
+		07D18DB1250B7ED2001E0C46 /* Songs */ = {
+			isa = PBXGroup;
+			children = (
+				07D02C83250B8D1B005E5A9E /* Single & ESP */,
+				07D02C82250B8CC7005E5A9E /* Non-Single */,
+			);
+			name = Songs;
 			sourceTree = "<group>";
 		};
 		07F6520E2508B7F20075399B /* Offline */ = {
@@ -196,7 +230,7 @@
 			children = (
 				07282A5A247AD69C0078E709 /* CategoryTableViewController.swift */,
 				0725866E24773CC500254564 /* SongsList.swift */,
-				07282A5C247ADE3D0078E709 /* ParentController.swift */,
+				07F16736250D598C00DD1682 /* musicUI.swift */,
 			);
 			name = Offline;
 			sourceTree = "<group>";
@@ -278,14 +312,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07D02C7D250B8BA5005E5A9E /* Unity.mp3 in Resources */,
+				07D02C80250B8BA5005E5A9E /* I Don't Wanna Go.mp3 in Resources */,
+				07D02C7F250B8BA5005E5A9E /* Hope.mp3 in Resources */,
 				0721CAE224770A130013277C /* LaunchScreen.storyboard in Resources */,
+				07D02C7E250B8BA5005E5A9E /* Ignite.mp3 in Resources */,
+				07CD39CB250D1D7D0065A2C7 /* TableViewCell1.xib in Resources */,
 				0721CADF24770A130013277C /* Assets.xcassets in Resources */,
+				07D02C74250B8A65005E5A9E /* Alone.mp3 in Resources */,
+				07D18DBA250B80DE001E0C46 /* Sing Me To Sleep.mp3 in Resources */,
+				07D02C72250B8A65005E5A9E /* Return.mp3 in Resources */,
+				07E27EA0250B974D00ED9D1C /* PLAY.mp3 in Resources */,
+				07D02C73250B8A65005E5A9E /* Memories.mp3 in Resources */,
+				07D02C76250B8AC0005E5A9E /* On My Way.mp3 in Resources */,
+				07E27E9E250B973300ED9D1C /* The Spectre.mp3 in Resources */,
+				07D18DBB250B80DE001E0C46 /* Faded.mp3 in Resources */,
+				07E27EA3250B981100ED9D1C /* Not Afraid ft Faded.mp3 in Resources */,
+				07D02C7C250B8BA5005E5A9E /* Avem.mp3 in Resources */,
 				0721CADA24770A120013277C /* Main.storyboard in Resources */,
-				0725867824773F4B00254564 /* Sing Me To Sleep.mp3 in Resources */,
-				0725867A24773F4B00254564 /* PLAY.mp3 in Resources */,
-				0725867924773F4B00254564 /* The Spectre.mp3 in Resources */,
-				0725867724773F4B00254564 /* Not Afraid ft Faded.mp3 in Resources */,
-				0725867624773F4B00254564 /* Faded.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,13 +383,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				0721CAEC24770CA20013277C /* Register.swift in Sources */,
-				07282A5D247ADE3D0078E709 /* ParentController.swift in Sources */,
 				0721CAD724770A120013277C /* Welcome.swift in Sources */,
 				0721CAEA24770C8D0013277C /* Login.swift in Sources */,
 				0725866F24773CC500254564 /* SongsList.swift in Sources */,
-				07B4E87D2507A5AF0028079A /* AlanWalker.xcdatamodeld in Sources */,
+				0729C473250D30D60084029E /* MusicDataModel.swift in Sources */,
+				0790703F250CCACD0028C269 /* AlanWalker.xcdatamodeld in Sources */,
 				07282A5B247AD69C0078E709 /* CategoryTableViewController.swift in Sources */,
+				07F16737250D598C00DD1682 /* musicUI.swift in Sources */,
 				072B51D62478534800627A96 /* FirstView.swift in Sources */,
+				07CD39CA250D1D7D0065A2C7 /* TableViewCell1.swift in Sources */,
 				0721CAD324770A120013277C /* AppDelegate.swift in Sources */,
 				0721CAD524770A120013277C /* SceneDelegate.swift in Sources */,
 			);
@@ -547,15 +593,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		0721CADB24770A120013277C /* AlanWalker.xcdatamodeld */ = {
+		0790703D250CCACD0028C269 /* AlanWalker.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				0721CADC24770A120013277C /* AlanWalker.xcdatamodel */,
+				0790703E250CCACD0028C269 /* AlanWalker.xcdatamodel */,
 			);
-			currentVersion = 0721CADC24770A120013277C /* AlanWalker.xcdatamodel */;
+			currentVersion = 0790703E250CCACD0028C269 /* AlanWalker.xcdatamodel */;
 			path = AlanWalker.xcdatamodeld;
 			sourceTree = "<group>";
-			usesTabs = 0;
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */

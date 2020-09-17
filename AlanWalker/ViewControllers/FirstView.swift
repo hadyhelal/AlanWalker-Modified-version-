@@ -17,7 +17,7 @@ class FirstView: UIViewController {
     }
     
     @IBAction func onlineMode(_ sender: Any) {
-        performSegue(withIdentifier: "online", sender: self)
+        //performSegue(withIdentifier: "online", sender: self)
     }
     
   
