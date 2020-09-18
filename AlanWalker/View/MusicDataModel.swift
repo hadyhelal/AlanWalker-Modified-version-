@@ -11,7 +11,7 @@ import Foundation
 struct MusicDataModel{
     
     var musicName : String
-    var musicAlbum : String?
+    var musicAlbum : String
     var musicImage : String
     var musicTime : Double
     
@@ -27,6 +27,8 @@ struct MusicData {
         list.append(MusicDataModel(musicName: "Memories", musicAlbum: "Single & ESP", musicImage: "galaxy", musicTime: 6.2))
         
         list.append(MusicDataModel(musicName: "Avem", musicAlbum: "Single & ESP", musicImage: "galaxy", musicTime: 3.22))
+        
+    
     }
     
 }

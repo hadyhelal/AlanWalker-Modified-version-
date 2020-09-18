@@ -20,7 +20,6 @@ class musicUI: UIViewController {
     @IBOutlet var albumNameLabel: UILabel!
     var albumNameLabelText : String? {
         didSet{
-            
             if albumNameLabel.text != nil { albumNameLabel.text = albumNameLabelText }
         }
     }

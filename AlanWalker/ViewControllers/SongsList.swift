@@ -8,17 +8,15 @@
 
 import UIKit
 import AVFoundation
-import CoreData
 
 class SongsList : UITableViewController , AVAudioPlayerDelegate {
     
-    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     var audio : AVAudioPlayer!
     //var musicName = [Songs] ()
     var musicVar = MusicData()
     var albumSelected : Albums? {
         didSet{
-            if self.albumSelected == musicVar.list[/*IndexPath.row*/0].musicAlbum {
+            if self.albumSelected?.albumName == musicVar.list[/*IndexPath.row*/0].musicAlbum {
             //print("===================== \(self.albumSelected!)  =======")
             loadData()
             }
@@ -127,31 +125,28 @@ class SongsList : UITableViewController , AVAudioPlayerDelegate {
     
     
     //MARK: -Core Data Methods
-    
-    func saveData (){
-        do {
-            try self.context.save()
-        }
-        catch{
-            print("Error while Saving Data ======== \(error)")
-        }
-    }
-    
-    func loadData(with request : NSFetchRequest<Songs> = Songs.fetchRequest() , predicate: NSPredicate? = nil) {
-        //let request : NSFetchRequest<Item> = Item.fetchRequest()
+
+    func loadData(with albumNameFetched : String, predicate: NSPredicate? = nil) {
         
-        let categoryPredicate = NSPredicate(format: "parentCategory.albumName MATCHES %@", albumSelected!.albumName!)
-        if let additionalPredicate = predicate {
-            request.predicate = NSCompoundPredicate(andPredicateWithSubpredicates: [categoryPredicate , additionalPredicate])
-        } else
-        {
-            request.predicate = categoryPredicate
-        }
-        do {
-            musicVar.list /*musicName*/ = try context.fetch(request)
-        }catch{
-            print("Error while fetching data \(error)")
-        }
+
+//        for i in 0...2 {
+//            if musicVar.list[i]. {
+//                    
+//            }
+//        }
+            
+//        let categoryPredicate = NSPredicate(format: "parentCategory.albumName MATCHES %@", albumSelected!.albumName!)
+//        if let additionalPredicate = predicate {
+//            request.predicate = NSCompoundPredicate(andPredicateWithSubpredicates: [categoryPredicate , additionalPredicate])
+//        } else
+//        {
+//            request.predicate = categoryPredicate
+//        }
+//        do {
+//            musicVar.list /*musicName*/ = try context.fetch(request)
+//        }catch{
+//            print("Error while fetching data \(error)")
+//        }
         tableView.reloadData()
     }
 }
