@@ -14,11 +14,12 @@ class SongsList : UITableViewController , AVAudioPlayerDelegate {
     var audio : AVAudioPlayer!
     //var musicName = [Songs] ()
     var musicVar = MusicData()
+    var currentMusicArray = [MusicDataModel] ()
     var albumSelected : Albums? {
         didSet{
             if self.albumSelected?.albumName == musicVar.list[/*IndexPath.row*/0].musicAlbum {
             //print("===================== \(self.albumSelected!)  =======")
-            loadData()
+                loadData(album: (self.albumSelected?.albumName)!)
             }
         }
     }
@@ -126,14 +127,13 @@ class SongsList : UITableViewController , AVAudioPlayerDelegate {
     
     //MARK: -Core Data Methods
 
-    func loadData(with albumNameFetched : String, predicate: NSPredicate? = nil) {
+    func loadData(album albumNameFetched : String, predicate: NSPredicate? = nil) {
         
-
-//        for i in 0...2 {
-//            if musicVar.list[i]. {
-//                    
-//            }
-//        }
+        let pp = musicVar.list.filter { ( music ) -> Bool in
+            return music.musicAlbum == albumSelected?.albumName
+        }
+        print(pp.count)
+        }
             
 //        let categoryPredicate = NSPredicate(format: "parentCategory.albumName MATCHES %@", albumSelected!.albumName!)
 //        if let additionalPredicate = predicate {
@@ -147,8 +147,8 @@ class SongsList : UITableViewController , AVAudioPlayerDelegate {
 //        }catch{
 //            print("Error while fetching data \(error)")
 //        }
-        tableView.reloadData()
-    }
+//        tableView.reloadData()
+    
 }
 
 
@@ -156,24 +156,24 @@ class SongsList : UITableViewController , AVAudioPlayerDelegate {
 extension SongsList : UISearchBarDelegate {
     
     
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        let request : NSFetchRequest<Songs> = Songs.fetchRequest()
-        
-        let predicate = NSPredicate(format: "songsName CONTAINS [cd] %@", searchBar.text!)
-        
-        request.sortDescriptors = [NSSortDescriptor(key: "songsName", ascending: true)]
-        
-        loadData(with: request , predicate: predicate)
-    }
+//    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+//        //let request : NSFetchRequest<Songs> = Songs.fetchRequest()
+//
+//        let predicate = NSPredicate(format: "songsName CONTAINS [cd] %@", searchBar.text!)
+//
+//        request.sortDescriptors = [NSSortDescriptor(key: "songsName", ascending: true)]
+//
+//        loadData(with: request , predicate: predicate)
+//    }
     
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        if searchBar.text?.count == 0 {
-            loadData()
-            
-            DispatchQueue.main.async {
-                searchBar.resignFirstResponder()
-            }
-        }
-    }
+//    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+//        if searchBar.text?.count == 0 {
+//            loadData()
+//
+//            DispatchQueue.main.async {
+//                searchBar.resignFirstResponder()
+//            }
+//        }
+//    }
 }
 
