@@ -11,7 +11,7 @@ import UIKit
 class CategoryTableViewController: UITableViewController {
     //check napster Website
     //    var topTracks : [String] = ["faded","alone","the spectre","dark side"]
-    var albumList :[String] = ["Single & ESP","Differnt World(2017)", "Something Up my Sleeve(2018)","Tired(Remix)", "Alone(Remix)", "Faded(Remix)" ,"Routine(Gamers Mix"]
+    var albumList :[String] = ["Single & ESP","Different World(2017)", "Something Up my Sleeve(2018)","Tired(Remix)", "Alone(Remix)", "Faded(Remix)" ,"Routine(Gamers Mix"]
     
     
     override func viewDidLoad() {

@@ -16,10 +16,10 @@
 		0721CAEA24770C8D0013277C /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0721CAE924770C8D0013277C /* Login.swift */; };
 		0721CAEC24770CA20013277C /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0721CAEB24770CA20013277C /* Register.swift */; };
 		0725866F24773CC500254564 /* SongsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0725866E24773CC500254564 /* SongsList.swift */; };
+		0727336F251BF8280095441A /* MusicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0727336E251BF8280095441A /* MusicData.swift */; };
 		07282A5B247AD69C0078E709 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07282A5A247AD69C0078E709 /* CategoryTableViewController.swift */; };
 		0729C473250D30D60084029E /* MusicDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0729C472250D30D60084029E /* MusicDataModel.swift */; };
 		072B51D62478534800627A96 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072B51D52478534800627A96 /* FirstView.swift */; };
-		0790703F250CCACD0028C269 /* AlanWalker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0790703D250CCACD0028C269 /* AlanWalker.xcdatamodeld */; };
 		07CD39CA250D1D7D0065A2C7 /* TableViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CD39C8250D1D7D0065A2C7 /* TableViewCell1.swift */; };
 		07CD39CB250D1D7D0065A2C7 /* TableViewCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07CD39C9250D1D7D0065A2C7 /* TableViewCell1.xib */; };
 		07D02C72250B8A65005E5A9E /* Return.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07D02C6F250B8A64005E5A9E /* Return.mp3 */; };
@@ -37,6 +37,9 @@
 		07E27EA0250B974D00ED9D1C /* PLAY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07E27E9F250B974D00ED9D1C /* PLAY.mp3 */; };
 		07E27EA3250B981100ED9D1C /* Not Afraid ft Faded.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07E27EA2250B981100ED9D1C /* Not Afraid ft Faded.mp3 */; };
 		07F16737250D598C00DD1682 /* musicUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F16736250D598C00DD1682 /* musicUI.swift */; };
+		07FBBA9F2521EEA700762E77 /* NewComers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FBBA9E2521EEA700762E77 /* NewComers.swift */; };
+		07FBBAA12521FB2600762E77 /* delegateClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FBBAA02521FB2600762E77 /* delegateClass.swift */; };
+		07FBBAA32521FF5400762E77 /* YoutYoubVideos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FBBAA22521FF5400762E77 /* YoutYoubVideos.swift */; };
 		97D5D2193C994FFB362C6E7B /* Pods_AlanWalker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907EF626350E332F0B591DAC /* Pods_AlanWalker.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,10 +55,10 @@
 		0721CAE924770C8D0013277C /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		0721CAEB24770CA20013277C /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		0725866E24773CC500254564 /* SongsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SongsList.swift; path = AlanWalker/ViewControllers/SongsList.swift; sourceTree = SOURCE_ROOT; };
+		0727336E251BF8280095441A /* MusicData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicData.swift; sourceTree = "<group>"; };
 		07282A5A247AD69C0078E709 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CategoryTableViewController.swift; path = AlanWalker/ViewControllers/CategoryTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		0729C472250D30D60084029E /* MusicDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicDataModel.swift; sourceTree = "<group>"; };
 		072B51D52478534800627A96 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirstView.swift; path = AlanWalker/ViewControllers/FirstView.swift; sourceTree = SOURCE_ROOT; };
-		0790703E250CCACD0028C269 /* AlanWalker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AlanWalker.xcdatamodel; sourceTree = "<group>"; };
 		07CD39C8250D1D7D0065A2C7 /* TableViewCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell1.swift; sourceTree = "<group>"; };
 		07CD39C9250D1D7D0065A2C7 /* TableViewCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell1.xib; sourceTree = "<group>"; };
 		07D02C6F250B8A64005E5A9E /* Return.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Return.mp3; sourceTree = "<group>"; };
@@ -73,6 +76,9 @@
 		07E27E9F250B974D00ED9D1C /* PLAY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PLAY.mp3; sourceTree = "<group>"; };
 		07E27EA2250B981100ED9D1C /* Not Afraid ft Faded.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Not Afraid ft Faded.mp3"; sourceTree = "<group>"; };
 		07F16736250D598C00DD1682 /* musicUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = musicUI.swift; sourceTree = "<group>"; };
+		07FBBA9E2521EEA700762E77 /* NewComers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewComers.swift; sourceTree = "<group>"; };
+		07FBBAA02521FB2600762E77 /* delegateClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = delegateClass.swift; sourceTree = "<group>"; };
+		07FBBAA22521FF5400762E77 /* YoutYoubVideos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutYoubVideos.swift; sourceTree = "<group>"; };
 		89CFD36A4F7CD7EE957D21EE /* Pods-AlanWalker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlanWalker.debug.xcconfig"; path = "Target Support Files/Pods-AlanWalker/Pods-AlanWalker.debug.xcconfig"; sourceTree = "<group>"; };
 		907EF626350E332F0B591DAC /* Pods_AlanWalker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlanWalker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B04C02733EE86C83E99575D9 /* Pods-AlanWalker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlanWalker.release.xcconfig"; path = "Target Support Files/Pods-AlanWalker/Pods-AlanWalker.release.xcconfig"; sourceTree = "<group>"; };
@@ -124,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				072B51D52478534800627A96 /* FirstView.swift */,
+				07FBBAA02521FB2600762E77 /* delegateClass.swift */,
 				07F6520E2508B7F20075399B /* Offline */,
 				07B4E87E2507A5D70028079A /* Online */,
 			);
@@ -146,6 +153,7 @@
 				0721CAD624770A120013277C /* Welcome.swift */,
 				0721CAE924770C8D0013277C /* Login.swift */,
 				0721CAEB24770CA20013277C /* Register.swift */,
+				07FBBAA22521FF5400762E77 /* YoutYoubVideos.swift */,
 			);
 			name = Online;
 			sourceTree = "<group>";
@@ -167,7 +175,6 @@
 				07CD39C4250D1D260065A2C7 /* Xip */,
 				0721CAD824770A120013277C /* Main.storyboard */,
 				0721CAE024770A130013277C /* LaunchScreen.storyboard */,
-				0729C472250D30D60084029E /* MusicDataModel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -175,7 +182,8 @@
 		07B4E8812507A8DD0028079A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0790703D250CCACD0028C269 /* AlanWalker.xcdatamodeld */,
+				0729C472250D30D60084029E /* MusicDataModel.swift */,
+				0727336E251BF8280095441A /* MusicData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -231,6 +239,7 @@
 				07282A5A247AD69C0078E709 /* CategoryTableViewController.swift */,
 				0725866E24773CC500254564 /* SongsList.swift */,
 				07F16736250D598C00DD1682 /* musicUI.swift */,
+				07FBBA9E2521EEA700762E77 /* NewComers.swift */,
 			);
 			name = Offline;
 			sourceTree = "<group>";
@@ -383,15 +392,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				0721CAEC24770CA20013277C /* Register.swift in Sources */,
+				0727336F251BF8280095441A /* MusicData.swift in Sources */,
 				0721CAD724770A120013277C /* Welcome.swift in Sources */,
 				0721CAEA24770C8D0013277C /* Login.swift in Sources */,
 				0725866F24773CC500254564 /* SongsList.swift in Sources */,
 				0729C473250D30D60084029E /* MusicDataModel.swift in Sources */,
-				0790703F250CCACD0028C269 /* AlanWalker.xcdatamodeld in Sources */,
 				07282A5B247AD69C0078E709 /* CategoryTableViewController.swift in Sources */,
+				07FBBAA12521FB2600762E77 /* delegateClass.swift in Sources */,
 				07F16737250D598C00DD1682 /* musicUI.swift in Sources */,
 				072B51D62478534800627A96 /* FirstView.swift in Sources */,
 				07CD39CA250D1D7D0065A2C7 /* TableViewCell1.swift in Sources */,
+				07FBBAA32521FF5400762E77 /* YoutYoubVideos.swift in Sources */,
+				07FBBA9F2521EEA700762E77 /* NewComers.swift in Sources */,
 				0721CAD324770A120013277C /* AppDelegate.swift in Sources */,
 				0721CAD524770A120013277C /* SceneDelegate.swift in Sources */,
 			);
@@ -591,19 +603,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		0790703D250CCACD0028C269 /* AlanWalker.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				0790703E250CCACD0028C269 /* AlanWalker.xcdatamodel */,
-			);
-			currentVersion = 0790703E250CCACD0028C269 /* AlanWalker.xcdatamodel */;
-			path = AlanWalker.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 0721CAC724770A120013277C /* Project object */;
 }

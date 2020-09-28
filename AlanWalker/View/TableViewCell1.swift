@@ -14,4 +14,5 @@ class TableViewCell1: UITableViewCell {
     @IBOutlet var musicLabel: UILabel!
     @IBOutlet var playImage: UIImageView!
     
+    @IBOutlet weak var albumLabel: UILabel!
 }

@@ -11,7 +11,7 @@ import AVFoundation
 
 class musicUI: UIViewController , AVAudioPlayerDelegate{
     
-    var audio : AVAudioPlayer!
+    var audio : AVAudioPlayer! = nil
     var sec = 0
     var min = 0
     var musicData : MusicDataModel?
@@ -36,7 +36,7 @@ class musicUI: UIViewController , AVAudioPlayerDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         playMusic()
-        updateUI(time: musicData!.musicTime)
+        updateUI()
         totalTimeLabel.text = audio.durationWithMinAndSec()
         musicNameLabel.text = musicData?.musicName
         albumNameLabel.text = musicData?.musicAlbum
@@ -54,13 +54,13 @@ class musicUI: UIViewController , AVAudioPlayerDelegate{
     @IBAction func play(_ sender: Any) {
         
         
-        updateUI(time: Float(audio!.currentTime))
+        updateUI()
     }
     
     @IBAction func rewind(_ sender: Any) {
     }
     
-    func updateUI(time : Float) {
+    func updateUI() {
         if isRunning {
             
             
@@ -101,7 +101,7 @@ class musicUI: UIViewController , AVAudioPlayerDelegate{
             
         }
     }
-    // show the current music time
+    // Show the current music time
     func showCurrentTime () {
         currentTimeLabel.text = "\(min.toString()):\(sec.toString())"
     }

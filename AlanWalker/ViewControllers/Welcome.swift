@@ -21,7 +21,7 @@ class Welcome: UIViewController {
     }
     
     @IBAction func registerButton(_ sender: Any) {
-      //  performSegue(withIdentifier: "RegisterSegue", sender: self)
+ 
     }
     
 }

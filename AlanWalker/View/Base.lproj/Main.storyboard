@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2ut-en-ShB">
-    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,14 +12,14 @@
             <objects>
                 <viewController id="4cB-mi-JRX" customClass="FirstView" customModule="AlanWalker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7d4-F2-deh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Alan Walker logo wallpaper by Tvrtk0 - f6 - Free on ZEDGE™" translatesAutoresizingMaskIntoConstraints="NO" id="8dv-Qx-eVQ">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="Qkg-N1-4nM">
-                                <rect key="frame" x="0.0" y="564" width="414" height="152"/>
+                                <rect key="frame" x="0.0" y="690" width="414" height="152"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7h4-tx-36i">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="57"/>
@@ -72,14 +72,14 @@
             <objects>
                 <viewController id="gUj-Xg-Jdv" customClass="Welcome" customModule="AlanWalker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fzi-oQ-eP1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="29 Alan Walker Wallpapers | WallpaperCarax" translatesAutoresizingMaskIntoConstraints="NO" id="N0A-vx-FOR">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Walker Wallpapers" translatesAutoresizingMaskIntoConstraints="NO" id="N0A-vx-FOR">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="XeL-0c-AyK">
-                                <rect key="frame" x="0.0" y="642" width="414" height="84"/>
+                                <rect key="frame" x="0.0" y="802" width="414" height="84"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfr-bG-7yD">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="42"/>
@@ -127,14 +127,14 @@
             <objects>
                 <viewController id="ArS-tR-qFk" customClass="Login" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kxU-Oy-HSa">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gear_ Razer Adaro DJ Headphone Review" translatesAutoresizingMaskIntoConstraints="NO" id="1SE-mZ-jbY">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="E9R-eQ-U3c">
-                                <rect key="frame" x="50" y="94" width="314" height="89"/>
+                                <rect key="frame" x="50" y="138" width="314" height="89"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Td-C9-n4Z">
                                         <rect key="frame" x="0.0" y="0.0" width="314" height="34"/>
@@ -153,10 +153,14 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sci-4h-c2Z">
-                                <rect key="frame" x="0.0" y="253" width="414" height="42"/>
+                                <rect key="frame" x="0.0" y="297" width="414" height="42"/>
                                 <color key="backgroundColor" red="0.088890232149999998" green="0.33053600789999998" blue="0.45785576109999998" alpha="0.79377140410000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
                                 <state key="normal" title="Log In"/>
+                                <connections>
+                                    <action selector="logIn:" destination="ArS-tR-qFk" eventType="touchUpInside" id="68N-wO-Ytg"/>
+                                    <segue destination="TLf-Y2-jqe" kind="show" identifier="logInPressed" id="INK-Ni-6PR"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="secondarySystemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
@@ -181,15 +185,50 @@
             </objects>
             <point key="canvasLocation" x="1900.0000000000002" y="-305.70652173913044"/>
         </scene>
+        <!--New Comers-->
+        <scene sceneID="1SS-X2-3JF">
+            <objects>
+                <viewController id="1fJ-Pc-FZF" customClass="NewComers" customModule="AlanWalker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5i4-9G-3MJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Srt-XZ-eC9">
+                                <rect key="frame" x="143" y="415" width="128" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="ZHq-ee-hiQ"/>
+                                    <constraint firstAttribute="width" constant="128" id="kFM-hI-OlK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="1fJ-Pc-FZF" eventType="touchUpInside" id="beD-GC-SAm"/>
+                                    <segue destination="TLf-Y2-jqe" kind="show" identifier="newMember" id="yfK-R1-H5C"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Srt-XZ-eC9" firstAttribute="centerX" secondItem="5i4-9G-3MJ" secondAttribute="centerX" id="c12-5c-EI8"/>
+                            <constraint firstItem="Srt-XZ-eC9" firstAttribute="centerY" secondItem="5i4-9G-3MJ" secondAttribute="centerY" id="n7G-qp-7Ca"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ElC-PR-ldl"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PHj-Nb-qxK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LN0-qP-ZeD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3086.9565217391305" y="-62.276785714285708"/>
+        </scene>
         <!--MusicUI-->
         <scene sceneID="GDr-hf-Gsk">
             <objects>
                 <viewController id="hQc-Km-sTE" customClass="musicUI" customModule="AlanWalker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qjj-Ol-dHr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="29 Alan Walker Wallpapers | WallpaperCarax" translatesAutoresizingMaskIntoConstraints="NO" id="Y5L-S3-VJe">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Walker Wallpapers" translatesAutoresizingMaskIntoConstraints="NO" id="Y5L-S3-VJe">
                                 <rect key="frame" x="20" y="68" width="374" height="335"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="DHQ-r7-Rs7"/>
@@ -208,7 +247,7 @@
                                         <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Album Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7U-I4-ypM">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Album Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7U-I4-ypM">
                                         <rect key="frame" x="0.0" y="30.333333333333314" width="112.66666666666667" height="19.666666666666671"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -269,19 +308,27 @@
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="297" translatesAutoresizingMaskIntoConstraints="NO" id="8Au-2U-f12" userLabel="Time progression">
                                 <rect key="frame" x="6.6666666666666572" y="497" width="400.66666666666674" height="22.333333333333371"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ia-B6-x4V">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ia-B6-x4V">
                                         <rect key="frame" x="0.0" y="0.0" width="56.333333333333336" height="22.333333333333332"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XkC-hP-0pj">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XkC-hP-0pj">
                                         <rect key="frame" x="353.33333333333331" y="0.0" width="47.333333333333314" height="22.333333333333332"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="2ia-B6-x4V" firstAttribute="leading" secondItem="8Au-2U-f12" secondAttribute="leading" id="CeB-du-NWf"/>
+                                    <constraint firstAttribute="bottom" secondItem="2ia-B6-x4V" secondAttribute="bottom" id="HYT-f3-5Ln"/>
+                                    <constraint firstAttribute="bottom" secondItem="XkC-hP-0pj" secondAttribute="bottom" id="V0J-fE-8ku"/>
+                                    <constraint firstItem="XkC-hP-0pj" firstAttribute="top" secondItem="8Au-2U-f12" secondAttribute="top" id="a58-Pd-RQI"/>
+                                    <constraint firstItem="2ia-B6-x4V" firstAttribute="top" secondItem="8Au-2U-f12" secondAttribute="top" id="m2j-l6-EPc"/>
+                                    <constraint firstAttribute="trailing" secondItem="XkC-hP-0pj" secondAttribute="trailing" id="uLo-Fb-h7K"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.050980392156862744" green="0.082352941176470587" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -316,14 +363,30 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FxS-2D-NEv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1792.753623188406" y="1259.5108695652175"/>
+            <point key="canvasLocation" x="3243" y="1260"/>
+        </scene>
+        <!--WebView-->
+        <scene sceneID="440-vc-kmE">
+            <objects>
+                <viewController id="aot-oO-P02" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zKs-Qz-6Of">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="P1o-zC-iYt"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="WebView" id="QfA-SC-uL2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b48-1f-hH0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1954" y="2069"/>
         </scene>
         <!--Songs-->
         <scene sceneID="0Mt-tZ-DCh">
             <objects>
                 <tableViewController id="b5M-o4-436" customClass="SongsList" customModule="AlanWalker" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="DCI-Km-cWp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.050980392156862744" green="0.082352941176470587" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <searchBar key="tableHeaderView" contentMode="redraw" id="0ut-4g-4L7">
@@ -357,6 +420,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <segue destination="hQc-Km-sTE" kind="presentation" identifier="musicUISeague" trigger="accessoryAction" id="RtG-SO-gRH"/>
+                                    <segue destination="aot-oO-P02" kind="show" identifier="webView" id="DuF-Hu-27e"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -369,14 +433,14 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ix8-r7-EQW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1031.8840579710145" y="1259.5108695652175"/>
+            <point key="canvasLocation" x="1954" y="1260"/>
         </scene>
         <!--Albums-->
         <scene sceneID="FEu-ie-fUK">
             <objects>
                 <tableViewController id="TLf-Y2-jqe" customClass="CategoryTableViewController" customModule="AlanWalker" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="jwu-Gi-oww">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.050980392156862744" green="0.082352941176470587" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
@@ -401,27 +465,31 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iZZ-nw-cnM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-423" y="1260"/>
+            <point key="canvasLocation" x="1084" y="1260"/>
         </scene>
         <!--Register-->
         <scene sceneID="EWh-aU-eEj">
             <objects>
                 <viewController id="ps1-NV-wDu" customClass="Register" customModule="AlanWalker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ert-G9-tn0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gear_ Razer Adaro DJ Headphone Review" translatesAutoresizingMaskIntoConstraints="NO" id="wtV-AL-wL7">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ObI-nd-Cdr">
-                                <rect key="frame" x="0.0" y="312" width="414" height="42"/>
+                                <rect key="frame" x="0.0" y="356" width="414" height="42"/>
                                 <color key="backgroundColor" red="0.088890232149999998" green="0.33053600789999998" blue="0.45785576109999998" alpha="0.79377140410000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
                                 <state key="normal" title="Register"/>
+                                <connections>
+                                    <action selector="register:" destination="ps1-NV-wDu" eventType="touchUpInside" id="DxI-2U-aJt"/>
+                                    <segue destination="1fJ-Pc-FZF" kind="show" identifier="registerPressed" id="fgc-1X-MsR"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="yiW-A0-zxd">
-                                <rect key="frame" x="50" y="94" width="314" height="148"/>
+                                <rect key="frame" x="50" y="138" width="314" height="148"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uSE-nk-v78">
                                         <rect key="frame" x="0.0" y="0.0" width="314" height="34"/>
@@ -475,7 +543,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2ut-en-ShB" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="k8z-uY-7WP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -489,11 +557,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="29 Alan Walker Wallpapers | WallpaperCarax" width="533.33331298828125" height="300"/>
         <image name="Alan Walker logo wallpaper by Tvrtk0 - f6 - Free on ZEDGE™" width="240" height="426.66665649414062"/>
         <image name="Gear_ Razer Adaro DJ Headphone Review" width="205" height="153.66667175292969"/>
+        <image name="Walker Wallpapers" width="533.33331298828125" height="300"/>
         <image name="fast forward" width="25" height="25"/>
         <image name="pause" width="25" height="25"/>
         <image name="rewind" width="25" height="25"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="yfK-R1-H5C"/>
+    </inferredMetricsTieBreakers>
 </document>

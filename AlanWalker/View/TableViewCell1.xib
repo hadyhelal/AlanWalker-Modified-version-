@@ -9,28 +9,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="71" id="KGk-i7-Jjw" customClass="TableViewCell1" customModule="AlanWalker" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="91" id="KGk-i7-Jjw" customClass="TableViewCell1" customModule="AlanWalker" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="galaxy" translatesAutoresizingMaskIntoConstraints="NO" id="BOR-La-3wE">
-                        <rect key="frame" x="0.0" y="0.0" width="76" height="44"/>
-                        <constraints>
-                            <constraint firstAttribute="width" secondItem="BOR-La-3wE" secondAttribute="height" multiplier="19:11" id="9um-oE-Ycl"/>
-                        </constraints>
-                    </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekH-RL-cuv">
-                        <rect key="frame" x="84" y="0.0" width="184" height="44"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="184" id="BU8-2M-yFg"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q3x-GO-Jqu">
                         <rect key="frame" x="268" y="0.0" width="52" height="44"/>
                         <subviews>
@@ -44,25 +29,59 @@
                         </subviews>
                         <constraints>
                             <constraint firstItem="9Vv-mI-3tT" firstAttribute="centerY" secondItem="q3x-GO-Jqu" secondAttribute="centerY" id="RIb-ST-AAh"/>
+                            <constraint firstAttribute="width" constant="52" id="U9P-xz-lFS"/>
                             <constraint firstItem="9Vv-mI-3tT" firstAttribute="centerX" secondItem="q3x-GO-Jqu" secondAttribute="centerX" id="vGk-Cc-nyo"/>
                         </constraints>
                     </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Alan Walker logo wallpaper by Tvrtk0 - f6 - Free on ZEDGE™" translatesAutoresizingMaskIntoConstraints="NO" id="BOR-La-3wE">
+                        <rect key="frame" x="0.0" y="0.0" width="91" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="91" id="oL3-aw-lx1"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oOB-Jo-U0N">
+                        <rect key="frame" x="115" y="10" width="153" height="24"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mohamed shaaban is dokneu7" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekH-RL-cuv">
+                                <rect key="frame" x="0.0" y="0.0" width="153" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hady is fucking fucking bitch" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7D4-uD-yB1">
+                                <rect key="frame" x="0.0" y="12" width="153" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="ekH-RL-cuv" firstAttribute="top" secondItem="oOB-Jo-U0N" secondAttribute="top" id="6nM-m8-RoQ"/>
+                            <constraint firstAttribute="trailing" secondItem="7D4-uD-yB1" secondAttribute="trailing" id="DhZ-vP-3ln"/>
+                            <constraint firstItem="7D4-uD-yB1" firstAttribute="leading" secondItem="oOB-Jo-U0N" secondAttribute="leading" id="h7z-ZI-qz6"/>
+                            <constraint firstItem="ekH-RL-cuv" firstAttribute="leading" secondItem="oOB-Jo-U0N" secondAttribute="leading" id="mP2-We-qx5"/>
+                            <constraint firstAttribute="trailing" secondItem="ekH-RL-cuv" secondAttribute="trailing" id="uvY-wD-zDD"/>
+                            <constraint firstItem="7D4-uD-yB1" firstAttribute="top" secondItem="ekH-RL-cuv" secondAttribute="bottom" id="xEv-XH-mA8"/>
+                        </constraints>
+                    </stackView>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="q3x-GO-Jqu" secondAttribute="bottom" id="1QS-6n-Mfk"/>
-                    <constraint firstItem="q3x-GO-Jqu" firstAttribute="leading" secondItem="ekH-RL-cuv" secondAttribute="trailing" id="33i-J4-gMM"/>
                     <constraint firstItem="BOR-La-3wE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="3km-44-xZ7"/>
+                    <constraint firstAttribute="bottom" secondItem="BOR-La-3wE" secondAttribute="bottom" id="5Iq-RP-3Tw"/>
                     <constraint firstAttribute="trailing" secondItem="q3x-GO-Jqu" secondAttribute="trailing" id="AJs-GY-iC8"/>
-                    <constraint firstItem="ekH-RL-cuv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Fgd-dQ-uil"/>
-                    <constraint firstItem="ekH-RL-cuv" firstAttribute="leading" secondItem="BOR-La-3wE" secondAttribute="trailing" constant="8" id="Nue-LH-vsg"/>
-                    <constraint firstAttribute="bottom" secondItem="BOR-La-3wE" secondAttribute="bottom" id="S8X-Wy-WEr"/>
+                    <constraint firstItem="q3x-GO-Jqu" firstAttribute="leading" secondItem="oOB-Jo-U0N" secondAttribute="trailing" id="NWd-R4-zQ8"/>
+                    <constraint firstAttribute="bottom" secondItem="BOR-La-3wE" secondAttribute="bottom" id="X4A-9z-RbL"/>
                     <constraint firstItem="BOR-La-3wE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="cu5-D0-DLG"/>
+                    <constraint firstItem="oOB-Jo-U0N" firstAttribute="leading" secondItem="BOR-La-3wE" secondAttribute="trailing" constant="24" id="eWz-3D-uW3"/>
                     <constraint firstItem="q3x-GO-Jqu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="r6X-je-etb"/>
-                    <constraint firstAttribute="bottom" secondItem="ekH-RL-cuv" secondAttribute="bottom" id="sUZ-Ih-LjH"/>
+                    <constraint firstItem="oOB-Jo-U0N" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="s5t-FW-toP"/>
+                    <constraint firstAttribute="bottom" secondItem="oOB-Jo-U0N" secondAttribute="bottom" constant="10" id="uMc-fZ-8t5"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="albumLabel" destination="7D4-uD-yB1" id="fs2-qC-taQ"/>
                 <outlet property="musicImage" destination="BOR-La-3wE" id="jTP-wG-lV5"/>
                 <outlet property="musicLabel" destination="ekH-RL-cuv" id="E8D-pW-MSt"/>
                 <outlet property="playImage" destination="9Vv-mI-3tT" id="UIg-ay-R7c"/>
@@ -71,7 +90,7 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="galaxy" width="1280" height="720"/>
+        <image name="Alan Walker logo wallpaper by Tvrtk0 - f6 - Free on ZEDGE™" width="240" height="426.5"/>
         <image name="play" width="25" height="25"/>
     </resources>
 </document>

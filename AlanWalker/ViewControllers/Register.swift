@@ -16,4 +16,9 @@ class Register: UIViewController {
         // Do any additional setup after loading the view.
     }
    
+    @IBAction func register(_ sender: Any) {
+   
+     let reg = delegateClass()
+        reg.isWebView = true
+    }
 }
