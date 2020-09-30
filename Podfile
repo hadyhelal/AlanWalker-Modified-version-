@@ -9,5 +9,6 @@ target 'AlanWalker' do
 
     pod 'SwipeCellKit'
     pod 'RealmSwift'
- # pod 'Firebase/Analytics'
+    pod 'Firebase/Core'
+    pod 'SVProgressHUD'
 end

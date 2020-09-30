@@ -20,6 +20,7 @@
 		07282A5B247AD69C0078E709 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07282A5A247AD69C0078E709 /* CategoryTableViewController.swift */; };
 		0729C473250D30D60084029E /* MusicDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0729C472250D30D60084029E /* MusicDataModel.swift */; };
 		072B51D62478534800627A96 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072B51D52478534800627A96 /* FirstView.swift */; };
+		07ADFF862523B8E300F08DCE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07ADFF852523B8E300F08DCE /* GoogleService-Info.plist */; };
 		07CD39CA250D1D7D0065A2C7 /* TableViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CD39C8250D1D7D0065A2C7 /* TableViewCell1.swift */; };
 		07CD39CB250D1D7D0065A2C7 /* TableViewCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07CD39C9250D1D7D0065A2C7 /* TableViewCell1.xib */; };
 		07D02C72250B8A65005E5A9E /* Return.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07D02C6F250B8A64005E5A9E /* Return.mp3 */; };
@@ -59,6 +60,7 @@
 		07282A5A247AD69C0078E709 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CategoryTableViewController.swift; path = AlanWalker/ViewControllers/CategoryTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		0729C472250D30D60084029E /* MusicDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicDataModel.swift; sourceTree = "<group>"; };
 		072B51D52478534800627A96 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirstView.swift; path = AlanWalker/ViewControllers/FirstView.swift; sourceTree = SOURCE_ROOT; };
+		07ADFF852523B8E300F08DCE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		07CD39C8250D1D7D0065A2C7 /* TableViewCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell1.swift; sourceTree = "<group>"; };
 		07CD39C9250D1D7D0065A2C7 /* TableViewCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell1.xib; sourceTree = "<group>"; };
 		07D02C6F250B8A64005E5A9E /* Return.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Return.mp3; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 				0721CADE24770A130013277C /* Assets.xcassets */,
 				07D02C7B250B8BA5005E5A9E /* I Don't Wanna Go.mp3 */,
 				0721CAE324770A130013277C /* Info.plist */,
+				07ADFF852523B8E300F08DCE /* GoogleService-Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				07D18DBA250B80DE001E0C46 /* Sing Me To Sleep.mp3 in Resources */,
 				07D02C72250B8A65005E5A9E /* Return.mp3 in Resources */,
 				07E27EA0250B974D00ED9D1C /* PLAY.mp3 in Resources */,
+				07ADFF862523B8E300F08DCE /* GoogleService-Info.plist in Resources */,
 				07D02C73250B8A65005E5A9E /* Memories.mp3 in Resources */,
 				07D02C76250B8AC0005E5A9E /* On My Way.mp3 in Resources */,
 				07E27E9E250B973300ED9D1C /* The Spectre.mp3 in Resources */,

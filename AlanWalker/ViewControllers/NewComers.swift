@@ -14,10 +14,13 @@ class NewComers: UIViewController {
     @IBAction func buttonPressed(_ sender: Any) {
         
     }
+    @IBOutlet weak var welcomeLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        welcomeLabel.text = "Welcome Mr: \("")"
     }
     
     
