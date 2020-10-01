@@ -15,7 +15,10 @@ class musicUI: UIViewController , AVAudioPlayerDelegate{
     var sec = 0
     var min = 0
     var musicData : MusicDataModel?
-    
+    var musicArray = [MusicDataModel] ()
+    var currentIndexPath : Int?
+    var nextMusicIsRunning = false
+
     @IBOutlet var musicNameLabel: UILabel!
     
     @IBOutlet var albumNameLabel: UILabel!
@@ -35,21 +38,29 @@ class musicUI: UIViewController , AVAudioPlayerDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        playMusic()
-        updateUI()
+        playMusic(playingAudioName: musicData!.musicName)
+        updateUI(musicTime: musicData!.musicTime)
         totalTimeLabel.text = audio.durationWithMinAndSec()
         musicNameLabel.text = musicData?.musicName
         albumNameLabel.text = musicData?.musicAlbum
-        songImage.image = UIImage(named: musicData!.musicImage)
         
-        
+        if let image = musicData?.musicImage{
+            songImage.image = UIImage(named: image)
+        }
         
     }
     
+    //MARK: - Playing Audio Functionaliy
     @IBAction func fastForward(_ sender: Any) {
+        updateUI(musicTime: musicArray[currentIndexPath! + 1].musicTime)
+        playMusic(playingAudioName: musicArray[currentIndexPath! + 1].musicName)
+        totalTimeLabel.text = audio.durationWithMinAndSec()
+        musicNameLabel.text = musicArray[currentIndexPath! + 1].musicName
+        albumNameLabel.text = musicArray[currentIndexPath! + 1].musicAlbum
+        songImage.image = UIImage(named: musicArray[currentIndexPath! + 1].musicImage)
+               
+        
     }
-    
-    
     @IBOutlet weak var playBtn: UIButton!
     @IBAction func play(_ sender: Any) {
         
@@ -60,7 +71,10 @@ class musicUI: UIViewController , AVAudioPlayerDelegate{
     @IBAction func rewind(_ sender: Any) {
     }
     
-    func updateUI() {
+
+
+    
+    func updateUI(musicTime : Float = 0.0) {
         if isRunning {
             
             
@@ -80,8 +94,13 @@ class musicUI: UIViewController , AVAudioPlayerDelegate{
     }
     
     @objc func updateProgress () {
-        
-        if ProgressMusciBar.progress >= 1 - (1 / musicData!.musicTime) {
+          var progressAudioTime : Float = 0.0
+          if  nextMusicIsRunning {
+               progressAudioTime = musicArray[currentIndexPath! + 1].musicTime
+          } else{
+              progressAudioTime = musicData!.musicTime
+          }
+        if ProgressMusciBar.progress >= 1 - (1 / progressAudioTime) {
             runningTime.invalidate()
             ProgressMusciBar.progress = 0
             sec = 0 ; min = 0 ; showCurrentTime()
@@ -95,7 +114,7 @@ class musicUI: UIViewController , AVAudioPlayerDelegate{
             }
             else { sec += 1   ; showCurrentTime() }
             
-            ProgressMusciBar.progress += 1 / musicData!.musicTime
+            ProgressMusciBar.progress += 1 / progressAudioTime
             
             ProgressMusciBar.setProgress(ProgressMusciBar.progress, animated: true)
             
@@ -108,8 +127,8 @@ class musicUI: UIViewController , AVAudioPlayerDelegate{
     
     // MARK: - playingMusic
     
-    func playMusic () {
-        let url = Bundle.main.url(forResource: musicData?.musicName, withExtension: ".mp3")!
+    func playMusic (playingAudioName : String) {
+        let url = Bundle.main.url(forResource: playingAudioName, withExtension: ".mp3")!
         do {
             audio = try AVAudioPlayer(contentsOf: url)
         } catch {

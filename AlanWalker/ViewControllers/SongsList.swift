@@ -21,92 +21,92 @@ class SongsList : UITableViewController , AVAudioPlayerDelegate ,ObservableObjec
         }
     }
     
-override func viewDidLoad() {
-    super.viewDidLoad()
-    
-    
-    // navigationController?.setNavigationBarHidden(false, animated: true)
-    tableView.separatorColor = .white
-    tableView.rowHeight = 91.0
-    tableView.tableFooterView = UIView()
-    print()
-    
-    // Registeration is to use it current class Bundle in register is to specify the location of the custom cell!
-    tableView.register(UINib(nibName: "TableViewCell1", bundle: nil), forCellReuseIdentifier: "MusicDataCell")
-}
-
-// MARK: - Table view data source
-
-
-
-override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return currentMusicArray.count
-}
-
-
-override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    
-    let cell = tableView.dequeueReusableCell(withIdentifier: "MusicDataCell", for: indexPath) as! TableViewCell1
-    
-    print("This ssss isss \(currentMusicArray.count) and index is \(indexPath.row)")
-    cell.musicLabel.text = currentMusicArray[indexPath.row].musicName
-    cell.musicLabel.textColor = .white
-    cell.musicLabel.font = UIFont(name: "Futura", size: 20.0)
-    
-    cell.albumLabel.text = currentMusicArray[indexPath.row].musicAlbum
-    cell.albumLabel.font = UIFont(name: "Futura", size: 20.0)
-    
-    cell.musicImage.image = UIImage(named: currentMusicArray[indexPath.row].musicImage)
-    
-    cell.playImage = UIImageView(image: UIImage(named: "play"))
-    cell.backgroundColor = .none
-    return cell
-}
-
-
-override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    
-    if knowledge.isWebView != nil && knowledge.isWebView == true {
-        performSegue(withIdentifier: "", sender: self)
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+        // navigationController?.setNavigationBarHidden(false, animated: true)
+        tableView.separatorColor = .white
+        tableView.rowHeight = 91.0
+        tableView.tableFooterView = UIView()
+        print()
+        
+        // Registeration is to use it current class Bundle in register is to specify the location of the custom cell!
+        tableView.register(UINib(nibName: "TableViewCell1", bundle: nil), forCellReuseIdentifier: "MusicDataCell")
     }
-    else {
-    performSegue(withIdentifier: "musicUISeague", sender: self)
+    
+    // MARK: - Table view data source
+    
+    
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return currentMusicArray.count
+    }
+    
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MusicDataCell", for: indexPath) as! TableViewCell1
+        
+        print("This ssss isss \(currentMusicArray.count) and index is \(indexPath.row)")
+        cell.musicLabel.text = currentMusicArray[indexPath.row].musicName
+        cell.musicLabel.textColor = .white
+        cell.musicLabel.font = UIFont(name: "Futura", size: 20.0)
+        
+        cell.albumLabel.text = currentMusicArray[indexPath.row].musicAlbum
+        cell.albumLabel.font = UIFont(name: "Futura", size: 20.0)
+        
+        cell.musicImage.image = UIImage(named: currentMusicArray[indexPath.row].musicImage)
+        
+        cell.playImage = UIImageView(image: UIImage(named: "play"))
+        cell.backgroundColor = .none
+        return cell
+    }
+    
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if knowledge.isWebView != nil && knowledge.isWebView == true {
+            performSegue(withIdentifier: "", sender: self)
         }
-    tableView.deselectRow(at: indexPath, animated: true)
-}
-
-
-//MARK: - Segue preparation
-
-
-override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    let destination = segue.destination as! musicUI
-    if let index = tableView.indexPathForSelectedRow {
-        destination.musicData = currentMusicArray[index.row]
+        else {
+            performSegue(withIdentifier: "musicUISeague", sender: self)
+        }
+        tableView.deselectRow(at: indexPath, animated: true)
     }
-}
-
-
-
-
-
-
-//MARK: - Load the music Data
-
-func loadData(album albumNameFetched : String, predicate: NSPredicate? = nil) {
-    
-    //        let pp = musicVar.list.filter { ( music ) -> Bool in
-    //            return music.musicAlbum == albumSelected
-    //        }
-    //        print(pp.count)
     
     
-    musicVar.list.forEach{
-        if $0.musicAlbum == albumSelected {
-            currentMusicArray.append($0)
+    //MARK: - Segue preparation
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destination = segue.destination as! musicUI
+        if let index = tableView.indexPathForSelectedRow {
+            destination.musicData = currentMusicArray[index.row]
+            destination.musicArray = currentMusicArray
+            destination.currentIndexPath = index.row
         }
     }
-}
+    
+    
+    
+    
+    
+    
+    //MARK: - Load the music Data
+    
+    func loadData(album albumNameFetched : String, predicate: NSPredicate? = nil) {
+        musicVar.list.forEach{
+            if $0.musicAlbum == albumSelected {
+                currentMusicArray.append($0)
+            }
+        }
+        //        let pp = musicVar.list.filter { ( music ) -> Bool in
+        //            return music.musicAlbum == albumSelected
+        //        }
+        //        print(pp.count)
+        
+    }
 }
 
 
