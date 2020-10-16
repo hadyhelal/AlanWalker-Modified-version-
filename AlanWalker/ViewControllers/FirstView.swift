@@ -8,21 +8,19 @@
 
 import UIKit
 
-class FirstView: UIViewController {
+class FirstView : UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        navigationController?.setNavigationBarHidden(true, animated: false)
+      //  navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
     @IBAction func onlineMode(_ sender: Any) {
-        //performSegue(withIdentifier: "online", sender: self)
     }
     
   
     @IBAction func offlineMode(_ sender: Any) {
-       // performSegue(withIdentifier: "offline", sender: self)
     }
     
 }

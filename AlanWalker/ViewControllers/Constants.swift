@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+struct Constants {
+
+    static var isOnline = false
+
+    struct Storyboard {
+        static let retisterVC = "registerationVC"
+        
+        static let albumListVC = "albumVC"
+        
+    }
+}

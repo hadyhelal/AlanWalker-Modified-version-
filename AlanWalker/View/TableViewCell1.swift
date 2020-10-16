@@ -12,7 +12,15 @@ class TableViewCell1: UITableViewCell {
 
     @IBOutlet var musicImage: UIImageView!
     @IBOutlet var musicLabel: UILabel!
-    @IBOutlet var playImage: UIImageView!
     
+    @IBOutlet weak var musicTotalTimeLabel: UILabel!
     @IBOutlet weak var albumLabel: UILabel!
+    
+    
+    override func awakeFromNib() {
+         musicTotalTimeLabel.textColor = .white
+         musicTotalTimeLabel.font = UIFont(name: "Futura", size: 17.0)
+    }
+       
+    
 }

@@ -19,18 +19,17 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q3x-GO-Jqu">
                         <rect key="frame" x="268" y="0.0" width="52" height="44"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play" translatesAutoresizingMaskIntoConstraints="NO" id="9Vv-mI-3tT">
-                                <rect key="frame" x="13.5" y="8" width="25" height="28"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="28" id="nbT-FS-1d1"/>
-                                    <constraint firstAttribute="width" constant="25" id="ojY-Fc-X7I"/>
-                                </constraints>
-                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J5Z-JY-ni9">
+                                <rect key="frame" x="5" y="12" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="9Vv-mI-3tT" firstAttribute="centerY" secondItem="q3x-GO-Jqu" secondAttribute="centerY" id="RIb-ST-AAh"/>
                             <constraint firstAttribute="width" constant="52" id="U9P-xz-lFS"/>
-                            <constraint firstItem="9Vv-mI-3tT" firstAttribute="centerX" secondItem="q3x-GO-Jqu" secondAttribute="centerX" id="vGk-Cc-nyo"/>
+                            <constraint firstItem="J5Z-JY-ni9" firstAttribute="centerY" secondItem="q3x-GO-Jqu" secondAttribute="centerY" id="c5h-g1-kaE"/>
+                            <constraint firstItem="J5Z-JY-ni9" firstAttribute="centerX" secondItem="q3x-GO-Jqu" secondAttribute="centerX" id="vAr-Qu-UHc"/>
                         </constraints>
                     </view>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Alan Walker logo wallpaper by Tvrtk0 - f6 - Free on ZEDGE™" translatesAutoresizingMaskIntoConstraints="NO" id="BOR-La-3wE">
@@ -84,13 +83,12 @@
                 <outlet property="albumLabel" destination="7D4-uD-yB1" id="fs2-qC-taQ"/>
                 <outlet property="musicImage" destination="BOR-La-3wE" id="jTP-wG-lV5"/>
                 <outlet property="musicLabel" destination="ekH-RL-cuv" id="E8D-pW-MSt"/>
-                <outlet property="playImage" destination="9Vv-mI-3tT" id="UIg-ay-R7c"/>
+                <outlet property="musicTotalTimeLabel" destination="J5Z-JY-ni9" id="BD0-Sj-sGe"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="85.714285714285708"/>
         </tableViewCell>
     </objects>
     <resources>
         <image name="Alan Walker logo wallpaper by Tvrtk0 - f6 - Free on ZEDGE™" width="240" height="426.5"/>
-        <image name="play" width="25" height="25"/>
     </resources>
 </document>

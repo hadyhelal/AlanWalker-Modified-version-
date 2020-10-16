@@ -37,6 +37,9 @@ class musicUI: UIViewController , AVAudioPlayerDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        songImage.layer.cornerRadius =  8.0
+        songImage.clipsToBounds = true
+        
         //Start Playing The Selected Music
         handleTheUpdateOfUI()
         

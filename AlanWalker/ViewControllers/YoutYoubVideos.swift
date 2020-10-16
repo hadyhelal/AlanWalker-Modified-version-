@@ -12,6 +12,7 @@ import WebKit
 class YoutYoubLoading: UIViewController , WKUIDelegate{
     
     var webview : WKWebView!
+    var urlString : String?
     
     override func loadView() {
         let confitguration = WKWebViewConfiguration()
@@ -24,11 +25,16 @@ class YoutYoubLoading: UIViewController , WKUIDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let url = URL(string: "www.google.com")
-        let Request = URLRequest(url: url!)
-        webview.load(Request)
-        // Do any additional setup after loading the view.
+        if let urlValidation = urlString
+        {
+            let url = URL(string: urlValidation)
+            
+            if let completeUrl = url {
+                
+                let Request = URLRequest(url: completeUrl)
+                webview.load(Request)
+            }
+        }
     }
     
     

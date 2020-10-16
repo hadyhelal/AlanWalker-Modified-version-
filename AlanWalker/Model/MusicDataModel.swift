@@ -14,6 +14,7 @@ struct MusicDataModel{
     var musicAlbum : String
     var musicImage : String
     var musicTime : Float
+    let musicURL : String
 }
 
 

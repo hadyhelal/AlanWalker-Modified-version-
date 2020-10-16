@@ -7,6 +7,9 @@ target 'AlanWalker' do
 
   # Pods for AlanWalker
 
-    pod 'Firebase/Core'
+    pod 'Firebase/Analytics'
+    pod 'Firebase/Firestore'
+    pod 'Firebase/Auth'
+
     pod 'SVProgressHUD'
 end

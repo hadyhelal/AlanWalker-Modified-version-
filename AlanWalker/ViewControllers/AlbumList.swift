@@ -11,13 +11,13 @@ import UIKit
 class AlbumList: UITableViewController {
     //check napster Website
     //    var topTracks : [String] = ["faded","alone","the spectre","dark side"]
-    var albumList :[String] = ["Single & ESP","Different World(2017)", "Something Up my Sleeve(2018)","Tired(Remix)", "Alone(Remix)", "Faded(Remix)" ,"Routine(Gamers Mix"]
+    var albumList :[String] = ["Single & ESP","Non-Single","Different World(2017)", "Recreated Music", "Faded(Remixes)" ,"Tired(Remixes)"]
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.setNavigationBarHidden(false, animated: true)
-        
+//        navigationController?.setNavigationBarHidden(false, animated: true)
+
         tableView.separatorColor = .white
         
         

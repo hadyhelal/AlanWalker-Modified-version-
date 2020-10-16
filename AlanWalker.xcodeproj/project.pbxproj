@@ -19,27 +19,40 @@
 		0727336F251BF8280095441A /* MusicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0727336E251BF8280095441A /* MusicData.swift */; };
 		07282A5B247AD69C0078E709 /* AlbumList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07282A5A247AD69C0078E709 /* AlbumList.swift */; };
 		0729C473250D30D60084029E /* MusicDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0729C472250D30D60084029E /* MusicDataModel.swift */; };
+		072AE656252CED0A009919F0 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072AE655252CED0A009919F0 /* Utilities.swift */; };
 		072B51D62478534800627A96 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072B51D52478534800627A96 /* FirstView.swift */; };
-		07ADFF862523B8E300F08DCE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07ADFF852523B8E300F08DCE /* GoogleService-Info.plist */; };
+		072C335B252E0B7200004016 /* All falls down.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 072C335A252E0B7100004016 /* All falls down.mp3 */; };
+		072C335D252E0B7B00004016 /* Do it all for you.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 072C335C252E0B7B00004016 /* Do it all for you.mp3 */; };
+		072C335F252E0B8600004016 /* Lonely.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 072C335E252E0B8600004016 /* Lonely.mp3 */; };
+		072C3364252E0BBC00004016 /* Tired by j-fla.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 072C3363252E0BBC00004016 /* Tired by j-fla.mp3 */; };
+		072C3366252E0BC200004016 /* Tired kygo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 072C3365252E0BC200004016 /* Tired kygo.mp3 */; };
+		072C3368252E0BC900004016 /* Tired.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 072C3367252E0BC900004016 /* Tired.mp3 */; };
+		072C336B252E0C1300004016 /* Smokers | halsey.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 072C336A252E0C1300004016 /* Smokers | halsey.mp3 */; };
+		072C336D252E0C1800004016 /* Faded(erelease).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 072C336C252E0C1800004016 /* Faded(erelease).mp3 */; };
+		072C336F252E0C1C00004016 /* Faded (interlude).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 072C336E252E0C1C00004016 /* Faded (interlude).mp3 */; };
+		072C3371252E0C8600004016 /* I Don't Wanna Go.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 072C3370252E0C8600004016 /* I Don't Wanna Go.mp3 */; };
+		072C3373252E0CF400004016 /* Lost control.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 072C3372252E0CF400004016 /* Lost control.mp3 */; };
+		078797F1252D11FF00D5510C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078797F0252D11FF00D5510C /* Constants.swift */; };
+		07AF13AB252A4461002104B0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07AF13AA252A4461002104B0 /* GoogleService-Info.plist */; };
 		07CD39CA250D1D7D0065A2C7 /* TableViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CD39C8250D1D7D0065A2C7 /* TableViewCell1.swift */; };
 		07CD39CB250D1D7D0065A2C7 /* TableViewCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07CD39C9250D1D7D0065A2C7 /* TableViewCell1.xib */; };
 		07D02C72250B8A65005E5A9E /* Return.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07D02C6F250B8A64005E5A9E /* Return.mp3 */; };
-		07D02C73250B8A65005E5A9E /* Memories.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07D02C70250B8A64005E5A9E /* Memories.mp3 */; };
+		07D02C73250B8A65005E5A9E /* Memories(Re).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07D02C70250B8A64005E5A9E /* Memories(Re).mp3 */; };
 		07D02C74250B8A65005E5A9E /* Alone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07D02C71250B8A65005E5A9E /* Alone.mp3 */; };
 		07D02C76250B8AC0005E5A9E /* On My Way.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07D02C75250B8AC0005E5A9E /* On My Way.mp3 */; };
 		07D02C7C250B8BA5005E5A9E /* Avem.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07D02C77250B8BA3005E5A9E /* Avem.mp3 */; };
 		07D02C7D250B8BA5005E5A9E /* Unity.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07D02C78250B8BA4005E5A9E /* Unity.mp3 */; };
 		07D02C7E250B8BA5005E5A9E /* Ignite.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07D02C79250B8BA4005E5A9E /* Ignite.mp3 */; };
-		07D02C7F250B8BA5005E5A9E /* Hope.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07D02C7A250B8BA5005E5A9E /* Hope.mp3 */; };
-		07D02C80250B8BA5005E5A9E /* I Don't Wanna Go.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07D02C7B250B8BA5005E5A9E /* I Don't Wanna Go.mp3 */; };
+		07D02C7F250B8BA5005E5A9E /* Hope(Re).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07D02C7A250B8BA5005E5A9E /* Hope(Re).mp3 */; };
 		07D18DBA250B80DE001E0C46 /* Sing Me To Sleep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07D18DB8250B80DD001E0C46 /* Sing Me To Sleep.mp3 */; };
 		07D18DBB250B80DE001E0C46 /* Faded.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07D18DB9250B80DE001E0C46 /* Faded.mp3 */; };
 		07E27E9E250B973300ED9D1C /* The Spectre.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07E27E9D250B973300ED9D1C /* The Spectre.mp3 */; };
 		07E27EA0250B974D00ED9D1C /* PLAY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07E27E9F250B974D00ED9D1C /* PLAY.mp3 */; };
 		07E27EA3250B981100ED9D1C /* Not Afraid ft Faded.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07E27EA2250B981100ED9D1C /* Not Afraid ft Faded.mp3 */; };
 		07F16737250D598C00DD1682 /* musicUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F16736250D598C00DD1682 /* musicUI.swift */; };
+		07F72702252D23E700889924 /* Memories.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07F72701252D23E700889924 /* Memories.mp3 */; };
+		07F72704252D265E00889924 /* Hope.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07F72703252D265E00889924 /* Hope.mp3 */; };
 		07FBBA9F2521EEA700762E77 /* NewComers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FBBA9E2521EEA700762E77 /* NewComers.swift */; };
-		07FBBAA12521FB2600762E77 /* delegateClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FBBAA02521FB2600762E77 /* delegateClass.swift */; };
 		07FBBAA32521FF5400762E77 /* YoutYoubVideos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FBBAA22521FF5400762E77 /* YoutYoubVideos.swift */; };
 		97D5D2193C994FFB362C6E7B /* Pods_AlanWalker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907EF626350E332F0B591DAC /* Pods_AlanWalker.framework */; };
 /* End PBXBuildFile section */
@@ -59,27 +72,40 @@
 		0727336E251BF8280095441A /* MusicData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicData.swift; sourceTree = "<group>"; };
 		07282A5A247AD69C0078E709 /* AlbumList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AlbumList.swift; path = AlanWalker/ViewControllers/AlbumList.swift; sourceTree = SOURCE_ROOT; };
 		0729C472250D30D60084029E /* MusicDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicDataModel.swift; sourceTree = "<group>"; };
+		072AE655252CED0A009919F0 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		072B51D52478534800627A96 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirstView.swift; path = AlanWalker/ViewControllers/FirstView.swift; sourceTree = SOURCE_ROOT; };
-		07ADFF852523B8E300F08DCE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		072C335A252E0B7100004016 /* All falls down.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "All falls down.mp3"; sourceTree = "<group>"; };
+		072C335C252E0B7B00004016 /* Do it all for you.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Do it all for you.mp3"; sourceTree = "<group>"; };
+		072C335E252E0B8600004016 /* Lonely.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Lonely.mp3; sourceTree = "<group>"; };
+		072C3363252E0BBC00004016 /* Tired by j-fla.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Tired by j-fla.mp3"; sourceTree = "<group>"; };
+		072C3365252E0BC200004016 /* Tired kygo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Tired kygo.mp3"; sourceTree = "<group>"; };
+		072C3367252E0BC900004016 /* Tired.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Tired.mp3; sourceTree = "<group>"; };
+		072C336A252E0C1300004016 /* Smokers | halsey.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Smokers | halsey.mp3"; sourceTree = "<group>"; };
+		072C336C252E0C1800004016 /* Faded(erelease).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Faded(erelease).mp3"; sourceTree = "<group>"; };
+		072C336E252E0C1C00004016 /* Faded (interlude).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Faded (interlude).mp3"; sourceTree = "<group>"; };
+		072C3370252E0C8600004016 /* I Don't Wanna Go.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "I Don't Wanna Go.mp3"; sourceTree = "<group>"; };
+		072C3372252E0CF400004016 /* Lost control.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Lost control.mp3"; sourceTree = "<group>"; };
+		078797F0252D11FF00D5510C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		07AF13AA252A4461002104B0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		07CD39C8250D1D7D0065A2C7 /* TableViewCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell1.swift; sourceTree = "<group>"; };
 		07CD39C9250D1D7D0065A2C7 /* TableViewCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell1.xib; sourceTree = "<group>"; };
 		07D02C6F250B8A64005E5A9E /* Return.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Return.mp3; sourceTree = "<group>"; };
-		07D02C70250B8A64005E5A9E /* Memories.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Memories.mp3; sourceTree = "<group>"; };
+		07D02C70250B8A64005E5A9E /* Memories(Re).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Memories(Re).mp3"; sourceTree = "<group>"; };
 		07D02C71250B8A65005E5A9E /* Alone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Alone.mp3; sourceTree = "<group>"; };
 		07D02C75250B8AC0005E5A9E /* On My Way.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "On My Way.mp3"; sourceTree = "<group>"; };
 		07D02C77250B8BA3005E5A9E /* Avem.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Avem.mp3; sourceTree = "<group>"; };
 		07D02C78250B8BA4005E5A9E /* Unity.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Unity.mp3; sourceTree = "<group>"; };
 		07D02C79250B8BA4005E5A9E /* Ignite.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ignite.mp3; sourceTree = "<group>"; };
-		07D02C7A250B8BA5005E5A9E /* Hope.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Hope.mp3; sourceTree = "<group>"; };
-		07D02C7B250B8BA5005E5A9E /* I Don't Wanna Go.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "I Don't Wanna Go.mp3"; sourceTree = "<group>"; };
+		07D02C7A250B8BA5005E5A9E /* Hope(Re).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Hope(Re).mp3"; sourceTree = "<group>"; };
 		07D18DB8250B80DD001E0C46 /* Sing Me To Sleep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sing Me To Sleep.mp3"; sourceTree = "<group>"; };
 		07D18DB9250B80DE001E0C46 /* Faded.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Faded.mp3; sourceTree = "<group>"; };
 		07E27E9D250B973300ED9D1C /* The Spectre.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Spectre.mp3"; sourceTree = "<group>"; };
 		07E27E9F250B974D00ED9D1C /* PLAY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PLAY.mp3; sourceTree = "<group>"; };
 		07E27EA2250B981100ED9D1C /* Not Afraid ft Faded.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Not Afraid ft Faded.mp3"; sourceTree = "<group>"; };
 		07F16736250D598C00DD1682 /* musicUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = musicUI.swift; sourceTree = "<group>"; };
+		07F72701252D23E700889924 /* Memories.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Memories.mp3; sourceTree = "<group>"; };
+		07F72703252D265E00889924 /* Hope.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Hope.mp3; sourceTree = "<group>"; };
 		07FBBA9E2521EEA700762E77 /* NewComers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewComers.swift; sourceTree = "<group>"; };
-		07FBBAA02521FB2600762E77 /* delegateClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = delegateClass.swift; sourceTree = "<group>"; };
 		07FBBAA22521FF5400762E77 /* YoutYoubVideos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutYoubVideos.swift; sourceTree = "<group>"; };
 		89CFD36A4F7CD7EE957D21EE /* Pods-AlanWalker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlanWalker.debug.xcconfig"; path = "Target Support Files/Pods-AlanWalker/Pods-AlanWalker.debug.xcconfig"; sourceTree = "<group>"; };
 		907EF626350E332F0B591DAC /* Pods_AlanWalker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlanWalker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +147,7 @@
 			children = (
 				07B4E87C2507A5870028079A /* AppDelegate */,
 				0721CAED24770CB10013277C /* ViewControllers */,
+				07F6520E2508B7F20075399B /* Offline */,
 				07B4E8802507A8CF0028079A /* View */,
 				07B4E8812507A8DD0028079A /* Model */,
 				07B4E87F2507A8860028079A /* Resources */,
@@ -132,11 +159,43 @@
 			isa = PBXGroup;
 			children = (
 				072B51D52478534800627A96 /* FirstView.swift */,
-				07FBBAA02521FB2600762E77 /* delegateClass.swift */,
-				07F6520E2508B7F20075399B /* Offline */,
 				07B4E87E2507A5D70028079A /* Online */,
+				078797F0252D11FF00D5510C /* Constants.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		072C3359252E0B6200004016 /* Different World */ = {
+			isa = PBXGroup;
+			children = (
+				072C335C252E0B7B00004016 /* Do it all for you.mp3 */,
+				072C335A252E0B7100004016 /* All falls down.mp3 */,
+				07E27E9D250B973300ED9D1C /* The Spectre.mp3 */,
+				072C335E252E0B8600004016 /* Lonely.mp3 */,
+				072C3372252E0CF400004016 /* Lost control.mp3 */,
+			);
+			name = "Different World";
+			sourceTree = "<group>";
+		};
+		072C3362252E0BA200004016 /* Tired(Remixes) */ = {
+			isa = PBXGroup;
+			children = (
+				072C3367252E0BC900004016 /* Tired.mp3 */,
+				072C3363252E0BBC00004016 /* Tired by j-fla.mp3 */,
+				072C3365252E0BC200004016 /* Tired kygo.mp3 */,
+			);
+			name = "Tired(Remixes)";
+			sourceTree = "<group>";
+		};
+		072C3369252E0BD800004016 /* Faded(Remixes) */ = {
+			isa = PBXGroup;
+			children = (
+				07E27EA2250B981100ED9D1C /* Not Afraid ft Faded.mp3 */,
+				072C336A252E0C1300004016 /* Smokers | halsey.mp3 */,
+				072C336C252E0C1800004016 /* Faded(erelease).mp3 */,
+				072C336E252E0C1C00004016 /* Faded (interlude).mp3 */,
+			);
+			name = "Faded(Remixes)";
 			sourceTree = "<group>";
 		};
 		07B4E87C2507A5870028079A /* AppDelegate */ = {
@@ -156,6 +215,7 @@
 				0721CAE924770C8D0013277C /* Login.swift */,
 				0721CAEB24770CA20013277C /* Register.swift */,
 				07FBBAA22521FF5400762E77 /* YoutYoubVideos.swift */,
+				07FBBA9E2521EEA700762E77 /* NewComers.swift */,
 			);
 			name = Online;
 			sourceTree = "<group>";
@@ -165,9 +225,8 @@
 			children = (
 				07D18DB1250B7ED2001E0C46 /* Songs */,
 				0721CADE24770A130013277C /* Assets.xcassets */,
-				07D02C7B250B8BA5005E5A9E /* I Don't Wanna Go.mp3 */,
 				0721CAE324770A130013277C /* Info.plist */,
-				07ADFF852523B8E300F08DCE /* GoogleService-Info.plist */,
+				07AF13AA252A4461002104B0 /* GoogleService-Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -185,6 +244,7 @@
 		07B4E8812507A8DD0028079A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				072AE655252CED0A009919F0 /* Utilities.swift */,
 				0729C472250D30D60084029E /* MusicDataModel.swift */,
 				0727336E251BF8280095441A /* MusicData.swift */,
 			);
@@ -203,8 +263,6 @@
 		07D02C82250B8CC7005E5A9E /* Non-Single */ = {
 			isa = PBXGroup;
 			children = (
-				07E27EA2250B981100ED9D1C /* Not Afraid ft Faded.mp3 */,
-				07E27E9D250B973300ED9D1C /* The Spectre.mp3 */,
 				07E27E9F250B974D00ED9D1C /* PLAY.mp3 */,
 				07D02C75250B8AC0005E5A9E /* On My Way.mp3 */,
 				07D18DB8250B80DD001E0C46 /* Sing Me To Sleep.mp3 */,
@@ -219,10 +277,11 @@
 		07D02C83250B8D1B005E5A9E /* Single & ESP */ = {
 			isa = PBXGroup;
 			children = (
-				07D02C70250B8A64005E5A9E /* Memories.mp3 */,
+				07F72701252D23E700889924 /* Memories.mp3 */,
 				07D02C77250B8BA3005E5A9E /* Avem.mp3 */,
-				07D02C7A250B8BA5005E5A9E /* Hope.mp3 */,
+				07F72703252D265E00889924 /* Hope.mp3 */,
 				07D02C6F250B8A64005E5A9E /* Return.mp3 */,
+				072C3370252E0C8600004016 /* I Don't Wanna Go.mp3 */,
 			);
 			name = "Single & ESP";
 			sourceTree = "<group>";
@@ -232,6 +291,10 @@
 			children = (
 				07D02C83250B8D1B005E5A9E /* Single & ESP */,
 				07D02C82250B8CC7005E5A9E /* Non-Single */,
+				072C3359252E0B6200004016 /* Different World */,
+				07F72700252D239000889924 /* Recreated */,
+				072C3369252E0BD800004016 /* Faded(Remixes) */,
+				072C3362252E0BA200004016 /* Tired(Remixes) */,
 			);
 			name = Songs;
 			sourceTree = "<group>";
@@ -242,9 +305,18 @@
 				07282A5A247AD69C0078E709 /* AlbumList.swift */,
 				0725866E24773CC500254564 /* SongsList.swift */,
 				07F16736250D598C00DD1682 /* musicUI.swift */,
-				07FBBA9E2521EEA700762E77 /* NewComers.swift */,
 			);
 			name = Offline;
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		07F72700252D239000889924 /* Recreated */ = {
+			isa = PBXGroup;
+			children = (
+				07D02C70250B8A64005E5A9E /* Memories(Re).mp3 */,
+				07D02C7A250B8BA5005E5A9E /* Hope(Re).mp3 */,
+			);
+			name = Recreated;
 			sourceTree = "<group>";
 		};
 		A2ABCA1F82F0EB6A4CE025F7 /* Frameworks */ = {
@@ -325,19 +397,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				07D02C7D250B8BA5005E5A9E /* Unity.mp3 in Resources */,
-				07D02C80250B8BA5005E5A9E /* I Don't Wanna Go.mp3 in Resources */,
-				07D02C7F250B8BA5005E5A9E /* Hope.mp3 in Resources */,
+				07D02C7F250B8BA5005E5A9E /* Hope(Re).mp3 in Resources */,
 				0721CAE224770A130013277C /* LaunchScreen.storyboard in Resources */,
+				07F72702252D23E700889924 /* Memories.mp3 in Resources */,
+				072C335B252E0B7200004016 /* All falls down.mp3 in Resources */,
 				07D02C7E250B8BA5005E5A9E /* Ignite.mp3 in Resources */,
 				07CD39CB250D1D7D0065A2C7 /* TableViewCell1.xib in Resources */,
+				072C3368252E0BC900004016 /* Tired.mp3 in Resources */,
+				07F72704252D265E00889924 /* Hope.mp3 in Resources */,
+				072C335D252E0B7B00004016 /* Do it all for you.mp3 in Resources */,
 				0721CADF24770A130013277C /* Assets.xcassets in Resources */,
+				072C335F252E0B8600004016 /* Lonely.mp3 in Resources */,
+				072C336B252E0C1300004016 /* Smokers | halsey.mp3 in Resources */,
+				072C3364252E0BBC00004016 /* Tired by j-fla.mp3 in Resources */,
 				07D02C74250B8A65005E5A9E /* Alone.mp3 in Resources */,
 				07D18DBA250B80DE001E0C46 /* Sing Me To Sleep.mp3 in Resources */,
 				07D02C72250B8A65005E5A9E /* Return.mp3 in Resources */,
+				072C3373252E0CF400004016 /* Lost control.mp3 in Resources */,
 				07E27EA0250B974D00ED9D1C /* PLAY.mp3 in Resources */,
-				07ADFF862523B8E300F08DCE /* GoogleService-Info.plist in Resources */,
-				07D02C73250B8A65005E5A9E /* Memories.mp3 in Resources */,
+				07D02C73250B8A65005E5A9E /* Memories(Re).mp3 in Resources */,
+				07AF13AB252A4461002104B0 /* GoogleService-Info.plist in Resources */,
+				072C3371252E0C8600004016 /* I Don't Wanna Go.mp3 in Resources */,
 				07D02C76250B8AC0005E5A9E /* On My Way.mp3 in Resources */,
+				072C336F252E0C1C00004016 /* Faded (interlude).mp3 in Resources */,
+				072C3366252E0BC200004016 /* Tired kygo.mp3 in Resources */,
+				072C336D252E0C1800004016 /* Faded(erelease).mp3 in Resources */,
 				07E27E9E250B973300ED9D1C /* The Spectre.mp3 in Resources */,
 				07D18DBB250B80DE001E0C46 /* Faded.mp3 in Resources */,
 				07E27EA3250B981100ED9D1C /* Not Afraid ft Faded.mp3 in Resources */,
@@ -396,13 +480,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0721CAEC24770CA20013277C /* Register.swift in Sources */,
+				078797F1252D11FF00D5510C /* Constants.swift in Sources */,
 				0727336F251BF8280095441A /* MusicData.swift in Sources */,
 				0721CAD724770A120013277C /* Welcome.swift in Sources */,
 				0721CAEA24770C8D0013277C /* Login.swift in Sources */,
 				0725866F24773CC500254564 /* SongsList.swift in Sources */,
 				0729C473250D30D60084029E /* MusicDataModel.swift in Sources */,
+				072AE656252CED0A009919F0 /* Utilities.swift in Sources */,
 				07282A5B247AD69C0078E709 /* AlbumList.swift in Sources */,
-				07FBBAA12521FB2600762E77 /* delegateClass.swift in Sources */,
 				07F16737250D598C00DD1682 /* musicUI.swift in Sources */,
 				072B51D62478534800627A96 /* FirstView.swift in Sources */,
 				07CD39CA250D1D7D0065A2C7 /* TableViewCell1.swift in Sources */,

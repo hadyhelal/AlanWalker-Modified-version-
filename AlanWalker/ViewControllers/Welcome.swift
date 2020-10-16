@@ -12,14 +12,18 @@ class Welcome: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        loginButton.layer.cornerRadius = 20
+        registerButton.layer.cornerRadius = 20
     }
     
     
+    @IBOutlet weak var loginButton: UIButton!
     @IBAction func logInButton(_ sender: Any) {
-     //   performSegue(withIdentifier: "loginSegue", sender: self)
+
     }
     
+    @IBOutlet weak var registerButton: UIButton!
     @IBAction func registerButton(_ sender: Any) {
  
     }
