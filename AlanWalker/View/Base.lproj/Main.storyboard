@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Alan Walker logo wallpaper by Tvrtk0 - f6 - Free on ZEDGE™" translatesAutoresizingMaskIntoConstraints="NO" id="8dv-Qx-eVQ" userLabel="BG Image">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896.00000000000011"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="Qkg-N1-4nM">
                                 <rect key="frame" x="0.0" y="690" width="414" height="152"/>
@@ -302,8 +302,12 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xd1-DU-ygT" userLabel="Upper View">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="404"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Walker Wallpapers" translatesAutoresizingMaskIntoConstraints="NO" id="Y5L-S3-VJe">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hope Re" translatesAutoresizingMaskIntoConstraints="NO" id="Y5L-S3-VJe">
                                         <rect key="frame" x="20" y="52" width="374" height="300"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="MUZ-O8-g5e"/>
+                                            <constraint firstAttribute="width" constant="374" id="ZOr-YG-q6X"/>
+                                        </constraints>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -462,7 +466,7 @@
             <objects>
                 <viewController id="aot-oO-P02" customClass="YoutYoubLoading" customModule="AlanWalker" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zKs-Qz-6Of" customClass="you">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="P1o-zC-iYt"/>
@@ -478,7 +482,7 @@
             <objects>
                 <tableViewController id="b5M-o4-436" customClass="SongsList" customModule="AlanWalker" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="DCI-Km-cWp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.050980392156862744" green="0.082352941176470587" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <searchBar key="tableHeaderView" contentMode="redraw" id="0ut-4g-4L7">
@@ -532,7 +536,7 @@
             <objects>
                 <tableViewController storyboardIdentifier="albumVC" id="TLf-Y2-jqe" customClass="AlbumList" customModule="AlanWalker" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="jwu-Gi-oww">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.050980392156862744" green="0.082352941176470587" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
@@ -677,12 +681,13 @@
     <resources>
         <image name="Alan Walker logo wallpaper by Tvrtk0 - f6 - Free on ZEDGE™" width="240" height="426.5"/>
         <image name="Gear_ Razer Adaro DJ Headphone Review" width="205" height="153.5"/>
+        <image name="Hope Re" width="100" height="56"/>
         <image name="Walker Wallpapers" width="533" height="300"/>
         <image name="fast forward" width="25" height="25"/>
         <image name="pause" width="25" height="25"/>
         <image name="rewind" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="glA-wm-G2v"/>
+        <segue reference="yfK-R1-H5C"/>
     </inferredMetricsTieBreakers>
 </document>
