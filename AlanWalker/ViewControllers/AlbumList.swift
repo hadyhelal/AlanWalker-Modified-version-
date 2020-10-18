@@ -10,14 +10,14 @@ import UIKit
 
 class AlbumList: UITableViewController {
     //check napster Website
-    //    var topTracks : [String] = ["faded","alone","the spectre","dark side"]
+
     var albumList :[String] = ["Single & ESP","Non-Single","Different World(2017)", "Recreated Music", "Faded(Remixes)" ,"Tired(Remixes)"]
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        navigationController?.setNavigationBarHidden(false, animated: true)
-
+        //        navigationController?.setNavigationBarHidden(false, animated: true)
+        
         tableView.separatorColor = .white
         
         
@@ -46,12 +46,7 @@ class AlbumList: UITableViewController {
         
         return cell
     }
-    
-    //    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    //        performSegue(withIdentifier: "songsSegues", sender: self)
-    //
-    //    }
-    
+
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destinationVC = segue.destination as! SongsList

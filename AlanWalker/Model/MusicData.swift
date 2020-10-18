@@ -27,23 +27,23 @@ struct MusicData {
         
         list.append(MusicDataModel(musicName: "Return", musicAlbum: "Single & ESP", musicImage: "Return", musicTime: 3.27, musicURL: "https://www.youtube.com/embed/EHxzSVhMHVc"))
         
-        list.append(MusicDataModel(musicName: "I Don't Wanna Go", musicAlbum: "Single & ESP", musicImage: "galaxy", musicTime: 3.41, musicURL: "https://www.youtube.com/embed/EHxzSVhMHVc")) // needs to be handeld
+        list.append(MusicDataModel(musicName: "I Don't Wanna Go", musicAlbum: "Single & ESP", musicImage: "galaxy", musicTime: 2.41, musicURL: "https://www.youtube.com/embed/EHxzSVhMHVc")) // needs to be handeld
         
         //Non-Single
         
-        list.append(MusicDataModel(musicName: "PLAY", musicAlbum: "Non-Single", musicImage: "PLAY", musicTime: 3.13, musicURL: ""))//Nill
+        list.append(MusicDataModel(musicName: "PLAY", musicAlbum: "Non-Single", musicImage: "PLAY", musicTime: 3.13, musicURL: "https://www.youtube.com/embed/YQRHrco73g4"))
         
         list.append(MusicDataModel(musicName: "On My Way", musicAlbum: "Non-Single", musicImage: "On my Way", musicTime: 3.36, musicURL: "https://www.youtube.com/embed/dhYOPzcsbGM"))
         
-        list.append(MusicDataModel(musicName: "Sing Me To Sleep", musicAlbum: "Non-Single", musicImage: "Sing me to sleep", musicTime: 3.10, musicURL: ""))//Nill
+        list.append(MusicDataModel(musicName: "Sing Me To Sleep", musicAlbum: "Non-Single", musicImage: "Sing me to sleep", musicTime: 3.10, musicURL: "https://www.youtube.com/embed/2i2khp_npdE"))
         
-        list.append(MusicDataModel(musicName: "Faded", musicAlbum: "Non-Single", musicImage: "Faded", musicTime: 3.23, musicURL: ""))//Nill
+        list.append(MusicDataModel(musicName: "Faded", musicAlbum: "Non-Single", musicImage: "Faded", musicTime: 3.23, musicURL: "https://www.youtube.com/embed/HhjHYkPQ8F0"))
         
         list.append(MusicDataModel(musicName: "Ignite", musicAlbum: "Non-Single", musicImage: "Ignite"/*-1*/, musicTime: 3.30, musicURL: "https://www.youtube.com/embed/Az-mGR-CehY"))
         
         list.append(MusicDataModel(musicName: "Unity", musicAlbum: "Non-Single", musicImage: "galaxy", musicTime: 3.23, musicURL: "https://www.youtube.com/embed/E3x_dLVTEuA"))
         
-        list.append(MusicDataModel(musicName: "Alone", musicAlbum: "Non-Single", musicImage: "Alone", musicTime: 4.45, musicURL: "")) //Nill
+        list.append(MusicDataModel(musicName: "Alone", musicAlbum: "Non-Single", musicImage: "Alone", musicTime: 4.45, musicURL: "https://www.youtube.com/embed/HhjHYkPQ8F0"))
         
         
         
@@ -72,11 +72,11 @@ struct MusicData {
         
         //Faded(Remixes)
         
-        list.append(MusicDataModel(musicName: "Not Afraid ft Faded", musicAlbum: "Faded(Remixes)", musicImage: "galaxy", musicTime: 5.11, musicURL: "")) //Nil
+        list.append(MusicDataModel(musicName: "Not Afraid ft Faded", musicAlbum: "Faded(Remixes)", musicImage: "galaxy", musicTime: 5.11, musicURL: "https://www.youtube.com/embed/eTiu541Uy0U"))
         
         list.append(MusicDataModel(musicName: "Smokers | halsey", musicAlbum: "Faded(Remixes)", musicImage: "NCS", musicTime: 4.51, musicURL: "https://www.youtube.com/embed/mlmpVkhV0X4"))
         
-        list.append(MusicDataModel(musicName: "Faded(erelease)", musicAlbum: "Faded(Remixes)", musicImage: "galaxy", musicTime: 4.51, musicURL: "")) //Nill
+        list.append(MusicDataModel(musicName: "Faded(erelease)", musicAlbum: "Faded(Remixes)", musicImage: "galaxy", musicTime: 4.51, musicURL: "https://www.youtube.com/embed/bM7SZ5SBzyY"))
         
         list.append(MusicDataModel(musicName: "Faded (interlude)", musicAlbum: "Faded(Remixes)", musicImage: "galaxy", musicTime: 00.40, musicURL: "https://www.youtube.com/embed/nIPgx1b02gM"))
         
@@ -89,7 +89,7 @@ struct MusicData {
         list.append(MusicDataModel(musicName: "Tired by j-fla", musicAlbum: "Tired(Remixes)", musicImage: "galaxy", musicTime: 2.44, musicURL: "https://www.youtube.com/embed/zQ9Wtz6QVv4"))
         
         
-        list.append(MusicDataModel(musicName: "Tired kygo", musicAlbum: "Tired(Remixes)", musicImage: "galaxy", musicTime: 3.26, musicURL: "https://www.youtube.com/embed/mITNFL1gzK4"))//nill time nd music
+        list.append(MusicDataModel(musicName: "Tired kygo", musicAlbum: "Tired(Remixes)", musicImage: "galaxy", musicTime: 4.00, musicURL: "https://www.youtube.com/embed/mITNFL1gzK4"))
         
         
         

@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class musicUI: UIViewController , AVAudioPlayerDelegate{
+class musicUI: UIViewController, AVAudioPlayerDelegate{
     
     var audio : AVAudioPlayer! = nil
     var sec = 0
@@ -29,6 +29,11 @@ class musicUI: UIViewController , AVAudioPlayerDelegate{
     @IBOutlet var currentTimeLabel: UILabel!
     
     
+    @IBOutlet weak var volumeControll: UISlider!
+    
+  
+    @IBOutlet weak var miniIMage: UIImageView!
+    
     var isRunning = false
     var runningTime = Timer()
     
@@ -43,6 +48,24 @@ class musicUI: UIViewController , AVAudioPlayerDelegate{
         //Start Playing The Selected Music
         handleTheUpdateOfUI()
         
+        volumeControll.setValue(1.0, animated: true)
+        
+        audio.volume = volumeControll.value
+        
+    }
+    
+    //MARK: - Volume Slider
+    
+    @IBAction func volumeSlider(_ sender: Any) {
+        switch volumeControll.value {
+        case 0:
+            miniIMage.image = UIImage(systemName: "speaker.slash")
+        default:
+            
+            miniIMage.image = UIImage(named: "Icon Min")
+                audio.volume = volumeControll.value
+
+        }
     }
     
     //MARK: - Playing Audio Functionaliy
@@ -143,6 +166,17 @@ class musicUI: UIViewController , AVAudioPlayerDelegate{
     {
         currentTimeLabel.text = "\(min.toString()):\(sec.toString())"
     }
+    
+    
+    //MARK: - Dismiss
+    
+    @IBAction func dismiss(_ sender: Any) {
+        
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    
+    
     
     // MARK: - playingMusic
     
