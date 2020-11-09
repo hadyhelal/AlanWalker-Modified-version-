@@ -21,6 +21,4 @@ class TableViewCell1: UITableViewCell {
          musicTotalTimeLabel.textColor = .white
          musicTotalTimeLabel.font = UIFont(name: "Futura", size: 17.0)
     }
-       
-    
 }

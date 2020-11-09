@@ -8,34 +8,29 @@
 
 import UIKit
 import WebKit
+//import SVProgressHUD
 
 class YoutYoubLoading: UIViewController , WKUIDelegate{
     
-    var webview : WKWebView!
+    
+    var webView: WKWebView!
     var urlString : String?
     
     override func loadView() {
-        let confitguration = WKWebViewConfiguration()
         
-        webview = WKWebView(frame: .zero, configuration: confitguration)
-        webview.uiDelegate = self
-        view = webview
-        
+        let webConfiguration = WKWebViewConfiguration()
+        webView = WKWebView(frame: .zero, configuration: webConfiguration)
+        webView.uiDelegate = self
+        view = webView
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let urlValidation = urlString
-        {
-            let url = URL(string: urlValidation)
-            
-            if let completeUrl = url {
-                
-                let Request = URLRequest(url: completeUrl)
-                webview.load(Request)
-            }
-        }
+//        SVProgressHUD.show()
+        let myURL = URL(string: urlString!)
+        let myRequest = URLRequest(url: myURL!)
+        webView.load(myRequest)
+        
+//        if !webView.isLoading { SVProgressHUD.dismiss()}
     }
-    
-    
 }

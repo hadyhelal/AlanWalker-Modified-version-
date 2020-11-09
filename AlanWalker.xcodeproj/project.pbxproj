@@ -31,6 +31,8 @@
 		072C336F252E0C1C00004016 /* Faded (interlude).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 072C336E252E0C1C00004016 /* Faded (interlude).mp3 */; };
 		072C3371252E0C8600004016 /* I Don't Wanna Go.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 072C3370252E0C8600004016 /* I Don't Wanna Go.mp3 */; };
 		072C3373252E0CF400004016 /* Lost control.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 072C3372252E0CF400004016 /* Lost control.mp3 */; };
+		0733EFD62556F5B4001CC454 /* Int Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0733EFD52556F5B4001CC454 /* Int Extension.swift */; };
+		0733EFD82556F5DF001CC454 /* AvAudioPlayerExtnsion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0733EFD72556F5DF001CC454 /* AvAudioPlayerExtnsion.swift */; };
 		0738E4B9253CFA9B0088D144 /* Tired kygo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0738E4B8253CFA9B0088D144 /* Tired kygo.mp3 */; };
 		0738E4BB253D01560088D144 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0738E4BA253D01560088D144 /* Constants.swift */; };
 		07AF13AB252A4461002104B0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07AF13AA252A4461002104B0 /* GoogleService-Info.plist */; };
@@ -84,6 +86,8 @@
 		072C336E252E0C1C00004016 /* Faded (interlude).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Faded (interlude).mp3"; sourceTree = "<group>"; };
 		072C3370252E0C8600004016 /* I Don't Wanna Go.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "I Don't Wanna Go.mp3"; sourceTree = "<group>"; };
 		072C3372252E0CF400004016 /* Lost control.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Lost control.mp3"; sourceTree = "<group>"; };
+		0733EFD52556F5B4001CC454 /* Int Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int Extension.swift"; sourceTree = "<group>"; };
+		0733EFD72556F5DF001CC454 /* AvAudioPlayerExtnsion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvAudioPlayerExtnsion.swift; sourceTree = "<group>"; };
 		0738E4B8253CFA9B0088D144 /* Tired kygo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Tired kygo.mp3"; sourceTree = "<group>"; };
 		0738E4BA253D01560088D144 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		07AF13AA252A4461002104B0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -145,12 +149,11 @@
 		0721CAD124770A120013277C /* AlanWalker */ = {
 			isa = PBXGroup;
 			children = (
+				0733EFD42556F592001CC454 /* Extensions */,
 				07B4E87C2507A5870028079A /* AppDelegate */,
-				0721CAED24770CB10013277C /* ViewControllers */,
-				0738E4BA253D01560088D144 /* Constants.swift */,
-				07F6520E2508B7F20075399B /* Offline */,
-				07B4E8802507A8CF0028079A /* View */,
 				07B4E8812507A8DD0028079A /* Model */,
+				07B4E8802507A8CF0028079A /* View */,
+				0721CAED24770CB10013277C /* ViewControllers */,
 				07B4E87F2507A8860028079A /* Resources */,
 			);
 			path = AlanWalker;
@@ -160,7 +163,9 @@
 			isa = PBXGroup;
 			children = (
 				072B51D52478534800627A96 /* FirstView.swift */,
+				0738E4BA253D01560088D144 /* Constants.swift */,
 				07B4E87E2507A5D70028079A /* Online */,
+				07F6520E2508B7F20075399B /* Offline */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -196,6 +201,15 @@
 				072C336E252E0C1C00004016 /* Faded (interlude).mp3 */,
 			);
 			name = "Faded(Remixes)";
+			sourceTree = "<group>";
+		};
+		0733EFD42556F592001CC454 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0733EFD52556F5B4001CC454 /* Int Extension.swift */,
+				0733EFD72556F5DF001CC454 /* AvAudioPlayerExtnsion.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		07B4E87C2507A5870028079A /* AppDelegate */ = {
@@ -307,7 +321,6 @@
 				07F16736250D598C00DD1682 /* musicUI.swift */,
 			);
 			name = Offline;
-			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		07F72700252D239000889924 /* Recreated */ = {
@@ -483,6 +496,8 @@
 				0727336F251BF8280095441A /* MusicData.swift in Sources */,
 				0721CAD724770A120013277C /* Welcome.swift in Sources */,
 				0721CAEA24770C8D0013277C /* Login.swift in Sources */,
+				0733EFD82556F5DF001CC454 /* AvAudioPlayerExtnsion.swift in Sources */,
+				0733EFD62556F5B4001CC454 /* Int Extension.swift in Sources */,
 				0725866F24773CC500254564 /* SongsList.swift in Sources */,
 				0729C473250D30D60084029E /* MusicDataModel.swift in Sources */,
 				072AE656252CED0A009919F0 /* Utilities.swift in Sources */,
@@ -641,6 +656,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AlanWalker/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -659,6 +675,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AlanWalker/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

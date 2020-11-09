@@ -11,12 +11,15 @@ import AVFoundation
 
 class musicUI: UIViewController, AVAudioPlayerDelegate{
     
+    // cmd + shift + o -> opening fastly anything in project
     var audio : AVAudioPlayer! = nil
     var sec = 0
     var min = 0
-
+    var autoContinue = false
     var musicArray = [MusicDataModel] ()
-    var currentIndexPath : Int?
+    var currentMusicIndex : Int!
+    var isRunning = false
+    var runningTime = Timer()
     
     @IBOutlet var musicNameLabel: UILabel!
     
@@ -28,22 +31,17 @@ class musicUI: UIViewController, AVAudioPlayerDelegate{
     
     @IBOutlet var currentTimeLabel: UILabel!
     
-    
     @IBOutlet weak var volumeControll: UISlider!
     
-  
     @IBOutlet weak var miniIMage: UIImageView!
-    
-    var isRunning = false
-    var runningTime = Timer()
     
     @IBOutlet var ProgressMusciBar: UIProgressView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        songImage.layer.cornerRadius =  8.0
-        songImage.clipsToBounds = true
+        songImage.layer.cornerRadius = 16.0
+        songImage.clipsToBounds      = true
         
         //Start Playing The Selected Music
         handleTheUpdateOfUI()
@@ -59,100 +57,110 @@ class musicUI: UIViewController, AVAudioPlayerDelegate{
     @IBAction func volumeSlider(_ sender: Any) {
         switch volumeControll.value {
         case 0:
-            miniIMage.image = UIImage(systemName: "speaker.slash")
+            miniIMage.image  = UIImage(systemName: "speaker.slash")
+            
         default:
             
-            miniIMage.image = UIImage(named: "Icon Min")
-                audio.volume = volumeControll.value
-
+            miniIMage.image  = UIImage(named: "Icon Min")
+            audio.volume     = volumeControll.value
+            
         }
     }
     
     //MARK: - Playing Audio Functionaliy
-    @IBAction func fastForward(_ sender: Any) {
-       
-        currentIndexPath! += 1
+    
+    @IBAction func shuffle(_ sender: Any) {
+        let random = Int.random(in: 0...musicArray.count)
         
-        if currentIndexPath! < musicArray.count , currentIndexPath! >= 0
-        {
-            handleTheUpdateOfUI()
-        }
-        else
-        {
-            currentIndexPath = 0
-            handleTheUpdateOfUI()
-        }
+        updateUI()
+        currentMusicIndex = random
+        handleTheUpdateOfUI()
+        
+    }
+    
+    @IBAction func fastForward(_ sender: Any) {
+        
+        playNext()
     }
     
     @IBOutlet weak var playBtn: UIButton!
-    @IBAction func play(_ sender: Any)
-    {
+    @IBAction func play(_ sender: Any){
         
         updateUI()
     }
     
     
-    @IBAction func rewind(_ sender: Any)
-    {
-       
-        currentIndexPath! -= 1
-      
-        if currentIndexPath! < musicArray.count , currentIndexPath! >= 0{
-       
+    @IBAction func rewind(_ sender: Any){
+        
+        currentMusicIndex -= 1
+        
+        if currentMusicIndex < musicArray.count , currentMusicIndex >= 0{
+            
             handleTheUpdateOfUI()
         }
             
         else {
-       
-            currentIndexPath = 0
+            currentMusicIndex = 0
             handleTheUpdateOfUI()
         }
     }
     
+    @IBAction func showMusicList(_ sender: Any) {
+        dismiss(animated: true)
+    }
     
-    
-    //MARK: - Update the UI Code
-    func updateUI() {
-        if isRunning {
+    fileprivate func playNext() {
+        currentMusicIndex += 1
+        
+        if currentMusicIndex < musicArray.count , currentMusicIndex >= 0{
             
-            pauseMusicUI()
-      
+            handleTheUpdateOfUI()
         }
-            
         else{
             
-            playMusicUI()
-       
+            currentMusicIndex = 0
+            handleTheUpdateOfUI()
         }
         
     }
+    
+    
+    //MARK: - Update the UI Code
+    
+    func updateUI() {
+        
+        isRunning ? pauseMusicUI() : playMusicUI()
+    }
+    
+    
     
     @objc func updateProgress () {
         var progressAudioTime : Float = 0.0
         
         
-        progressAudioTime = musicArray[currentIndexPath!].musicTime
+        progressAudioTime = Float(musicArray[currentMusicIndex].musicTime)!
         
         
         if ProgressMusciBar.progress >= 1 - (1 / progressAudioTime) {
-           
+            
             runningTime.invalidate()
             ProgressMusciBar.progress = 0
             sec = 0 ; min = 0 ; showCurrentTime()
-            playBtn.setImage(UIImage(named: "play"), for: .normal)
+            //playBtn.setImage(UIImage(named: "play"), for: .normal)
+            autoContinue = true
+            playNext()
+            
         }
         else {
             
-            if sec == 59
-            {
+            switch sec {
+            case 59:
                 min += 1
                 sec = 0
                 showCurrentTime()
-            }
-            else
-            {
-                sec += 1   ; showCurrentTime()
-                
+            default:
+                sec += 1
+                showCurrentTime()
             }
             
             ProgressMusciBar.progress += 1 / progressAudioTime
@@ -161,6 +169,7 @@ class musicUI: UIViewController, AVAudioPlayerDelegate{
             
         }
     }
+    
     // Show the current music time
     func showCurrentTime ()
     {
@@ -172,10 +181,11 @@ class musicUI: UIViewController, AVAudioPlayerDelegate{
     
     @IBAction func dismiss(_ sender: Any) {
         
-        self.dismiss(animated: true, completion: nil)
+        audio.stop() // or use audio.pause()
+        
+        self.dismiss(animated: true, completion: nil )
+        
     }
-    
-    
     
     
     // MARK: - playingMusic
@@ -191,17 +201,16 @@ class musicUI: UIViewController, AVAudioPlayerDelegate{
         {
             print("Error while playing audio :: \(error)")
         }
-        musicArray[currentIndexPath!].musicTime = Float(audio.duration)
+        musicArray[currentMusicIndex].musicTime = String(audio.duration)
         audio.play()
     }
-
+    
     
     func handleTheUpdateOfUI()
     {
         
         if playBtn.imageView?.image != UIImage(named: "play") , audio != nil
         {
-
             pauseMusicUI()
         }
         
@@ -210,14 +219,15 @@ class musicUI: UIViewController, AVAudioPlayerDelegate{
         ProgressMusciBar.progress = 0
         showCurrentTime()
         
-        playMusic(playingAudioName: musicArray[currentIndexPath!].musicName)
+        playMusic(playingAudioName: musicArray[currentMusicIndex].musicName)
         updateUI()
-        musicNameLabel.text = musicArray[currentIndexPath!].musicName
-        totalTimeLabel.text = audio.durationWithMinAndSec()
-        albumNameLabel.text = musicArray[currentIndexPath!].musicAlbum
-        songImage.image = UIImage(named: musicArray[currentIndexPath!].musicImage)
         
-
+        musicNameLabel.text = musicArray[currentMusicIndex].musicName
+        totalTimeLabel.text = audio.durationWithMinAndSec()
+        albumNameLabel.text = musicArray[currentMusicIndex].musicAlbum
+        songImage.image = UIImage(named: musicArray[currentMusicIndex].musicImage)
+        if autoContinue { playMusic(playingAudioName: musicNameLabel.text!)}
+        
     }
     
     func pauseMusicUI()
@@ -235,30 +245,6 @@ class musicUI: UIViewController, AVAudioPlayerDelegate{
         playBtn.setImage(UIImage(named: "pause"), for: .normal)
         audio.play()
         runningTime = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateProgress), userInfo: nil, repeats: true)
-        
     }
 }
 
-
-//MARK: - AVAudioPlayer Extension to handle the total time view
-
-extension AVAudioPlayer {
-    func durationWithMinAndSec () -> String {
-        print(self.duration)
-        
-        let durationInt  = Int(self.duration)
-        return "\(durationInt / 60):\(durationInt % 60 )"
-        
-    }
-}
-
-//MARK: - Int Extension Return the time in "00:00" Format
-extension Int {
-    func toString() -> String {
-        if (self < 10 && self >= 0) {
-            return "0\(Int(self))"
-        } else {
-            return "\(Int(self))"
-        }
-    }
-}

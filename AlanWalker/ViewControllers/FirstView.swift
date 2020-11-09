@@ -13,7 +13,13 @@ class FirstView : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-      //  navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = true
+
+        
     }
     
     @IBAction func onlineMode(_ sender: Any) {

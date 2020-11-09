@@ -12,6 +12,7 @@ class Welcome: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.isNavigationBarHidden = false
 
         loginButton.layer.cornerRadius = 20
         registerButton.layer.cornerRadius = 20

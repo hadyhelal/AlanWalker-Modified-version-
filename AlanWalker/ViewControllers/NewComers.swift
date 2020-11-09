@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import FirebaseFirestore
 class NewComers: UIViewController {
     
  
@@ -19,6 +19,7 @@ class NewComers: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+       // let dp = Firestore.firestore()
         
         welcomeLabel.text = "Welcome Mr: \("")"
     }

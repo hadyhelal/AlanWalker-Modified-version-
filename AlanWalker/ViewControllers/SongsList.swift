@@ -4,12 +4,13 @@
 //
 //  Created by Hady on 5/22/20.
 //  Copyright © 2020 HadyOrg. All rights reserved.
-//
 
 import UIKit
+import AVFoundation
 
 class SongsList : UITableViewController, ObservableObject {
     
+    static var audioIsPlaying : AVAudioPlayer?
     var musicVar = MusicData()
     var currentMusicArray = [MusicDataModel] ()
     
@@ -22,19 +23,18 @@ class SongsList : UITableViewController, ObservableObject {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        configureTableView()
         
+    }
+    
+    private func configureTableView() {
         
-        // navigationController?.setNavigationBarHidden(false, animated: true)
         tableView.separatorColor = .white
         tableView.rowHeight = 91.0
         tableView.tableFooterView = UIView()
         
         // Registeration is to use it current class Bundle in register is to specify the location of the custom cell!
         tableView.register(UINib(nibName: "TableViewCell1", bundle: nil), forCellReuseIdentifier: "MusicDataCell")
-        
-//        let tapGesture = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
-//            view.addGestureRecognizer(tapGesture)
-        
     }
     
     // MARK: - Table view data source
@@ -48,25 +48,25 @@ class SongsList : UITableViewController, ObservableObject {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "MusicDataCell", for: indexPath) as! TableViewCell1
+        let localMusicData = currentMusicArray[indexPath.row]
         
-        cell.musicLabel.text = currentMusicArray[indexPath.row].musicName
+        cell.musicLabel.text      = localMusicData.musicName
         cell.musicLabel.textColor = .white
-        cell.musicLabel.font = UIFont(name: "Futura", size: 20.0)
+        cell.musicLabel.font      = UIFont(name: "Futura", size: 20.0)
         
-        cell.albumLabel.text = currentMusicArray[indexPath.row].musicAlbum
-        cell.albumLabel.font = UIFont(name: "Futura", size: 20.0)
+        cell.albumLabel.text  = localMusicData.musicAlbum
+        cell.albumLabel.font  = UIFont(name: "Futura", size: 20.0)
         
-        cell.musicImage.image = UIImage(named: currentMusicArray[indexPath.row].musicImage)
+        cell.musicImage.image = UIImage(named: localMusicData.musicImage)
         
-        cell.musicTotalTimeLabel.text = prepareTimeString(currentMusicArray[indexPath.row].musicTime)
-        cell.backgroundColor = .none
+        cell.musicTotalTimeLabel.text = prepareTimeString(localMusicData.musicTime)
+        cell.backgroundColor          = .none
         return cell
     }
     
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        print("didSelcetedRow Clicked")
         if Constants.isOnline {
             performSegue(withIdentifier: "webViewSegue", sender: self)
             print("user Now Online--")
@@ -75,18 +75,10 @@ class SongsList : UITableViewController, ObservableObject {
             performSegue(withIdentifier: "musicUISeague", sender: self)
             print("user is OFFline--")
         }
-        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     
-    func prepareTimeString(_ time : Float) -> String{
-        
-        let timeString = String(time)
-        let reblace = String(timeString.map {
-            $0 == "." ? ":" : $0
-        })
-        return reblace
-    }
+
     
     //MARK: - Segue preparation
     
@@ -94,22 +86,22 @@ class SongsList : UITableViewController, ObservableObject {
         
         if segue.identifier == "musicUISeague"{
             
-            
-            let destination = segue.destination as! musicUI
-            if let index = tableView.indexPathForSelectedRow {
+            let destination            = segue.destination as! musicUI
+            if let index               = tableView.indexPathForSelectedRow {
                 destination.musicArray = currentMusicArray
-                destination.currentIndexPath = index.row
-                
+                destination.currentMusicIndex = index.row
+
             }
         }
+            
         else if segue.identifier == "webViewSegue" {
+            
             let destination = segue.destination as! YoutYoubLoading
-            if let index = tableView.indexPathForSelectedRow {
+            if let index    = tableView.indexPathForSelectedRow {
             
                 destination.urlString = currentMusicArray[index.row].musicURL
                 
             }
-                
         }
     }
     
@@ -124,6 +116,24 @@ class SongsList : UITableViewController, ObservableObject {
                 currentMusicArray.append($0)
             }
         }
+    }
+    
+    //MARK: - other Methods
+    
+    func prepareTimeString(_ time : String) -> String{
+        
+        let reblace = String(time).replacingOccurrences(of: ".", with: ":")
+               return reblace
+    
+        //Another way to do the same thing!
+    
+//        let reblace = String(timeString.map {
+//            $0 == "." ? ":" : $0
+//        })
+//        print(reblace)
+//        return reblace
+        
+       
     }
 }
 
@@ -148,9 +158,7 @@ extension SongsList : UISearchBarDelegate {
             DispatchQueue.main.async
                 {
                     searchBar.resignFirstResponder()
-                    
             }
         }
     }
 }
-

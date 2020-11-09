@@ -26,6 +26,9 @@ class Login: UIViewController {
         
     }
     
+    //Log in Operation Dancing Here Bro!
+    //--------------------------------------//
+    
     @IBOutlet weak var login: UIButton!
     
     @IBAction func logIn(_ sender: Any) {
@@ -34,8 +37,10 @@ class Login: UIViewController {
         if error != nil {
             showError(error!)
         }
+            
         else {
-            let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            
+            let email    = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             
             Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
@@ -43,6 +48,7 @@ class Login: UIViewController {
                     self.showError(error!.localizedDescription)
                 }
                 else{
+                    
                     //verfication to the VCs that this user online to play Youtbe videos
                     Constants.isOnline = true
                     self.transationToVC()
@@ -53,8 +59,10 @@ class Login: UIViewController {
     
     
     func showError(_ message : String) {
-        errorLabel.text = message
+       
+        errorLabel.text  = message
         errorLabel.alpha = 1
+        
     }
     
     
@@ -68,11 +76,12 @@ class Login: UIViewController {
         let cleanPassword = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         
         if Utilities.isPasswordValid(cleanPassword) == false {
-            return "please write strong password with at least 8 characters and hold out a special character and numbers!"
+            return "Please write strong password with at least 8 characters and hold out a special character and numbers!"
         }
         
         return nil
     }
+    
     func transationToVC () {
         let vcDestination = storyboard?.instantiateViewController(identifier: Constants.Storyboard.albumListVC) as! AlbumList
         
@@ -80,6 +89,5 @@ class Login: UIViewController {
         view.window?.becomeKey()
         
     }
-    
     
 }

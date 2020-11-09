@@ -226,7 +226,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jnD-J1-NO4" userLabel="UpperView">
                                 <rect key="frame" x="0.0" y="44" width="414" height="409"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="here you have the ability to play Alan Walker music videos via YouTube be online!" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="0" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e87-yW-1cu">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="here you have the ability to play Alan Walker music videos via YouTube be online!" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e87-yW-1cu">
                                         <rect key="frame" x="20" y="156" width="374" height="97.5"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -324,7 +324,7 @@
                             </connections>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="musicUISeague" id="7xq-CZ-v9o" customClass="SwipeTableViewCell" customModule="SwipeCellKit">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="7xq-CZ-v9o" userLabel="Cell" customClass="SwipeTableViewCell" customModule="SwipeCellKit">
                                 <rect key="frame" x="0.0" y="72" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7xq-CZ-v9o" id="e59-Bg-hHO">
@@ -346,6 +346,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <segue destination="aot-oO-P02" kind="presentation" identifier="webViewSegue" id="uBM-Hn-dw4"/>
+                                    <segue destination="BYg-3U-Svx" kind="presentation" identifier="musicUISeague" trigger="accessoryAction" id="i4u-u1-05y"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -511,11 +512,11 @@
             <objects>
                 <viewController id="BYg-3U-Svx" customClass="musicUI" customModule="AlanWalker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eBn-Zn-USs">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NAV-rF-SDj" userLabel="Mini Track View">
-                                <rect key="frame" x="0.0" y="44" width="414" height="64"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
                                 <subviews>
                                     <view alpha="0.60000002384185791" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ROj-2J-f2L">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
@@ -571,7 +572,7 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rLa-z8-MJa" userLabel="Max View">
-                                <rect key="frame" x="30" y="116" width="354" height="750"/>
+                                <rect key="frame" x="30" y="72" width="354" height="740"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lhb-h4-oDf" userLabel="Dismiss">
                                         <rect key="frame" x="0.0" y="0.0" width="354" height="22"/>
@@ -595,7 +596,7 @@
                                                 <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Album Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NK6-ML-Olx">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Album Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NK6-ML-Olx">
                                                 <rect key="frame" x="104.5" y="39.5" width="145" height="31.5"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -629,10 +630,17 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1ZF-jt-fIV" userLabel="Audio Configure">
-                                        <rect key="frame" x="0.0" y="519.5" width="354" height="214"/>
+                                        <rect key="frame" x="0.0" y="519.5" width="354" height="193.5"/>
                                         <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ilG-t7-Bn1">
+                                                <rect key="frame" x="0.0" y="86" width="71" height="22"/>
+                                                <state key="normal" image="shuffle" catalog="system"/>
+                                                <connections>
+                                                    <action selector="shuffle:" destination="BYg-3U-Svx" eventType="touchUpInside" id="LvJ-dk-79n"/>
+                                                </connections>
+                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WHu-qg-sf0" userLabel="Rewind">
-                                                <rect key="frame" x="0.0" y="91" width="118" height="32"/>
+                                                <rect key="frame" x="71" y="81" width="70.5" height="32"/>
                                                 <state key="normal" image="rewind">
                                                     <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -641,41 +649,47 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1t-Wl-stf">
-                                                <rect key="frame" x="118" y="91" width="118" height="32"/>
+                                                <rect key="frame" x="141.5" y="81" width="71" height="32"/>
                                                 <state key="normal" image="pause"/>
                                                 <connections>
                                                     <action selector="play:" destination="BYg-3U-Svx" eventType="touchUpInside" id="SMW-Y5-0mh"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5J-Rj-G5S" userLabel="Forward">
-                                                <rect key="frame" x="236" y="91" width="118" height="32"/>
+                                                <rect key="frame" x="212.5" y="81" width="70.5" height="32"/>
                                                 <state key="normal" image="fast forward"/>
                                                 <connections>
                                                     <action selector="fastForward:" destination="BYg-3U-Svx" eventType="touchUpInside" id="doh-fq-9cr"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKh-hB-t2X">
+                                                <rect key="frame" x="283" y="86" width="71" height="22"/>
+                                                <state key="normal" image="music.note.list" catalog="system"/>
+                                                <connections>
+                                                    <action selector="showMusicList:" destination="BYg-3U-Svx" eventType="touchUpInside" id="qCd-Ra-DVQ"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ref-pW-uQj" userLabel="Volume">
-                                        <rect key="frame" x="0.0" y="743.5" width="354" height="6.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uBc-TT-6ug">
+                                        <rect key="frame" x="0.0" y="723" width="354" height="17"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon Min" translatesAutoresizingMaskIntoConstraints="NO" id="1mt-bK-OyN" userLabel="Mini Image">
-                                                <rect key="frame" x="0.0" y="0.0" width="6.5" height="6.5"/>
-                                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon Min" translatesAutoresizingMaskIntoConstraints="NO" id="ryF-BL-Y9c">
+                                                <rect key="frame" x="0.0" y="0.0" width="17" height="17"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="1mt-bK-OyN" secondAttribute="height" multiplier="1:1" id="00N-UO-Z46"/>
+                                                    <constraint firstAttribute="width" secondItem="ryF-BL-Y9c" secondAttribute="height" multiplier="1:1" id="so3-Zf-ike"/>
                                                 </constraints>
                                             </imageView>
-                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="0RO-KP-JdI">
-                                                <rect key="frame" x="14.5" y="0.0" width="325" height="7.5"/>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="6xa-xB-B7p">
+                                                <rect key="frame" x="25" y="0.0" width="304" height="18"/>
                                                 <connections>
-                                                    <action selector="volumeSlider:" destination="BYg-3U-Svx" eventType="valueChanged" id="d7Q-vq-6N8"/>
+                                                    <action selector="volumeSlider:" destination="BYg-3U-Svx" eventType="valueChanged" id="hCV-Qw-CGU"/>
                                                 </connections>
                                             </slider>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IconMax" translatesAutoresizingMaskIntoConstraints="NO" id="pY9-8k-qfh" userLabel="Max Image">
-                                                <rect key="frame" x="347.5" y="0.0" width="6.5" height="6.5"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IconMax" translatesAutoresizingMaskIntoConstraints="NO" id="yoT-lU-x6C">
+                                                <rect key="frame" x="337" y="0.0" width="17" height="17"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="pY9-8k-qfh" secondAttribute="height" multiplier="1:1" id="XWF-n5-2DS"/>
+                                                    <constraint firstAttribute="width" secondItem="yoT-lU-x6C" secondAttribute="height" multiplier="1:1" id="SIf-p8-l2Q"/>
                                                 </constraints>
                                             </imageView>
                                         </subviews>
@@ -699,12 +713,12 @@
                         <outlet property="ProgressMusciBar" destination="5Fm-jB-88d" id="eo9-70-2yH"/>
                         <outlet property="albumNameLabel" destination="NK6-ML-Olx" id="3yy-FA-TXq"/>
                         <outlet property="currentTimeLabel" destination="s4C-Eh-GUV" id="FtB-UF-4wr"/>
-                        <outlet property="miniIMage" destination="1mt-bK-OyN" id="DhT-65-w6d"/>
+                        <outlet property="miniIMage" destination="ryF-BL-Y9c" id="w1L-r7-Ybm"/>
                         <outlet property="musicNameLabel" destination="9jx-fF-kes" id="Jn2-eu-hcB"/>
                         <outlet property="playBtn" destination="e1t-Wl-stf" id="gdv-wR-2XA"/>
                         <outlet property="songImage" destination="l7A-1X-juz" id="Sdf-NO-fjv"/>
                         <outlet property="totalTimeLabel" destination="63I-9x-A39" id="Ipv-pN-q8C"/>
-                        <outlet property="volumeControll" destination="0RO-KP-JdI" id="J2i-eR-Koj"/>
+                        <outlet property="volumeControll" destination="6xa-xB-B7p" id="JMV-tU-Yhb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wLI-Wl-O6I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -722,8 +736,10 @@
         <image name="Right" width="16" height="16"/>
         <image name="Walker Wallpapers" width="533" height="300"/>
         <image name="fast forward" width="32" height="32"/>
+        <image name="music.note.list" catalog="system" width="64" height="56"/>
         <image name="pause" width="32" height="32"/>
         <image name="rewind" width="32" height="32"/>
+        <image name="shuffle" catalog="system" width="64" height="46"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="yfK-R1-H5C"/>

@@ -16,15 +16,18 @@ class AlbumList: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //        navigationController?.setNavigationBarHidden(false, animated: true)
+
+        configureBegin()
         
-        tableView.separatorColor = .white
-        
-        
-        tableView.rowHeight = 71.0
+    }
+    
+    
+    func configureBegin(){
+        navigationController?.isNavigationBarHidden = false
+
+        tableView.separatorColor  = .white
+        tableView.rowHeight       = 71.0
         tableView.tableFooterView = UIView()
-        
-        
     }
     
     // MARK: - TableView Data source
@@ -39,11 +42,12 @@ class AlbumList: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = albumList[indexPath.row]
-        cell.textLabel?.textColor = .white
-        cell.textLabel?.font = UIFont(name: "Futura", size: 20.0)
+
         cell.backgroundColor = .none
+        cell.textLabel?.font = UIFont(name: "Futura", size: 20.0)
+        cell.textLabel?.text = albumList[indexPath.row]
         
+        cell.textLabel?.textColor = .white
         return cell
     }
 
