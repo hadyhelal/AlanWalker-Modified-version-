@@ -9,7 +9,6 @@
 import Foundation
 
 struct MusicDataModel{
-    
     var musicName : String
     var musicAlbum : String
     var musicImage : String

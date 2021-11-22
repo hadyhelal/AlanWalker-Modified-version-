@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcomeVC" customModule="AlanWalker" customModuleProvider="target">
+            <connections>
+                <outlet property="loginButton" destination="Frb-vR-aRJ" id="3Cm-aY-rtq"/>
+                <outlet property="registerButton" destination="JsS-Ge-A0U" id="5QB-jG-mfW"/>
+                <outlet property="view" destination="OH4-PI-7BM" id="MDw-25-U8t"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="OH4-PI-7BM">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Walker Wallpapers" translatesAutoresizingMaskIntoConstraints="NO" id="cFb-SV-XLU">
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wzC-3H-fZI">
+                    <rect key="frame" x="20" y="748" width="374" height="94"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Frb-vR-aRJ">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="42"/>
+                            <color key="backgroundColor" red="0.075472049420000006" green="0.15573525429999999" blue="0.30359357599999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
+                            <state key="normal" title="Log In"/>
+                            <connections>
+                                <action selector="logInButton:" destination="-1" eventType="touchUpInside" id="qPa-CB-8oz"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JsS-Ge-A0U">
+                            <rect key="frame" x="0.0" y="52" width="374" height="42"/>
+                            <color key="backgroundColor" red="0.065612711010000005" green="0.057513333860000002" blue="0.18966174129999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
+                            <state key="normal" title="Register"/>
+                            <connections>
+                                <action selector="registerButton:" destination="-1" eventType="touchUpInside" id="Xba-YU-f7l"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="JfW-1O-dl9"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="cFb-SV-XLU" secondAttribute="bottom" id="3y1-Ym-fqt"/>
+                <constraint firstItem="JfW-1O-dl9" firstAttribute="trailing" secondItem="wzC-3H-fZI" secondAttribute="trailing" constant="20" id="DKj-Aw-Yvz"/>
+                <constraint firstItem="JfW-1O-dl9" firstAttribute="bottom" secondItem="wzC-3H-fZI" secondAttribute="bottom" constant="20" id="FiE-IG-WbH"/>
+                <constraint firstItem="JfW-1O-dl9" firstAttribute="trailing" secondItem="cFb-SV-XLU" secondAttribute="trailing" id="RCw-ng-B2Y"/>
+                <constraint firstItem="wzC-3H-fZI" firstAttribute="leading" secondItem="JfW-1O-dl9" secondAttribute="leading" constant="20" id="clL-Y6-T1j"/>
+                <constraint firstItem="cFb-SV-XLU" firstAttribute="leading" secondItem="JfW-1O-dl9" secondAttribute="leading" id="fqC-p7-Fwd"/>
+                <constraint firstItem="cFb-SV-XLU" firstAttribute="top" secondItem="JfW-1O-dl9" secondAttribute="top" id="vBU-Sh-ktp"/>
+            </constraints>
+            <point key="canvasLocation" x="704.34782608695662" y="48.883928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Walker Wallpapers" width="533" height="300"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

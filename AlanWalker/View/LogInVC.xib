@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LogInVC" customModule="AlanWalker" customModuleProvider="target">
+            <connections>
+                <outlet property="emailTextField" destination="f9c-gX-Mb4" id="yYy-OZ-si1"/>
+                <outlet property="errorLabel" destination="aVa-kA-6cm" id="Bz2-uF-VXf"/>
+                <outlet property="login" destination="gAS-hk-Qsm" id="wAG-aX-mjo"/>
+                <outlet property="passwordTextField" destination="zRY-Xy-2Iq" id="mHP-KD-bTp"/>
+                <outlet property="view" destination="5fp-s0-IAZ" id="6x3-4y-35O"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="5fp-s0-IAZ">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gear_ Razer Adaro DJ Headphone Review" translatesAutoresizingMaskIntoConstraints="NO" id="Jgk-Pz-oaX">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="xr8-n9-xJM">
+                    <rect key="frame" x="50" y="94" width="314" height="89"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f9c-gX-Mb4">
+                            <rect key="frame" x="0.0" y="0.0" width="314" height="34"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zRY-Xy-2Iq">
+                            <rect key="frame" x="0.0" y="55" width="314" height="34"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GJM-bo-AOy">
+                    <rect key="frame" x="20" y="253" width="374" height="62.5"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAS-hk-Qsm">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="42"/>
+                            <color key="backgroundColor" red="0.088890232149999998" green="0.33053600789999998" blue="0.45785576109999998" alpha="0.79377140410000002" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
+                            <state key="normal" title="Log In"/>
+                            <connections>
+                                <action selector="logIn:" destination="-1" eventType="touchUpInside" id="Meb-eY-3Ie"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVa-kA-6cm">
+                            <rect key="frame" x="0.0" y="42" width="374" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" systemColor="systemRedColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="xZa-ra-rUs"/>
+            <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Jgk-Pz-oaX" firstAttribute="leading" secondItem="xZa-ra-rUs" secondAttribute="leading" id="6ua-OQ-c5e"/>
+                <constraint firstItem="GJM-bo-AOy" firstAttribute="top" secondItem="xr8-n9-xJM" secondAttribute="bottom" constant="70" id="8uO-Hm-eed"/>
+                <constraint firstItem="xr8-n9-xJM" firstAttribute="leading" secondItem="xZa-ra-rUs" secondAttribute="leading" constant="50" id="CJK-xI-6DS"/>
+                <constraint firstItem="xZa-ra-rUs" firstAttribute="trailing" secondItem="xr8-n9-xJM" secondAttribute="trailing" constant="50" id="EOn-dr-mhk"/>
+                <constraint firstItem="xZa-ra-rUs" firstAttribute="trailing" secondItem="GJM-bo-AOy" secondAttribute="trailing" constant="20" id="JKr-Yh-WVT"/>
+                <constraint firstItem="Jgk-Pz-oaX" firstAttribute="trailing" secondItem="xZa-ra-rUs" secondAttribute="trailing" id="L7H-Mz-Inh"/>
+                <constraint firstItem="xr8-n9-xJM" firstAttribute="centerX" secondItem="5fp-s0-IAZ" secondAttribute="centerX" id="SOi-cP-fZS"/>
+                <constraint firstItem="GJM-bo-AOy" firstAttribute="leading" secondItem="xZa-ra-rUs" secondAttribute="leading" constant="20" id="aqf-SF-eSe"/>
+                <constraint firstItem="Jgk-Pz-oaX" firstAttribute="bottom" secondItem="xZa-ra-rUs" secondAttribute="bottom" id="oLS-DE-SX0"/>
+                <constraint firstItem="xr8-n9-xJM" firstAttribute="top" secondItem="xZa-ra-rUs" secondAttribute="top" constant="50" id="q4V-wJ-rtP"/>
+                <constraint firstItem="Jgk-Pz-oaX" firstAttribute="top" secondItem="xZa-ra-rUs" secondAttribute="top" id="uzb-Bl-PvJ"/>
+            </constraints>
+            <point key="canvasLocation" x="704.34782608695662" y="48.883928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Gear_ Razer Adaro DJ Headphone Review" width="205" height="153.5"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
