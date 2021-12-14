@@ -11,14 +11,19 @@ import AVFoundation
 
 class MusicUIVC: UIViewController, AVAudioPlayerDelegate{
     // cmd + shift + o -> opening fastly anything in project
-    var audio : AVAudioPlayer! = nil
     var sec = 0
     var min = 0
     var autoContinue = false
-    var musicArray = [MusicDataModel] ()
-    var currentMusicIndex : Int!
-    var isRunning = false
-    var runningTime = Timer()
+    var isRunning    = false
+    var musicArray   = [MusicDataModel] ()
+    var runningTime  = Timer()
+    var currentMusicIndex: Int!
+
+    let playingAudio = playingSongDI(audioPrepareation: AudioPreparation() )
+
+    lazy var viewModel = {
+        return MusicUIViewModel( audio: playingAudio)
+    }()
     
     @IBOutlet var musicNameLabel: UILabel!
     @IBOutlet var albumNameLabel: UILabel!
@@ -27,7 +32,12 @@ class MusicUIVC: UIViewController, AVAudioPlayerDelegate{
     @IBOutlet var currentTimeLabel: UILabel!
     @IBOutlet weak var volumeControll: UISlider!
     @IBOutlet weak var minSound: UIImageView!
-    @IBOutlet var ProgressMusciBar: UIProgressView!
+    @IBOutlet var progressMusicBar: UIProgressView!
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(true)
+        viewModel.updateUI()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,12 +45,41 @@ class MusicUIVC: UIViewController, AVAudioPlayerDelegate{
         songImage.clipsToBounds      = true
         
         //Start Playing The Selected Music
-        handleTheUpdateOfUI()
+        bindValues()
+        viewModel.handlePlayOrPauseMusic()
         
-        volumeControll.setValue(1.0, animated: true)
+        volumeControll.setValue(0.75, animated: true)
+        viewModel.setAudioVolume(volumeDegree: 0.75)
         
-        audio.volume = volumeControll.value
+    }
+    
+    func bindValues(){
+        viewModel.sec.bind { [weak self] sec in self?.sec = sec }
+        viewModel.min.bind { [weak self] min in self?.min = min }
+        viewModel.autoContinue.bind { [weak self] autoContinue in self?.autoContinue = autoContinue }
+        viewModel.currentMusicIndex.bind { [weak self] currentMusicIdx in self?.currentMusicIndex = currentMusicIdx }
+        viewModel.musicArray.bind { [weak self] musicArray in self?.musicArray = musicArray }
+        viewModel.isRunning.bind { [weak self] isRunning in self?.isRunning = isRunning }
         
+        //UI binding
+        viewModel.albumNameLabel.bind   { [weak self] albumName  in self?.albumNameLabel.text       = albumName }
+        viewModel.currentTimeLabel.bind { [weak self] timeText   in self?.currentTimeLabel.text     = timeText  }
+        viewModel.musicNameLabel.bind   { [weak self] musicName  in self?.musicNameLabel.text       = musicName }
+        viewModel.totalTimeLabel.bind   { [weak self] totalTime  in self?.totalTimeLabel.text       = totalTime }
+        viewModel.progressMusicBar.bind { [weak self] progress   in self?.progressMusicBar.setProgress((self?.viewModel.progressMusicBar.value)!, animated: true )
+            
+        }
+        viewModel.songImage.bind        { [weak self] songImage  in self?.songImage.image = UIImage(named: songImage)}
+        
+        viewModel.playBtn.bind { [weak self] playPauseImage in
+            DispatchQueue.main.async {
+            self?.playBtn.setBackgroundImage(UIImage(named: playPauseImage), for: .normal)
+            }
+        }
+
+       // viewModel.volumeControll.bind   { [weak self] volumeControl  in self?.volumeControll}
+
+
     }
     
     //MARK: - Volume Slider
@@ -52,7 +91,7 @@ class MusicUIVC: UIViewController, AVAudioPlayerDelegate{
             
         default:
             minSound.image  = UIImage(named: "Icon Min")
-            audio.volume     = volumeControll.value
+            viewModel.audioManager.audio!.volume = volumeControll.value
             
         }
     }
@@ -60,153 +99,141 @@ class MusicUIVC: UIViewController, AVAudioPlayerDelegate{
     //MARK: - Playing Audio Functionaliy
     
     @IBAction func shuffle(_ sender: UIButton) {
-        let random = Int.random(in: 0...musicArray.count)
-        
-        updateUI()
-        currentMusicIndex = random
-        handleTheUpdateOfUI()
-        
+        viewModel.shuffleMusic()
     }
     
     @IBAction func fastForward(_ sender: UIButton) {
-        
-        playNext()
+        viewModel.playNext()
     }
     
     @IBOutlet weak var playBtn: UIButton!
     @IBAction func play(_ sender: Any){
-        updateUI()
+        viewModel.updateUI()
     }
     
-    
     @IBAction func rewind(_ sender: UIButton){
-        currentMusicIndex -= 1
-        if currentMusicIndex < musicArray.count , currentMusicIndex >= 0{
-            handleTheUpdateOfUI()
-        }else {
-            currentMusicIndex = 0
-            handleTheUpdateOfUI()
-        }
+        viewModel.rewind()
     }
     
     @IBAction func showMusicList(_ sender: UIButton) {
         dismiss(animated: true)
     }
     
-    private func playNext() {
-        currentMusicIndex += 1
-        if currentMusicIndex < musicArray.count , currentMusicIndex >= 0 {
-            handleTheUpdateOfUI()
-        }else{
-            currentMusicIndex = 0
-            handleTheUpdateOfUI()
-        }
-    }
-    
-    
-    //MARK: - Update the UI Code
-    
-    func updateUI() { isRunning ? pauseMusicUI() : playMusicUI() }
-    
-    @objc func updateProgress () {
-        var progressAudioTime : Float = 0.0
-        progressAudioTime = Float(musicArray[currentMusicIndex].musicTime)!
-        
-        
-        if ProgressMusciBar.progress >= 1 - (1 / progressAudioTime) {
-            
-            runningTime.invalidate()
-            ProgressMusciBar.progress = 0
-            sec = 0 ; min = 0 ; showCurrentTime()
-            //playBtn.setImage(UIImage(named: "play"), for: .normal)
-            autoContinue = true
-            playNext()
-            
-        }
-        else {
-            
-            switch sec {
-            case 59:
-                min += 1
-                sec = 0
-                showCurrentTime()
-            default:
-                sec += 1
-                showCurrentTime()
-            }
-            
-            ProgressMusciBar.progress += 1 / progressAudioTime
-            
-            ProgressMusciBar.setProgress(ProgressMusciBar.progress, animated: true)
-            
-        }
-    }
-    
-    // Show the current music time
-    func showCurrentTime () {
-        currentTimeLabel.text = "\(min.toString()):\(sec.toString())"
-    }
-    
+//    private func playNext() {
+//        currentMusicIndex += 1
+//        if currentMusicIndex < musicArray.count , currentMusicIndex >= 0 {
+//            handleTheUpdateOfUI()
+//        }else{
+//            currentMusicIndex = 0
+//            handleTheUpdateOfUI()
+//        }
+//    }
+//
+//
+//    //MARK: - Update the UI Code
+//
+//    func updateUI() { isRunning ? pauseMusicUI() : playMusicUI() }
+//
+  //  @objc func updateProgress () {
+//        var progressAudioTime : Float = 0.0
+//        progressAudioTime = Float(musicArray[currentMusicIndex].musicTime)!
+//
+//
+//        if progressMusicBar.progress >= 1 - (1 / progressAudioTime) {
+//
+//            runningTime.invalidate()
+//            progressMusicBar.progress = 0
+//            sec = 0 ; min = 0 ; //showCurrentTime()
+//            //playBtn.setImage(UIImage(named: "play"), for: .normal)
+//            autoContinue = true
+//            //playNext()
+//
+//        }
+//        else {
+//
+//            switch sec {
+//            case 59:
+//                min += 1
+//                sec = 0
+//                //showCurrentTime()
+//            default:
+//                sec += 1
+//                //showCurrentTime()
+//            }
+//
+//            progressMusicBar.progress += 1 / progressAudioTime
+//
+//            progressMusicBar.setProgress(progressMusicBar.progress, animated: true)
+//
+//        }
+//    }
+//
+//    // Show the current music time
+//    func showCurrentTime () {
+//        currentTimeLabel.text = "\(min.toString()):\(sec.toString())"
+//    }
+//
     
     //MARK: - Dismiss
     
     @IBAction func dismiss(_ sender: Any) {
-        
-        audio.stop() // or use audio.pause()
-        
-        self.dismiss(animated: true, completion: nil )
+        self.dismiss(animated: true)
         
     }
 
     // MARK: - playingMusic
-    
-    func playMusic (playingAudioName : String) {
-        let url = Bundle.main.url(forResource: playingAudioName, withExtension: ".mp3")!
-        
-        do {
-            audio = try AVAudioPlayer(contentsOf: url)
-        }
-        catch
-        {
-            print("Error while playing audio :: \(error)")
-        }
-        musicArray[currentMusicIndex].musicTime = String(audio.duration)
-        audio.play()
-    }
-    
-    func handleTheUpdateOfUI() {
-        if playBtn.currentBackgroundImage != UIImage(named: "play") , audio != nil {
-            pauseMusicUI()
-        }
-        
-        sec = 0
-        min = 0
-        ProgressMusciBar.progress = 0
-        showCurrentTime()
-        
-        playMusic(playingAudioName: musicArray[currentMusicIndex].musicName)
-        updateUI()
-        
-        musicNameLabel.text = musicArray[currentMusicIndex].musicName
-        totalTimeLabel.text = audio.durationWithMinAndSec()
-        albumNameLabel.text = musicArray[currentMusicIndex].musicAlbum
-        songImage.image = UIImage(named: musicArray[currentMusicIndex].musicImage)
-        if autoContinue { playMusic(playingAudioName: musicNameLabel.text!)}
-        
-    }
-    
-    func pauseMusicUI() {
-        isRunning.toggle()
-        runningTime.invalidate()
-        audio.pause()
-        playBtn.setBackgroundImage(UIImage(named: "play"), for: .normal)
-    }
-    
-    func playMusicUI() {
-        isRunning.toggle()
-        playBtn.setBackgroundImage(UIImage(named: "pause"), for: .normal)
-        audio.play()
-        runningTime = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateProgress), userInfo: nil, repeats: true)
-    }
+//
+//    func playMusic (playingAudioName : String) {
+//        guard let url = Bundle.main.url(forResource: playingAudioName, withExtension: ".mp3") else {
+//            return
+//        }
+//
+//        do {
+//            audio = try AVAudioPlayer(contentsOf: url)
+//        }
+//        catch
+//        {
+//            print("Error while playing audio :: \(error)")
+//        }
+//        musicArray[currentMusicIndex].musicTime = String(audio.duration)
+//        audio.play()
+//    }
+//
+//    func handleTheUpdateOfUI() {
+//        if playBtn.currentBackgroundImage != UIImage(named: "play") , audio != nil {
+//            pauseMusicUI()
+//        }
+//
+//        sec = 0
+//        min = 0
+//        progressMusicBar.progress = 0
+//        showCurrentTime()
+//
+//        playMusic(playingAudioName: musicArray[currentMusicIndex].musicName)
+//        updateUI()
+//
+//        DispatchQueue.main.async {
+//            self.musicNameLabel.text = self.musicArray[self.currentMusicIndex].musicName
+//            self.totalTimeLabel.text = self.audio.durationWithMinAndSec()
+//            self.albumNameLabel.text = self.musicArray[self.currentMusicIndex].musicAlbum
+//            self.songImage.image = UIImage(named: self.musicArray[self.currentMusicIndex].musicImage)
+//            if self.autoContinue { self.playMusic(playingAudioName: self.musicNameLabel.text!)}
+//        }
+//
+//    }
+//
+//    func pauseMusicUI() {
+//        isRunning.toggle()
+//        runningTime.invalidate()
+//        audio.pause()
+//        playBtn.setBackgroundImage(UIImage(named: "play"), for: .normal)
+//    }
+//
+//    func playMusicUI() {
+//        isRunning.toggle()
+//        playBtn.setBackgroundImage(UIImage(named: "pause"), for: .normal)
+//        audio.play()
+//        runningTime = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateProgress), userInfo: nil, repeats: true)
+//    }
 }
 

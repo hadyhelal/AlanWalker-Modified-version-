@@ -57,6 +57,8 @@
 		B66B67BD2735E0DF002C5F10 /* FireBaseLoginDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66B67BC2735E0DF002C5F10 /* FireBaseLoginDI.swift */; };
 		B66B67C02735E7D9002C5F10 /* UIViewController Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66B67BF2735E7D9002C5F10 /* UIViewController Ext.swift */; };
 		B66F19A5273E736F0085E57E /* MiniMusicBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66F19A4273E736F0085E57E /* MiniMusicBar.swift */; };
+		B6821191275DB7AC007E0E14 /* AudioPreparation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6821190275DB7AC007E0E14 /* AudioPreparation.swift */; };
+		B68F3882275BA4B30045B4AA /* MusicUIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68F3881275BA4B30045B4AA /* MusicUIViewModel.swift */; };
 		B6AB37A82732956E0004758B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AB37A62732956E0004758B /* HomeVC.swift */; };
 		B6AB37A92732956E0004758B /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6AB37A72732956E0004758B /* HomeVC.xib */; };
 		B6AB37C52732A7560004758B /* TapBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AB37C42732A7560004758B /* TapBarController.swift */; };
@@ -70,6 +72,9 @@
 		B6AB37DF2732C2380004758B /* YouTubeVideoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6AB37DD2732C2380004758B /* YouTubeVideoVC.xib */; };
 		B6AB37E52732C3170004758B /* AlbumListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AB37E32732C3170004758B /* AlbumListVC.swift */; };
 		B6AB37E62732C3170004758B /* AlbumListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6AB37E42732C3170004758B /* AlbumListVC.xib */; };
+		B6AD551E27564B60003B5FA5 /* SongsListVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AD551D27564B60003B5FA5 /* SongsListVIewModel.swift */; };
+		B6AD5521275651FA003B5FA5 /* playingSongDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AD5520275651FA003B5FA5 /* playingSongDI.swift */; };
+		B6AD552B27565811003B5FA5 /* LoadingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AD552A27565811003B5FA5 /* LoadingData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -127,6 +132,8 @@
 		B66B67BC2735E0DF002C5F10 /* FireBaseLoginDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseLoginDI.swift; sourceTree = "<group>"; };
 		B66B67BF2735E7D9002C5F10 /* UIViewController Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController Ext.swift"; sourceTree = "<group>"; };
 		B66F19A4273E736F0085E57E /* MiniMusicBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniMusicBar.swift; sourceTree = "<group>"; };
+		B6821190275DB7AC007E0E14 /* AudioPreparation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPreparation.swift; sourceTree = "<group>"; };
+		B68F3881275BA4B30045B4AA /* MusicUIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicUIViewModel.swift; sourceTree = "<group>"; };
 		B6AB37A62732956E0004758B /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		B6AB37A72732956E0004758B /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		B6AB37C42732A7560004758B /* TapBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapBarController.swift; sourceTree = "<group>"; };
@@ -140,6 +147,9 @@
 		B6AB37DD2732C2380004758B /* YouTubeVideoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YouTubeVideoVC.xib; sourceTree = "<group>"; };
 		B6AB37E32732C3170004758B /* AlbumListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListVC.swift; sourceTree = "<group>"; };
 		B6AB37E42732C3170004758B /* AlbumListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumListVC.xib; sourceTree = "<group>"; };
+		B6AD551D27564B60003B5FA5 /* SongsListVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsListVIewModel.swift; sourceTree = "<group>"; };
+		B6AD5520275651FA003B5FA5 /* playingSongDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playingSongDI.swift; sourceTree = "<group>"; };
+		B6AD552A27565811003B5FA5 /* LoadingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -402,6 +412,8 @@
 			children = (
 				B66B67AE2735CF47002C5F10 /* FirebaseDI.swift */,
 				B66B67BC2735E0DF002C5F10 /* FireBaseLoginDI.swift */,
+				B6AD5520275651FA003B5FA5 /* playingSongDI.swift */,
+				B6821190275DB7AC007E0E14 /* AudioPreparation.swift */,
 			);
 			name = "DI class";
 			sourceTree = "<group>";
@@ -418,6 +430,9 @@
 		B66B67C32735E906002C5F10 /* Offline */ = {
 			isa = PBXGroup;
 			children = (
+				B6AD5529275657F2003B5FA5 /* SongsListFiles */,
+				B6AD551D27564B60003B5FA5 /* SongsListVIewModel.swift */,
+				B68F3881275BA4B30045B4AA /* MusicUIViewModel.swift */,
 			);
 			path = Offline;
 			sourceTree = "<group>";
@@ -482,6 +497,14 @@
 				B6AB37E42732C3170004758B /* AlbumListVC.xib */,
 			);
 			name = AlbumListVC;
+			sourceTree = "<group>";
+		};
+		B6AD5529275657F2003B5FA5 /* SongsListFiles */ = {
+			isa = PBXGroup;
+			children = (
+				B6AD552A27565811003B5FA5 /* LoadingData.swift */,
+			);
+			name = SongsListFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -646,12 +669,17 @@
 				B6AB37C52732A7560004758B /* TapBarController.swift in Sources */,
 				B66B67C02735E7D9002C5F10 /* UIViewController Ext.swift in Sources */,
 				B6AB37CA2732B2170004758B /* WelcomeVC.swift in Sources */,
+				B68F3882275BA4B30045B4AA /* MusicUIViewModel.swift in Sources */,
 				B6AB37D72732B4DB0004758B /* LogInVC.swift in Sources */,
+				B6821191275DB7AC007E0E14 /* AudioPreparation.swift in Sources */,
+				B6AD5521275651FA003B5FA5 /* playingSongDI.swift in Sources */,
+				B6AD551E27564B60003B5FA5 /* SongsListVIewModel.swift in Sources */,
 				B6AB37E52732C3170004758B /* AlbumListVC.swift in Sources */,
 				B6AB37D22732B4C30004758B /* RegisterVC.swift in Sources */,
 				07CD39CA250D1D7D0065A2C7 /* TableViewCell1.swift in Sources */,
 				B66B67AF2735CF47002C5F10 /* FirebaseDI.swift in Sources */,
 				B66962B52735678B00AD7EB6 /* MusicUIVC.swift in Sources */,
+				B6AD552B27565811003B5FA5 /* LoadingData.swift in Sources */,
 				B6AB37DE2732C2380004758B /* YouTubeVideoVC.swift in Sources */,
 				0721CAD324770A120013277C /* AppDelegate.swift in Sources */,
 				B6AB37A82732956E0004758B /* HomeVC.swift in Sources */,

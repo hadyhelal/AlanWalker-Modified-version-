@@ -330,11 +330,13 @@ PODS:
   - nanopb/decode (1.30906.0)
   - nanopb/encode (1.30906.0)
   - PromisesObjC (1.2.10)
+  - Resolver (1.0.7)
 
 DEPENDENCIES:
   - Firebase/Analytics
   - Firebase/Auth
   - Firebase/Firestore
+  - Resolver
 
 SPEC REPOS:
   trunk:
@@ -356,6 +358,7 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - PromisesObjC
+    - Resolver
 
 SPEC CHECKSUMS:
   abseil: 6c8eb7892aefa08d929b39f9bb108e5367e3228f
@@ -376,7 +379,8 @@ SPEC CHECKSUMS:
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
   PromisesObjC: b14b1c6b68e306650688599de8a45e49fae81151
+  Resolver: da30396fcabb46790959209430a4a0a9e6e39849
 
-PODFILE CHECKSUM: f5391ef5a8228f5e42d51005c8c18b375d0833bf
+PODFILE CHECKSUM: 354bbb9921467f45d84272424a522849e22a7a35
 
 COCOAPODS: 1.10.1

@@ -7,24 +7,29 @@
 //
 
 import UIKit
-import AVFoundation
 
 class SongsListVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     lazy var musicData     = MusicData()
+    
+    lazy var viewModel: SongsListVIewModel = {
+        return SongsListVIewModel()
+    }()
+    
     var selectedMusicArray = [MusicDataModel] ()
     var filterdMusicArray  = [MusicDataModel] ()
     var originalMusicArray = [MusicDataModel] ()
     
-    static var audioIsPlaying: AVAudioPlayer?
     var albumSelected: String? {
         didSet{
-            loadData(album: (self.albumSelected)!)
+            guard self.albumSelected != nil else { dismiss(animated: true) ; return }
+            viewModel.loadData(album: self.albumSelected!)
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        bindValues()
         title = "Play your favorite!"
         configureTableView()
         configureSearchController()
@@ -44,8 +49,28 @@ class SongsListVC: UIViewController {
         
     }
     
+    private func bindValues(){
+        viewModel.selectedMusicArray.bind { [weak self] selectedArray in
+            self?.selectedMusicArray = selectedArray
+        }
+        
+        viewModel.filterdMusicArray.bind { [weak self] filteredArray in
+            self?.filterdMusicArray  = filteredArray
+        }
+        
+        viewModel.originalMusicArray.bind { [weak self] originalArray in
+            self?.originalMusicArray = originalArray
+        }
+        
+        viewModel.reloadTableView.bind { [weak self] _ in
+            DispatchQueue.main.async {
+                self?.tableView.reloadData()
+            }
+        }
+        
+    }
     private func configureTableView() {
-        tableView.delegate = self
+        tableView.delegate   = self
         tableView.dataSource = self
         tableView.separatorColor  = .white
         tableView.rowHeight       = 76.0
@@ -62,12 +87,7 @@ class SongsListVC: UIViewController {
         navigationItem.searchController = searchController
     }
     
-     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let musicUIVC               = MusicUIVC()
-        musicUIVC.musicArray        = selectedMusicArray
-        musicUIVC.currentMusicIndex = indexPath.row
-        present(musicUIVC, animated: true)
-    }
+
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "musicUISeague"{
@@ -75,66 +95,17 @@ class SongsListVC: UIViewController {
             if let index    = tableView.indexPathForSelectedRow {
                 destination.musicArray = selectedMusicArray
                 destination.currentMusicIndex = index.row
-                
             }
         }
-        
-//        else if segue.identifier == "webViewSegue" {
-//            
-//            let destination = segue.destination as! YoutYoubLoading
-//            if let index    = tableView.indexPathForSelectedRow {
-//                
-//                destination.urlString = selectedMusicArray[index.row].musicURL
-//                
-//            }
-//        }
     }
-    
-    //MARK: - Load the music Data
-    
-    func loadData(album albumNameFetched : String) {
-        musicData.list.forEach{
-            if $0.musicAlbum == albumSelected {
-                originalMusicArray.append($0)
-            }
-        }
-        selectedMusicArray = originalMusicArray
-        DispatchQueue.main.async {
-            self.tableView.reloadData()
-        }
-    }
-    
-    func prepareTimeString(_ time : String) -> String{
-        let reblace = String(time).replacingOccurrences(of: ".", with: ":")
-        return reblace
-        
-        //Another way to do the same thing!
-        
-        //        let reblace = String(timeString.map {
-        //            $0 == "." ? ":" : $0
-        //        })
-        //        print(reblace)
-        //        return reblace
-        
-        
-    }
+
 }
 
 
 //MARK: - UISearchBar Functionalities
 extension SongsListVC: UISearchBarDelegate, UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
-        guard let filter = searchController.searchBar.text else {
-            return
-        }
-        guard !filter.isEmpty else {
-            selectedMusicArray  = originalMusicArray
-            tableView.reloadData()
-            return
-        }
-        selectedMusicArray = originalMusicArray.filter{
-            $0.musicName.contains(filter)
-        }
+        viewModel.filterImplementation(searchBarText: searchController.searchBar.text)
         tableView.reloadData()
     }
     
@@ -149,6 +120,14 @@ extension SongsListVC: UITableViewDelegate, UITableViewDataSource {
         return selectedMusicArray.count
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let musicUIVC               = MusicUIVC()
+        musicUIVC.viewModel.musicArray.value        = selectedMusicArray
+        musicUIVC.viewModel.currentMusicIndex.value = indexPath.row
+        present(musicUIVC, animated: true)
+   }
+    
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "MusicDataCell", for: indexPath) as! TableViewCell1
@@ -157,7 +136,7 @@ extension SongsListVC: UITableViewDelegate, UITableViewDataSource {
         cell.configureMusicAndAlbum(songName: localMusicData.musicName, albumName: localMusicData.musicAlbum)
         cell.configureImageAndTime(color: view.backgroundColor!,
                                    image: localMusicData.musicImage,
-                                   totalTime: prepareTimeString(localMusicData.musicTime))
+                                   totalTime: viewModel.prepareTimeString(localMusicData.musicTime))
         return cell
     }
     

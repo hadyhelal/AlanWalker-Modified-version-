@@ -8,7 +8,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "61626D18-189B-4403-B94A-3424F21FA070"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AlanWalker/ViewControllers/AlbumList.swift"
@@ -24,7 +24,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "6CC1952D-4FF0-47C0-AD88-2657E115BD36"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AlanWalker/View/MiniMusicBar.swift"
@@ -37,7 +37,7 @@
             <Locations>
                <Location
                   uuid = "6CC1952D-4FF0-47C0-AD88-2657E115BD36 - c7e123499f19169d"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "AlanWalker.MiniMusicBar.__allocating_init(musicImage: __C.UIImage, musicName: Swift.String, isMusicPlaying: Swift.Bool) -&gt; AlanWalker.MiniMusicBar"
@@ -52,7 +52,7 @@
                </Location>
                <Location
                   uuid = "6CC1952D-4FF0-47C0-AD88-2657E115BD36 - bbe0cdc811023d66"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "AlanWalker.MiniMusicBar.init(musicImage: __C.UIImage, musicName: Swift.String, isMusicPlaying: Swift.Bool) -&gt; AlanWalker.MiniMusicBar"
@@ -71,112 +71,112 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "80E779B8-DEF1-4F12-AEC9-2D8A14256A20"
+            uuid = "C9F01A92-6BFE-4B3E-A7A8-3FC82670FF9C"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AlanWalker/View/MiniMusicBar.swift"
+            filePath = "AlanWalker/View/MusicUIVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "configure()"
+            startingLineNumber = "225"
+            endingLineNumber = "225"
+            landmarkName = "MusicUIVC"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "371A3C76-FD43-40B3-B769-FC1B56E6B3CD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AlanWalker/Viewmodel/Offline/MusicUIViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
+            landmarkName = "playNext()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "C58D42A0-F420-4BB0-91DB-90AEAB8DD3CA"
+            uuid = "6E216004-8EA9-451A-96EB-8A9E08622C62"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AlanWalker/View/MiniMusicBar.swift"
+            filePath = "AlanWalker/Viewmodel/Offline/MusicUIViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
-            landmarkName = "init(frame:)"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "MusicUIViewModel"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7D596287-5BE4-4A3D-BFD5-B0C95F648F95"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AlanWalker/Viewmodel/Offline/MusicUIViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "updateProgress()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "555E6283-F1B8-4110-BE4D-C3581EA4DB7A"
+            uuid = "23C8190C-EB57-4A87-B186-F59312AFF85C"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AlanWalker/View/SongsListVC/SongsListVC.swift"
+            filePath = "AlanWalker/View/MusicUIVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
-            landmarkName = "loadData(album:)"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
+            landmarkName = "play(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B7B0DFFC-BDCE-41B7-8D11-8156995E9E18"
+            uuid = "14DB6786-0AE3-431E-B11B-485C44DB3113"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AlanWalker/View/SongsListVC/SongsListVC.swift"
+            filePath = "AlanWalker/View/MusicUIVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
-            landmarkName = "loadData(album:)"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "viewDidDisappear(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "163B979D-2E08-4FF8-8806-A3799209CB9D"
+            uuid = "8CC4CF54-B59A-4555-AD6E-54EB67C68808"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AlanWalker/View/SongsListVC/SongsListVC.swift"
+            filePath = "AlanWalker/View/MusicUIVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "149"
-            endingLineNumber = "149"
-            landmarkName = "tableView(_:numberOfRowsInSection:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "362E5B8C-8613-4EDB-AB7C-26A775D2338E"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AlanWalker/View/SongsListVC/SongsListVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "152"
-            endingLineNumber = "152"
-            landmarkName = "tableView(_:cellForRowAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "DF8358F2-51C0-4BAE-8817-395D8B3EB125"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AlanWalker/View/SongsListVC/SongsListVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "148"
-            endingLineNumber = "148"
-            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
+            landmarkName = "showMusicList(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

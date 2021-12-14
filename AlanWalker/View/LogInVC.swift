@@ -16,7 +16,7 @@ class LogInVC: UIViewController {
     @IBOutlet weak var login: UIButton!
     
     private lazy var viewModel: LoginViewModel = {
-        return LoginViewModel()
+        return LoginViewModel(db: FireBaseLoginDI())
     }()
     
     override func viewDidLoad() {

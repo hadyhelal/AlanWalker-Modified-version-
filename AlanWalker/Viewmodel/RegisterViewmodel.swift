@@ -7,8 +7,6 @@
 //
 
 import Foundation
-import FirebaseFirestore
-import FirebaseAuth
 
 class RegisterViewmodel {
     let firstnameText = Box("")
@@ -23,7 +21,7 @@ class RegisterViewmodel {
         self.db = db
     }
     
-    func regiserationProcess() {
+     func regiserationProcess() {
         let error = validateFields()
         guard error == nil else {
             errorText.value = error!
@@ -52,9 +50,7 @@ class RegisterViewmodel {
             }
         }
         
-
     }
-    
     
     private func validateFields() -> String? {
         if firstnameText.value.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||

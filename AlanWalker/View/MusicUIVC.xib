@@ -10,12 +10,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MusicUIVC" customModule="AlanWalker" customModuleProvider="target">
             <connections>
-                <outlet property="ProgressMusciBar" destination="Rqu-jP-zCc" id="SEg-Pl-tpz"/>
                 <outlet property="albumNameLabel" destination="C4G-Xj-Wkh" id="OJb-5y-Bes"/>
                 <outlet property="currentTimeLabel" destination="bLQ-y3-MxY" id="ff0-MS-05k"/>
                 <outlet property="minSound" destination="QJg-rX-u22" id="lmh-hY-GYY"/>
                 <outlet property="musicNameLabel" destination="i51-wL-fXB" id="nLG-BM-YHB"/>
                 <outlet property="playBtn" destination="djP-MS-uTQ" id="V3c-Yd-S41"/>
+                <outlet property="progressMusicBar" destination="Rqu-jP-zCc" id="SEg-Pl-tpz"/>
                 <outlet property="songImage" destination="ze5-El-EtM" id="Fx5-Rh-kzm"/>
                 <outlet property="totalTimeLabel" destination="dSl-Ik-ryU" id="jJw-98-LQd"/>
                 <outlet property="view" destination="vwa-DB-wO9" id="gUL-U7-0MO"/>
@@ -92,7 +92,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="69.666666666666671" height="50"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ah-NV-dgA">
-                                            <rect key="frame" x="12.333333333333336" y="3.9999999999999574" width="45" height="42.333333333333357"/>
+                                            <rect key="frame" x="12.333333333333336" y="3.9999999999999609" width="45" height="42.333333333333343"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="45" id="59h-ia-9g0"/>
                                                 <constraint firstAttribute="height" constant="45" id="LJA-G2-pDR"/>
@@ -172,7 +172,7 @@
                                     <rect key="frame" x="318.33333333333331" y="0.0" width="69.666666666666686" height="50"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gmn-w4-vBi">
-                                            <rect key="frame" x="12.333333333333371" y="3.6666666666666305" width="45" height="43.666666666666671"/>
+                                            <rect key="frame" x="12.333333333333371" y="3.6666666666666288" width="45" height="43.666666666666671"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="45" id="Lc3-uL-Gfu"/>
                                                 <constraint firstAttribute="height" constant="45" id="yfD-ds-9e9"/>

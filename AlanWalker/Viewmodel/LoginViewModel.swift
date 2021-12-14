@@ -7,9 +7,6 @@
 //
 
 import Foundation
-import FirebaseFirestore
-import Firebase
-import FirebaseAuth
 
 class LoginViewModel {
     let emailText    = Box("")
@@ -18,7 +15,7 @@ class LoginViewModel {
     let successLogin = Box(false)
     let db: FireBaseLoginProtocol
     
-    init( db: FireBaseLoginProtocol = FireBaseLoginDI()) {
+    init( db: FireBaseLoginProtocol) {
         self.db = db
     }
     

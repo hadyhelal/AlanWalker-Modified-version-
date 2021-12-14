@@ -16,5 +16,6 @@ end
     pod 'Firebase/Analytics'
     pod 'Firebase/Firestore'
     pod 'Firebase/Auth'
+    pod "Resolver"
 
 end
