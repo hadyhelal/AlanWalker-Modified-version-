@@ -33,19 +33,19 @@ class SongsListVC: UIViewController {
         title = "Play your favorite!"
         configureTableView()
         configureSearchController()
-        let image         = UIImage(named: selectedMusicArray[1].musicImage)!
-        let musicName     = selectedMusicArray[0].musicName
-        let miniMusicView = MiniMusicBar(musicImage: image , musicName: musicName, isMusicPlaying: true)
-        //tableView.tableFooterView = miniMusicView
-        view.addSubview(miniMusicView)
-        miniMusicView.translatesAutoresizingMaskIntoConstraints = false
-        
-        NSLayoutConstraint.activate([
-            miniMusicView.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor),
-            miniMusicView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor),
-            miniMusicView.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor),
-            miniMusicView.heightAnchor.constraint(equalToConstant: 80)
-        ])
+//        let image         = UIImage(named: selectedMusicArray[1].musicImage)!
+//        let musicName     = selectedMusicArray[0].musicName
+//        let miniMusicView = MiniMusicBar(musicImage: image , musicName: musicName, isMusicPlaying: true)
+//        //tableView.tableFooterView = miniMusicView
+//        view.addSubview(miniMusicView)
+//        miniMusicView.translatesAutoresizingMaskIntoConstraints = false
+//
+//        NSLayoutConstraint.activate([
+//            miniMusicView.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor),
+//            miniMusicView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor),
+//            miniMusicView.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor),
+//            miniMusicView.heightAnchor.constraint(equalToConstant: 80)
+//        ])
         
     }
     
