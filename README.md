@@ -19,7 +19,7 @@ I built this software more than year a go and it was very simple application wit
 #### You care about database? 
 this app has been passing through several modification from the back end i refactored  Info.plit, Core data, Realm and finally settled down normal struct model!
 
-# what is under development now?
+# What is under development now?
 - Update IoC Dependency Injection design battern with new annotation technique(Service Locator with Resolver).
 - Writing Unit and UI test.
 - Refactor audio playing implementation code.
