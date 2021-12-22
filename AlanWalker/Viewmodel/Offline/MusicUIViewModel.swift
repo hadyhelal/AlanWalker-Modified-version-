@@ -8,10 +8,6 @@
 
 import Foundation
 
-protocol recieveAlbumArrayAndMusic {
-    
-}
-
 class MusicUIViewModel {
     
     var audioManager: AVFoundationProtocol
