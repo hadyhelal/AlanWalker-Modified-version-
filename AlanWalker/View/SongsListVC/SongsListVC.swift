@@ -87,8 +87,6 @@ class SongsListVC: UIViewController {
         navigationItem.searchController = searchController
     }
     
-
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "musicUISeague"{
             let destination = segue.destination as! MusicUIVC

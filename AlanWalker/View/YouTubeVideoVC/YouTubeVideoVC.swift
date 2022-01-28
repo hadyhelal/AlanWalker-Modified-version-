@@ -9,7 +9,7 @@
 import WebKit
 //import SVProgressHUD
 
-class YouTubeVideoVC: UIViewController , WKUIDelegate{
+class YouTubeVideoVC: UIViewController, WKUIDelegate{
 
     var webView: WKWebView!
     var urlString : String?
